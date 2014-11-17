@@ -14,6 +14,17 @@
     "url": "https://github.com/overlookmotel/overlook-framework/issues"
   },
   "dependencies": {
+    "express": "3.x",
+    "connect-powered-by": "0.1.x",
+    "less-middleware": "1.0.x",
+    "sequelize-extra": "0.2.x",
+    "bluebird-extra": "0.1.x",
+    "fs-extra-promise": "0.1.x",
+    "require-folder-tree": "1.0.x",
+    "shimming": "0.0.x",
+    "bcrypt": "0.8.x",
+    "overlook-utils": "0.0.x",
+    "ejs-extended": "0.0.x"
   },
   "devDependencies": {
     "mocha": "2.0.x",
