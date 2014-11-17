@@ -1,0 +1,6 @@
+<% layout('/_layouts/layoutInner') -%>
+<?
+var items = data[<%- _.quote(route.model.namePlural) %>];
+?>
+
+<% include ../_helpers/itemsList %>

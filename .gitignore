@@ -1,2 +1,4 @@
 .DS_STORE
 node_modules
+
+defaults/views/_helpers/forms/widgets/menuOpen.ejs

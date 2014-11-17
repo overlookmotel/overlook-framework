@@ -1,0 +1,13 @@
+<%
+// title = 'Unknown error';
+%>
+<% layout('/_layouts/layout') -%>
+
+<h1>Unknown error</h1>
+<?
+(function() {
+	var title = 'Unknown error', text = 'This error has been logged and will be investigated';
+	?><% include ../_helpers/errorBox %>
+<?
+})();
+?>
