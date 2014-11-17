@@ -18,6 +18,6 @@ test:
 	fi
 
 jshint:
-	./node_modules/.bin/jshint lib
+	./node_modules/.bin/jshint lib defaults/controllers defaults/models
 
 .PHONY: test
