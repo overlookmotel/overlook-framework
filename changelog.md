@@ -7,3 +7,4 @@
 ## Next
 
 * Default sort order for users
+* ejs-extra dependency
