@@ -1,0 +1,9 @@
+<%
+// receives (app, field, fieldName, first, fieldData)
+var nameFieldName = fieldName.slice(0, -2) + 'Name';
+%><?
+(function(){
+	var nameValue = formData[<%- _.quote(nameFieldName) %>];
+?><% include ./menuOpenBare %><?
+})();
+?>
