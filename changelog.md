@@ -8,3 +8,7 @@
 
 * Default sort order for users
 * ejs-extra dependency
+
+## 0.0.3
+
+* Travis gets lastest Sequelize from Github
