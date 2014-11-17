@@ -1,0 +1,38 @@
+<%
+// receives (field, fieldName)
+%><?
+(function() {
+<%
+if (field.reference) {
+	var modelName = field.reference, action = '';
+
+%>	var value = item[<%- _.quote(fieldName.slice(0, -2)) %>];
+	if (value) {
+		var id = value.id, name = value.name;
+		?><% include ./modelLink %><?
+	} else {
+		?>(none)<?
+	}
+<%
+} else {
+%>	var value = item[<%- _.quote(fieldName) %>];
+	if (value !== null && value !== undefined) {
+<%
+	// run all displayers on value
+	if (!field.display || _.isEmpty(field.display)) {
+%>?><?= value ?><?<%
+	} else {
+		_.forIn(field.display, function(options, displayerName) {
+			if (!_.isPlainObject(options)) options = {param: options};
+%>		value = displayers[<%- _.quote(displayerName) %>](value, <%- JSON.stringify(options) %>);
+		value = _.isPlainObject(value) ? value.html : _.escapeHTML(value);
+<%
+		});
+%>?><?- value ?><?<%
+	}
+%>
+	}
+<%
+}
+%>})();
+?>

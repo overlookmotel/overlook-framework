@@ -1,0 +1,10 @@
+<%
+// receives (overlook, field, fieldName, first, fieldData)
+script('/js/overlook/libraries/typeahead.bundle.min.js');
+script('/js/overlook/typeahead.js');
+stylesheet('/css/overlook/css/typeahead.css'); // from https://github.com/hyspace/typeahead.js-bootstrap3.less/
+
+var nameFieldName = fieldName.slice(0, -2) + 'Name';
+var url = overlook.modelPaths[field.modelName];
+
+%><input type="hidden" name="<%= fieldName %>" value="<?= value ?>" /><input type="text" name="<%= nameFieldName %>" value="<?= nameValue || '' ?>" class="form-control" data-dropdown-url="<%= url %>" />

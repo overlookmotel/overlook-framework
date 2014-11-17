@@ -1,0 +1,17 @@
+<%
+// receives (field, fieldName, first)
+%><?
+(function() {
+	var value = formData[<%- _.quote(fieldName) %>];
+	var error = formErrors[<%- _.quote(fieldName) %>];
+?>
+<div class="form-group<? if (error) { ?> has-error<? } ?>">
+  <label for="<%= fieldName %>" class="col-sm-2 control-label"><%= field.label %><%
+if (field.required) { %> *<% }
+%></label>
+  <div class="col-sm-10"><?
+	if (error) { ?><div style="color:#FF0000"><?= error ?></div><? }
+?><% include ./formField %><?
+})();
+?></div>
+</div>

@@ -1,0 +1,8 @@
+<%
+// receives ()
+%><p>
+<?
+_.forEach(items, function(item) {
+?>  <div><a href="<?= item.id ?>/"><?= item.name ?></a></div>
+<? });
+?></p>

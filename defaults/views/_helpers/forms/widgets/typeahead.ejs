@@ -1,0 +1,10 @@
+<%
+// receives (actionTypes, field, fieldName, first)
+script('/js/overlook/libraries/typeahead.bundle.min.js');
+script('/js/overlook/typeahead.js');
+stylesheet('/css/overlook/css/typeahead.css'); // from https://github.com/hyspace/typeahead.js-bootstrap3.less/
+
+%><input name="<%= fieldName %>" value="<?= value ?>"<%
+if (field.length) { %> maxlength="<%= field.length %>"<% }
+if (first) { %> autofocus<% }
+%> class="form-control" data-typeahead-url="<% if (actionTypes.item) { %>../<% } %>" />

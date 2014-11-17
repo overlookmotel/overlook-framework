@@ -1,0 +1,11 @@
+<%
+// receives ()
+%><?
+(function() {
+	if (!_.isEmpty(formErrors)) {
+		var title = 'There were problems with the information submitted. Please try again.';
+		var text = _.values(formErrors).join('\n');
+		?><% include ../errorBox %><?
+	}
+})();
+?>

@@ -1,0 +1,6 @@
+<%
+// receives ()
+%><div class="alert alert-danger">
+  <p><b><?= title ?></b></p>
+<? if (text) { ?>  <p><?- _.escapeHTML(text) ?></p><? } ?>
+</div>

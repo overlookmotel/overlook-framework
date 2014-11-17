@@ -1,0 +1,43 @@
+<%
+// receives (field, fieldName, first)
+%><?
+(function() {
+	var fieldData<% if (field.dataName) { %> = data[<%- _.quote(field.dataName) %>]<% } %>;
+?><%
+switch (field.widget) {
+	case 'text':
+		%><% include ./widgets/text %><%
+		break;
+	case 'password':
+		%><% include ./widgets/password %><%
+		break;
+	case 'hidden':
+		%><% include ./widgets/hidden %><%
+		break;
+	case 'currency':
+		%><% include ./widgets/currency %><%
+		break;
+	case 'textbox':
+		%><% include ./widgets/textbox %><%
+		break;
+	case 'checkbox':
+		%><% include ./widgets/checkbox %><%
+		break;
+	case 'checkboxFilter':
+		%><% include ./widgets/checkboxFilter %><%
+		break;
+	case 'typeahead':
+		%><% include ./widgets/typeahead %><%
+		break;
+	case 'menu':
+		%><% include ./widgets/menu %><%
+		break;
+	case 'menuOpen':
+		%><% include ./widgets/menuOpen %><%
+		break;
+	default:
+		%><% include ./widgets/text %><%
+}
+%><?
+})();
+?>

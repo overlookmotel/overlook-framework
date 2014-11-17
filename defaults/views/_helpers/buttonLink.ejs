@@ -1,0 +1,4 @@
+<%
+// receives (url, text, glyph, mode)
+%><a href="<%= url %>" class="btn btn-<%= mode || 'primary' %>"><%
+if (glyph) {%><% include ./glyph %> <% } %><%= text %></a>

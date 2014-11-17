@@ -1,0 +1,10 @@
+<%
+// receives (form)
+
+var first = true;
+_.forIn(form.fields, function(field, fieldName) {
+	%><% include ./formFieldLine %>
+<%
+	first = false;
+});
+%>

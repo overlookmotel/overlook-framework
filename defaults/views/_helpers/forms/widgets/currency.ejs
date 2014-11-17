@@ -1,0 +1,9 @@
+<%
+// receives (field, fieldName, first)
+%><div class="input-group">
+  <span class="input-group-addon">&pound</span>
+  <input name="<%= fieldName %>" value="<?= value ?>"<%
+if (field.length) { %> maxlength="<%= field.length %>"<% }
+if (first) { %> autofocus<% }
+%> class="form-control" />
+</div>

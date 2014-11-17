@@ -1,0 +1,43 @@
+<%
+// receives ()
+%><?
+(function() {
+	if (!paging || paging.pages == 1) return;
+?><ul class="pagination">
+<?
+	var page = paging.page;
+	if (page == 1) {
+?>  <li><span>&laquo;</span></li>
+<?
+	} else if (page == 2) {
+?>  <li><a href="<? if (query) { ?>?<?- query ?><? } else { ?>./<? } ?>">&laquo;</a></li>
+<?		
+	} else {
+?>  <li><a href="?<? if (query) { ?><?- query ?>&<? } ?>p=<?= page - 1 ?>">&laquo;</a></li>
+<?		
+	}
+	
+	for (var i = 1; i <= paging.pages; i++) {
+?>  <li<? if (i == page) { ?> class="active"<? } ?>><a href="<?
+		if (i > 1) {
+			?>?<?
+			if (query) { ?><?- query ?>&<? }
+			?>p=<?= i ?><?
+		} else if (query) {
+			?>?<?- query ?><?
+		} else {
+			?>./<?
+		} ?>"><?= i ?></a></li>
+<?
+	}
+	
+	if (page == paging.pages) {
+?>  <li><span>&raquo;</span></li>
+<?
+	} else {
+?>  <li><a href="?<? if (query) { ?><?- query ?>&<? } ?>p=<?= page + 1 ?>">&raquo;</a></li>
+<?		
+	}
+?></ul><?
+})();
+?>

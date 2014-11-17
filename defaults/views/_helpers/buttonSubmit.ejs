@@ -1,0 +1,4 @@
+<%
+// receives (text, glyph, mode)
+%><button type="submit" class="btn btn-<%= mode || 'primary' %>"><%
+if (glyph) {%><% include ./glyph %> <% } %><%= text %></button>

@@ -1,0 +1,7 @@
+<%
+// receives (fieldName, first)
+%><input type="checkbox" name="<%= fieldName %>" value="1"<%
+if (first) { %> autofocus<% }
+%><?
+if (value == '1') { ?> checked<? }
+?> />

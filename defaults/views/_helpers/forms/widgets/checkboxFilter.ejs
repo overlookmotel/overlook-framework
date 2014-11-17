@@ -1,0 +1,9 @@
+<%
+// receives (fieldName, first)
+%><select name="<%= fieldName %>" class="form-control"<%
+if (first) { %> autofocus<% }
+%>>
+  <option></option>
+  <option value="1"<? if (value == '1') { ?> selected<? } ?>>Y</option>
+  <option value="0"<? if (value == '0') { ?> selected<? } ?>>N</option>
+</select>

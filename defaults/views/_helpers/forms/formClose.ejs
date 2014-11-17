@@ -1,0 +1,17 @@
+<%
+// receives (form)
+%><div class="col-sm-offset-2"><%
+
+var submit = form.submit || {};
+var text = submit.text || 'Save';
+var glyph = submit.glyph || 'ok';
+var mode = submit.mode || 'primary';
+%><% include ../buttonSubmit %><%
+
+if (!submit || !submit.noCancel) {
+	var url = './', text = 'Cancel', glyph = 'remove', mode = 'warning';
+%> <% include ../buttonLink %><%
+}
+
+%></div>
+</form>
