@@ -13,6 +13,6 @@
 
 * Travis gets lastest Sequelize from Github
 
-## Next
+## 0.0.4
 
 * Added url field format
