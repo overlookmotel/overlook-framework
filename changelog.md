@@ -17,6 +17,6 @@
 
 * Added url field format
 
-## Next
+## 0.0.5
 
 * Added default view _layouts/layoutInner.ejs
