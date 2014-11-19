@@ -20,3 +20,7 @@
 ## 0.0.5
 
 * Added default view _layouts/layoutInner.ejs
+
+## Next
+
+* Error messages
