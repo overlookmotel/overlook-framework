@@ -1,0 +1,27 @@
+<% layout('layout') %>
+
+<ol class="breadcrumb">
+<?
+(function() {
+	// breadcrumbs
+	for (var i = 0; i < breadcrumbs.length - 1; i++) {
+		?>  <li><a href="<?= breadcrumbs[i].url ?>"><?= breadcrumbs[i].title ?></a></li>
+<?
+	}
+?>  <li class="active"><?= breadcrumbs[i].title ?><?
+})();
+?></li>
+</ol>
+
+<?
+(function() {
+	if (flash) {
+		var msg = flash.msg, mode = flash.style;
+		?><% include ../_helpers/flashMsg %><?
+	}
+})();
+?>
+
+<h1><?= title ?></h1>
+
+<%- body %>
