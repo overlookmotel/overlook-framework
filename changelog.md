@@ -24,3 +24,7 @@
 ## 0.0.6
 
 * Error messages
+
+## Next
+
+* User login field lengthened to 50 chars

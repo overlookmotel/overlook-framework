@@ -17,7 +17,7 @@ module.exports = {
 			order: [['login']]
 		},
 		login: {
-			type: Sequelize.STRING(20),
+			type: Sequelize.STRING(50),
 			widget: 'text',
 			allowNull: false,
 			unique: true

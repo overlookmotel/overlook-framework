@@ -26,7 +26,7 @@ exports = module.exports = {
 		// make form
 		var form = {
 			fields: {
-				login: {format: 'string', length: 20, widget: 'text', required: true},
+				login: {format: 'string', length: 50, widget: 'text', required: true},
 				password: {format: 'password', required: true},
 				remember: {format: 'boolean', label: 'Remember me'}
 			},
