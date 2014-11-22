@@ -28,3 +28,4 @@
 ## Next
 
 * User login field lengthened to 50 chars
+* Long text fields edited in textboxes
