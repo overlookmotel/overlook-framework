@@ -61,7 +61,7 @@ exports = module.exports = {
 				var parentResource = this.parentResources[this.parentResources.length - 1];
 				options.where[parentResource.model.name + _.capitalize(parentResource.paramField)] = this.params[parentResource.param];
 			}
-				
+			
 			// get from db
 			return this.model.findAndCountAll(options).bind(this)
 			.then(function(result) {
