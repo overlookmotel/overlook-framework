@@ -22,3 +22,8 @@ See changelog.md
 ## Issues
 
 If you discover a bug, please raise an issue on Github. https://github.com/overlookmotel/overlook-framework/issues
+
+## TODO
+
+* Implement many-to-many relations listing/creating/deleting
+* Support for ENUM datatype

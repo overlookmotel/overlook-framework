@@ -34,3 +34,5 @@
 
 * Refactor: move lib/routes/runRoute() into own file
 * resourceJoin route type for showing many-to-many joins
+
+## 0.0.9
