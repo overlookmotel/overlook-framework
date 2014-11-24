@@ -53,62 +53,8 @@ exports = module.exports = {
 		.then(this.loaded)
 		.ifElse(function() {
 			// set up options
-			var options = {
-				where: {},
-				include: [{all: 'One', attributes: ['id', 'name']}]
-			};
-			
-			// set filters
-			_.forIn(this.filters, function(value, attribute) {
-				var field = this.fields[attribute];
-				if (field) {
-					if (field.mainType == 'string') {
-						options.where[attribute] = {like: '%' + value + '%'};
-					} else if (field.mainType == 'date') {
-						value = forms.conformers.date(value);
-						this.filters[attribute] = _.dateToString(value);
-						options.where[attribute] = {gte: value};
-					} else {
-						options.where[attribute] = value;
-					}
-				} else if (_.endsWith(attribute, 'Name')) {
-					field = this.fields[attribute.slice(0, -4) + 'Id'];
-					if (field && field.reference) options.where[attribute.slice(0, -4) + '.name'] = {like: '%' + value + '%'};
-				}
-			}, this);
-			
-			// set sort order
-			if (this.sort) {
-				var order;
-				var attribute = this.sort;
-				if (_.startsWith(attribute, '-')) {
-					attribute = attribute.slice(1);
-					order = [attribute, 'DESC'];
-				} else {
-					order = [attribute, 'ASC'];
-				}
-				
-				var reference = this.model.rawAttributes[attribute] && this.model.rawAttributes[attribute].reference;
-				if (reference) {
-					var as = attribute.slice(0, -2);
-					if (as != reference) {
-						order.unshift({model: this.models[reference], as: as});
-					} else {
-						order.unshift(this.models[reference]);
-					}
-					order[1] = 'name';
-				}
-				
-				options.order = [order];
-			} else {
-				options.order = [];
-			}
-			options.order.push(['id', 'ASC']);
-			
-			// set paging
-			var pageLength = this.overlook.options.general.pageLength;
-			options.limit = pageLength;
-			options.offset = pageLength * (this.paging.page - 1);
+			var options = {include: {all: 'One', attributes: ['id', 'name']}};
+			this.loadOptions.call(this, options);
 			
 			// filter by parent resources
 			if (this.parentResources) {
@@ -119,12 +65,69 @@ exports = module.exports = {
 			// get from db
 			return this.model.findAndCountAll(options).bind(this)
 			.then(function(result) {
-				this.paging.pages = Math.ceil(result.count / pageLength);
+				this.paging.pages = Math.ceil(result.count / options.limit);
 				
 				// save db result to data
 				this.dataMain = this.data[this.model.namePlural] = result.rows;
 			});
 		});
+	},
+	
+	loadOptions: function(options) {
+		// set filters
+		options.where = {};
+		
+		_.forIn(this.filters, function(value, attribute) {
+			var field = this.fields[attribute];
+			if (field) {
+				if (field.mainType == 'string') {
+					options.where[attribute] = {like: '%' + value + '%'};
+				} else if (field.mainType == 'date') {
+					value = forms.conformers.date(value);
+					this.filters[attribute] = _.dateToString(value);
+					options.where[attribute] = {gte: value};
+				} else {
+					options.where[attribute] = value;
+				}
+			} else if (_.endsWith(attribute, 'Name')) {
+				field = this.fields[attribute.slice(0, -4) + 'Id'];
+				if (field && field.reference) options.where[attribute.slice(0, -4) + '.name'] = {like: '%' + value + '%'};
+			}
+		}, this);
+		
+		// set sort order
+		if (this.sort) {
+			var order;
+			var attribute = this.sort;
+			if (_.startsWith(attribute, '-')) {
+				attribute = attribute.slice(1);
+				order = [attribute, 'DESC'];
+			} else {
+				order = [attribute, 'ASC'];
+			}
+			
+			var reference = this.model.rawAttributes[attribute] && this.model.rawAttributes[attribute].reference;
+			if (reference) {
+				var as = attribute.slice(0, -2);
+				if (as != reference) {
+					order.unshift({model: this.models[reference], as: as});
+				} else {
+					order.unshift(this.models[reference]);
+				}
+				order[1] = 'name';
+			}
+			
+			options.order = [order];
+		} else {
+			options.order = [];
+		}
+		
+		options.order.push(['id', 'ASC']);
+		
+		// set paging
+		var pageLength = this.overlook.options.general.pageLength;
+		options.limit = pageLength;
+		options.offset = pageLength * (this.paging.page - 1);
 	},
 	
 	makeDisplayOptions: function(defaultFn) {
