@@ -30,7 +30,7 @@
 * User login field lengthened to 50 chars
 * Long text fields edited in textboxes
 
-## Next
+## 0.0.8
 
 * Refactor: move lib/routes/runRoute() into own file
 * resourceJoin route type for showing many-to-many joins
