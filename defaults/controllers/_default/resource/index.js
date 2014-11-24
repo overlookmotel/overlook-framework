@@ -122,7 +122,7 @@ exports = module.exports = {
 			options.order = [];
 		}
 		
-		options.order.push(['id', 'ASC']);
+		if (this.model.attributes.id) options.order.push(['id', 'ASC']);
 		
 		// set paging
 		var pageLength = this.overlook.options.general.pageLength;
