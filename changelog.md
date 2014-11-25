@@ -50,6 +50,6 @@
 
 * Fixes for user set-up
 
-## Next
+## 0.1.2
 
 * Login with email instead of user name
