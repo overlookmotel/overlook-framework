@@ -7,9 +7,6 @@
 
 // action definition
 exports = module.exports = {
-	// variables
-	sortDefault: 'login',
-	
 	// functions
 	
 	init: function(defaultFn) {

@@ -49,3 +49,7 @@
 ## 0.1.1
 
 * Fixes for user set-up
+
+## Next
+
+* Login with email instead of user name

@@ -31,7 +31,7 @@ exports = module.exports = {
 		// if root user, check uneditable fields haven't been edited
 		var user = this.dataMain;
 		if (user.isRoot) {
-			_.forEach(['login', 'isActive'], function(fieldName) {
+			_.forEach(['email', 'isActive'], function(fieldName) {
 				if (this.actData[fieldName] != user[fieldName]) {
 					// field can't be changed
 					this.actResult = {error: 'cannotEdit', field: fieldName, value: user[fieldName]};

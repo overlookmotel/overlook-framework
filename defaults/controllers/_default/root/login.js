@@ -26,7 +26,7 @@ exports = module.exports = {
 		// make form
 		var form = {
 			fields: {
-				login: {format: 'string', length: 50, widget: 'text', required: true},
+				email: {format: 'string', length: 50, widget: 'text', required: true},
 				password: {format: 'password', required: true},
 				remember: {format: 'boolean', label: 'Remember me'}
 			},
@@ -44,7 +44,7 @@ exports = module.exports = {
 	
 	act: function() {
 		// check login details against db
-		return authentication.login(this.actData.login, this.actData.password, this.actData.remember, this.res, this.overlook).bind(this)
+		return authentication.login(this.actData.email, this.actData.password, this.actData.remember, this.res, this.overlook).bind(this)
 		.then(function(user) {
 			if (!user) {
 				// success
@@ -81,7 +81,7 @@ exports = module.exports = {
 	failed: function() {
 		var error = this.actResult.error;
 		if (error == 'loginFailed') {
-			this.formErrors.login = 'Login failed. Please try again.';
+			this.formErrors.email = 'Login failed. Please try again.';
 			this.formData.password = '';
 			return;
 		}

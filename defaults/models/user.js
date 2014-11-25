@@ -9,16 +9,7 @@ var Sequelize = require('sequelize-extra');
 module.exports = {
 	fields: {
 		name: {
-			type: Sequelize.VIRTUAL,
-			get: function() {
-				return this.login;
-			},
-			attributes: ['login'],
-			order: [['login']]
-		},
-		login: {
-			type: Sequelize.STRING(50),
-			widget: 'text',
+			type: Sequelize.STRING(100),
 			allowNull: false,
 			unique: true
 		},
