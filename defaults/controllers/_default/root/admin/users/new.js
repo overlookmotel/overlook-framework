@@ -7,8 +7,8 @@
 var _ = require('overlook-utils');
 
 // libraries
-var forms = require('../../../../../lib/forms'),
-	authentication = require('../../../../../lib/authentication');
+var forms = require('../../../../../../lib/forms'),
+	authentication = require('../../../../../../lib/authentication');
 
 // exports
 

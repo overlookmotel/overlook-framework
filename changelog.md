@@ -53,3 +53,7 @@
 ## 0.1.2
 
 * Login with email instead of user name
+
+## Next
+
+* Move users resource to inside admin namespace route (i.e. /admin/users)

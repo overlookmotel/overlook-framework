@@ -8,6 +8,5 @@
 // route definition
 exports = module.exports = {
 	// route params
-	type: 'resource',
-	parentType: 'namespace'
+	type: 'resource'
 };

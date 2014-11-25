@@ -1,5 +1,5 @@
 // --------------------
-// Permissions resource controller
+// Admin namespace controller
 // Route definition
 // --------------------
 
@@ -8,6 +8,5 @@
 // route definition
 exports = module.exports = {
 	// route params
-	type: 'resource',
-	parentType: 'namespace'
+	type: 'namespace'
 };
