@@ -44,5 +44,12 @@ exports = module.exports = {
 		});
 	},
 	
-	failed: resourceNewAction.failed
+	failed: function() {
+		if (this.actResult.error == 'uniqueFail' && this.actResult.field == 'PRIMARY') {
+			this.formErrors[this.targetModel.name + 'Id'] = 'Already in ' + this.data[this.parent.model.name].name + '. Try another.';
+			return;
+		}
+		
+		return resourceNewAction.failed();
+	}
 };

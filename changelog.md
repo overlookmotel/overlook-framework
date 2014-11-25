@@ -64,3 +64,7 @@
 * Fix redirection after deleting resource item
 * Dummy fields used in errors called '_dummy' not 'dummy' to avoid clash with an actual field called 'dummy'
 * Titles and messages for resourceJoin actions
+
+## Next
+
+* Handle error if attempt to create the same join twice in resource joins
