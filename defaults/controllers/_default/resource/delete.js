@@ -51,7 +51,7 @@ exports = module.exports = {
 	failed: function() {
 		var error = this.actResult.error;
 		if (error == 'cannotDelete') {
-			this.formErrors.dummy = this.dataMain.name + ' cannot be deleted';
+			this.formErrors._dummy = this.dataMain.name + ' cannot be deleted';
 			return;
 		}
 		
