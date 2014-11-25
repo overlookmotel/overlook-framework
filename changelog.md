@@ -46,6 +46,6 @@
 * Remove deprecated Sequelize option `syncOnAssociation`
 * Bug fixes/typos
 
-## Next
+## 0.1.1
 
 * Fixes for user set-up
