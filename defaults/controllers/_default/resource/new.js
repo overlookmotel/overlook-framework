@@ -116,7 +116,7 @@ exports = module.exports = {
 			this.dataMain = this.data[this.model.name] = item;
 			
 			// redirect to view item
-			return this.redirect('../' + item.id + '/', 'Created ' + item.name);
+			return this.redirect('./' + item.id + '/', 'Created ' + item.name);
 		});
 	},
 	
