@@ -58,7 +58,7 @@
 
 * Move users resource to inside admin namespace route (i.e. /admin/users)
 
-## Next
+## 0.2.1
 
 * Move TODO into separate file, not included by npm
 * Fix redirection after deleting resource item
