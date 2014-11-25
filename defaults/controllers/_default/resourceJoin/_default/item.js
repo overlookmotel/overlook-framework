@@ -3,9 +3,6 @@
 // Default item action
 // --------------------
 
-// modules
-var _ = require('overlook-utils');
-
 // imports
 var resourceDefaultItemAction = require('../../resource/_default/item');
 

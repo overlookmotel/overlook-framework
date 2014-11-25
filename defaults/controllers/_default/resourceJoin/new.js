@@ -3,9 +3,6 @@
 // new action
 // --------------------
 
-// modules
-var Promise = require('bluebird-extra');
-
 // imports
 var resourceNewAction = require('../resource/new');
 

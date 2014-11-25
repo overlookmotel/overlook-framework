@@ -3,13 +3,6 @@
 // index action
 // --------------------
 
-// modules
-var Promise = require('bluebird-extra'),
-	_ = require('overlook-utils');
-
-// libraries
-var forms = require('../../../../lib/forms');
-
 // imports
 var resourceIndexAction = require('../resource/index');
 

@@ -3,12 +3,6 @@
 // delete action
 // --------------------
 
-// modules
-var _ = require('overlook-utils');
-
-// libraries
-var forms = require('../../../../lib/forms');
-
 // imports
 var resourceDeleteAction = require('../resource/delete');
 
