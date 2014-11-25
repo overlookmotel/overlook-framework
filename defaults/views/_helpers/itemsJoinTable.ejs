@@ -1,15 +1,13 @@
 <%
-// receives (overlook, fields)
+// receives (items, fields)
 %><% include ../_helpers/itemsTableHead %>
 <?
 _.forEach(items, function(item) {
-	var id = item.id;
+	var id = item[dataJoinedName].id;
 ?>      <tr>
         <td><%
-var modelName = route.model.name, action = '', glyph = 'eye-open', mode = '';
-%><% include ../_helpers/modelButtonGlyphLink %> <%
-action = 'edit', glyph = 'pencil', mode = 'warning';
-%><% include ../_helpers/modelButtonGlyphLink %> <%
+var modelName = route.model.name, action = 'edit', glyph = 'pencil', mode = 'warning';
+%><% //include ../_helpers/modelButtonGlyphLink %> <%
 action = 'delete', glyph = 'trash', mode = 'danger';
 %><% include ../_helpers/modelButtonGlyphLink %></td>
 <%

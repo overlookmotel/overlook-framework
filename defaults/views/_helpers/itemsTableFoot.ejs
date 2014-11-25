@@ -1,0 +1,13 @@
+<%
+// receives (items, paging, query)
+%>
+    </tbody>
+  </table>
+<?
+if (items.length) {
+?><% include ./pager %><?
+} else {
+?><p>None found</p><?
+}
+?>
+</div>

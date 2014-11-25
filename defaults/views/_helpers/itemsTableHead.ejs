@@ -1,0 +1,82 @@
+<%
+// receives (filters, fields)
+%><% script('/js/overlook/itemsTable.js') %>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th class="col-md-1"></th>
+<?
+var query;
+(function(){
+	var sorted, newSort, fieldName;
+	
+	var queryParts = [];
+	_.forIn(filters, function(value, filter) {
+		queryParts.push('f' + escape(_.capitalize(filter)) + '=' + escape(value));
+	});
+	query = queryParts.join('&');
+?><%
+// table headers
+_.forIn(fields, function(field, fieldName) {
+%><?
+	var fieldName = <%- _.quote(fieldName) %>;
+	if (sort == fieldName) {
+		sorted = 'down';
+		newSort = '-' + fieldName;
+	} else {
+		if (sort == '-' + fieldName) {
+			sorted = 'up';
+		} else {
+			sorted = undefined;
+		}
+		newSort = fieldName;
+	}	
+	
+	var thisQuery = query;
+	if (newSort != sortDefault) {
+		if (query) thisQuery += '&';
+		thisQuery += 's=' + escape(newSort);
+	}
+	
+	thisQuery = thisQuery ? '?' + thisQuery : './';
+?>        <th><a href="<?- thisQuery ?>"><%= field.label %><?
+	if (sorted) { ?> <span class="glyphicon glyphicon-chevron-<?- sorted ?>"></span><? }
+?></a></th>
+<%
+});
+%>      </tr>
+<?
+	if (sort && sort != sortDefault) {
+		queryParts.push('s=' + escape(sort));
+		query = queryParts.join('&')
+	}
+?>      <tr data-item-table-filters="1" class="item-table-filters">
+        <td class="right"><span class="glyphicon glyphicon-search glyph-lg"></span></td>
+<%
+// table filters
+_.forIn(fields, function(field, fieldName) {
+	var first = false;
+%><?
+	var fieldName = <%- _.quote(fieldName) %>;
+?>        <td><%
+	if (field.widget == 'menuOpen') {
+%><?
+	var value = filters[fieldName] || '';
+	var nameFieldName = <%- _.quote(fieldName.slice(0, -2) + 'Name') %>;
+	var nameValue = filters[nameFieldName] || filterNames[nameFieldName] || '';
+?><% include ./forms/widgets/menuOpenBare %><%
+	} else if (field.widget) {
+%><? var value = filters[fieldName] || '';
+?><% include ./forms/formField %><%
+	}
+%></td>
+<%
+});
+%>
+        </tr>
+    </thead>
+    <tbody>
+<?
+})();
+?>
