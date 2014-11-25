@@ -57,3 +57,7 @@
 ## 0.2.0
 
 * Move users resource to inside admin namespace route (i.e. /admin/users)
+
+## Next
+
+* Move TODO into separate file, not included by npm
