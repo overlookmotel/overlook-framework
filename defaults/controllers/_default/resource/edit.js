@@ -19,7 +19,7 @@ exports = module.exports = {
 	// functions
 	
 	initForm: function() {
-		// run same initForm function as for edit
+		// run same initForm function as for new
 		return this.route.actions.new.initForm.call(this);
 	},
 	
