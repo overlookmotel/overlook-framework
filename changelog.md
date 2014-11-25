@@ -45,3 +45,7 @@
 * Unset Sequelize option `omitNull`
 * Remove deprecated Sequelize option `syncOnAssociation`
 * Bug fixes/typos
+
+## Next
+
+* Fixes for user set-up
