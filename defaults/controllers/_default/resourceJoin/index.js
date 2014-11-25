@@ -1,5 +1,5 @@
 // --------------------
-// Default resource controller
+// Default resourceJoin controller
 // index action
 // --------------------
 
@@ -25,7 +25,7 @@ exports = module.exports = {
 			// sort by target's name
 			this.sortDefault = this.route.targetModel.name + 'Id';
 			
-			// remove field for parent name
+			// remove fields for parent name
 			delete this.fields[this.route.parent.model.name + 'Id'];
 		});
 	},

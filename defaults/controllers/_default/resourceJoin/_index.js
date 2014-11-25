@@ -1,5 +1,5 @@
 // --------------------
-// Default resource controller
+// Default resourceJoin controller
 // Route definition
 // --------------------
 
