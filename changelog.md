@@ -36,3 +36,12 @@
 * resourceJoin route type for showing many-to-many joins
 
 ## 0.0.9
+
+* Code tidy
+
+## Next
+
+* ResourceJoin controllers and view implemented
+* Unset Sequelize option `omitNull`
+* Remove deprecated Sequelize option `syncOnAssociation`
+* Bug fixes/typos
