@@ -39,7 +39,7 @@
 
 * Code tidy
 
-## Next
+## 0.1.0
 
 * ResourceJoin controllers and view implemented
 * Unset Sequelize option `omitNull`
