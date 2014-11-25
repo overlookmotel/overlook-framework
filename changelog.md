@@ -61,3 +61,4 @@
 ## Next
 
 * Move TODO into separate file, not included by npm
+* Fix redirection after deleting resource item

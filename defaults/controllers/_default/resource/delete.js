@@ -45,7 +45,7 @@ exports = module.exports = {
 	},
 	
 	done: function() {
-		return this.redirect('../../', 'Deleted ' + this.dataMain.name);
+		return this.redirect('../', 'Deleted ' + this.dataMain.name);
 	},
 	
 	failed: function() {
