@@ -9,7 +9,11 @@ var mode = submit.mode || 'primary';
 %><% include ../buttonSubmit %><%
 
 if (!submit || !submit.noCancel) {
-	var url = './', text = 'Cancel', glyph = 'remove', mode = 'warning';
+	var cancel = form.cancel || {},
+		url = cancel.url || './',
+		text = cancel.text || 'Cancel',
+		glyph = cancel.glyph || 'remove',
+		mode = cancel.mode || 'warning';
 %> <% include ../buttonLink %><%
 }
 
