@@ -1,10 +1,11 @@
 <% layout('/_layouts/layoutInner') -%>
 <?
-var items = data[<%- _.quote(route.model.namePlural) %>];
+var items = data[<%- _.quote(route.model.namePlural) %>],
+	dataJoinedName = <%- _.quote(route.targetModel.name) %>;
 ?>
 
-<% include ../_helpers/itemsTable %>
+<% include ../_helpers/itemsJoinTable %>
 
 <%
-var url = 'add', text = 'Add', glyph = 'plus', mode;
+var url = 'new', text = 'Add', glyph = 'plus', mode;
 %><p><% include ../_helpers/buttonLink %></p>

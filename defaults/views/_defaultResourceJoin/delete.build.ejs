@@ -1,0 +1,12 @@
+<% layout('/_layouts/layoutInner') -%>
+
+<h3>Are you sure you want to delete <?= data[<%- _.quote(route.model.name) %>].name ?>?</h3>
+
+<% include ../_helpers/forms/formOpen %>
+<% include ../_helpers/forms/formErrors %>
+<p><%
+var text = 'Delete', glyph = 'trash', mode = 'danger';
+%><% include ../_helpers/buttonSubmit %><%
+var url = '../', text = 'Cancel', glyph = 'remove', mode = 'warning';
+%> <% include ../_helpers/buttonLink %></p>
+</form>
