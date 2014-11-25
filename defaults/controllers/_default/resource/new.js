@@ -114,7 +114,7 @@ exports = module.exports = {
 		return this.model.find({where: {id: this.dataMain.id}}).bind(this)
 		.then(function(item) {
 			this.dataMain = this.data[this.model.name] = item;
-				
+			
 			// redirect to view item
 			return this.redirect('../' + item.id + '/', 'Created ' + item.name);
 		});
