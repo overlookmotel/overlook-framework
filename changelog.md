@@ -65,6 +65,6 @@
 * Dummy fields used in errors called '_dummy' not 'dummy' to avoid clash with an actual field called 'dummy'
 * Titles and messages for resourceJoin actions
 
-## Next
+## 0.2.2
 
 * Handle error if attempt to create the same join twice in resource joins
