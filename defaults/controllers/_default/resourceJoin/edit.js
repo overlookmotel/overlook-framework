@@ -29,6 +29,10 @@ exports = module.exports = {
 	
 	populate: resourceEditAction.populate,
 	act: resourceEditAction.act,
-	done: resourceEditAction.done,
+	
+	done: function() {
+		return this.redirect('../', 'Saved changes to ' + this.dataMain[this.targetModel.name].name);
+	},
+	
 	failed: resourceEditAction.failed
 };

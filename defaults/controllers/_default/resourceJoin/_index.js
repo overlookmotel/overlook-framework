@@ -23,5 +23,18 @@ exports = module.exports = {
 		});
 	},
 	
-	makeBreadcrumbsItem: resourceRoute.makeBreadcrumbsItem
+	makeBreadcrumbsItem: function(route, data, url) {
+		var title;
+		if (data[route.model.name]) {
+			data = data[route.model.name];
+			title = data[route.targetModel.name].get('name');
+		} else {
+			title = route.titleItem;
+		}
+		
+		var breadcrumbs = this.makeBreadcrumbsIndex(route, data, _.parentUrl(url));
+		
+		breadcrumbs.push({title: title, url: url});
+		return breadcrumbs;
+	}
 };

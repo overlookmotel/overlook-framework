@@ -3,6 +3,9 @@
 // Default item action
 // --------------------
 
+// modules
+var _ = require('overlook-utils');
+
 // imports
 var resourceDefaultItemAction = require('../../resource/_default/item');
 
@@ -16,6 +19,10 @@ exports = module.exports = {
 	loaded: resourceDefaultItemAction.loaded,
 	loadFail: resourceDefaultItemAction.loadFail,
 	accessFail: resourceDefaultItemAction.accessFail,
-	makeTitle: resourceDefaultItemAction.makeTitle,
+	
+	makeTitle: function() {
+		_.defaultValue(this, 'title', (this.titleAction ? this.titleAction + ' ' : '') + (this.dataMain ? this.dataMain[this.targetModel.name].name : this.titleItem));
+	},
+	
 	makeBreadcrumbs: resourceDefaultItemAction.makeBreadcrumbs
 };

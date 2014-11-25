@@ -1,6 +1,6 @@
 <% layout('/_layouts/layoutInner') -%>
 
-<h3>Are you sure you want to delete <?= data[<%- _.quote(route.model.name) %>].name ?>?</h3>
+<h3>Are you sure you want to delete <?= data[<%- _.quote(route.targetModel.name) %>].name ?> from <?= data[<%- _.quote(route.parent.model.name) %>].name ?>?</h3>
 
 <% include ../_helpers/forms/formOpen %>
 <% include ../_helpers/forms/formErrors %>
