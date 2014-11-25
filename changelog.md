@@ -63,3 +63,4 @@
 * Move TODO into separate file, not included by npm
 * Fix redirection after deleting resource item
 * Dummy fields used in errors called '_dummy' not 'dummy' to avoid clash with an actual field called 'dummy'
+* Titles and messages for resourceJoin actions
