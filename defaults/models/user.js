@@ -23,13 +23,13 @@ module.exports = {
 		passwordHash: {
 			type: Sequelize.STRING(60),
 			format: 'password',
-			secret: true,
-			allowNull: true
+			allowNull: true,
+			secret: true
 		},
 		cookieKey: {
 			type: Sequelize.STRING(60),
-			secret: true,
-			allowNull: true
+			allowNull: true,
+			secret: true
 		},
 		isSystem: {
 			type: Sequelize.BOOLEAN,
