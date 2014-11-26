@@ -20,10 +20,7 @@ exports = module.exports = {
 		return defaultFn().bind(this)
 		.then(function() {
 			// modify form
-			_.forEach(['isSystem', 'isRoot', 'isPublic'], function(fieldName) {
-				delete this.form.fields[fieldName];
-			}, this);
-			
+			delete this.form.fields.type;
 			forms.addField(this.form, 'password', {format: 'password', required: true});
 		});
 	},

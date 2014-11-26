@@ -11,11 +11,9 @@ exports = module.exports = {
 	
 	access: function(defaultFn) {
 		return defaultFn().bind(this)
-		.ifElse(function() {
-			// check if is public/root role, and say no access if so
-			return !this.dataMain.isPublic && !this.dataMain.isRoot;
-		}, function() {
-			return false;
+		.then(function(allowed) {
+			// check if is root/admin/user/public role, and say no access if so
+			return allowed && this.dataMain.type == null;
 		});
 	}
 };

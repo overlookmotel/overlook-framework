@@ -13,8 +13,7 @@ exports = module.exports = {
 		return defaultFn().bind(this)
 		.then(function() {
 			// set up fields
-			delete this.fields.isRoot;
-			delete this.fields.isPublic;
+			delete this.fields.type;
 		});
 	}
 };

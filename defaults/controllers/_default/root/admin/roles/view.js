@@ -16,9 +16,7 @@ exports = module.exports = {
 		return defaultFn().bind(this)
 		.then(function() {
 			// modify fields
-			_.forEach(['isRoot', 'isPublic'], function(fieldName) {
-				delete this.fields[fieldName];
-			}, this);
+			delete this.fields.type;
 		});
 	}
 };
