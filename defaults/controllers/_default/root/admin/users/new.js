@@ -34,5 +34,16 @@ exports = module.exports = {
 			this.actData.cookieKey = key;
 			delete this.actData.password;
 		});
+	},
+	
+	act: function(defaultFn) {
+		return defaultFn().bind(this)
+		.then(function(success) {
+			if (!success) return success;
+			
+			// add user role to user
+			return this.dataMain.addRole(this.overlook.userRole)
+			.return(success);
+		});
 	}
 };
