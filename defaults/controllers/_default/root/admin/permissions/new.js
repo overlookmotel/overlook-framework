@@ -23,7 +23,7 @@ exports = module.exports = {
 			if (!success) return success;
 			
 			// add permission to root role
-			return this.overlook.rootRole.addPermission(this.dataMain)
+			return this.overlook.rootRole.addPermission(this.dataMain, {transaction: this.transaction})
 			.return(success);
 		});
 	}
