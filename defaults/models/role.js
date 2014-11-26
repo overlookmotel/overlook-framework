@@ -13,15 +13,10 @@ module.exports = {
 			allowNull: false,
 			unique: true
 		},
-		isRoot: {
-			type: Sequelize.BOOLEAN,
-			allowNull: false,
-			defaultValue: false
-		},
-		isPublic: {
-			type: Sequelize.BOOLEAN,
-			allowNull: false,
-			defaultValue: false
+		type: {
+			type: Sequelize.STRING(10),
+			allowNull: true,
+			unique: true
 		}
 	},
 	manyToMany: {

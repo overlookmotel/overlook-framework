@@ -72,3 +72,8 @@
 ## 0.2.3
 
 * Expose `forms` library functions as `Overlook.forms`
+
+## Next
+
+* Change from `isRoot`, `isPublic` etc columns in user and role models to single column `type`
+* Refactor db stocking code
