@@ -69,6 +69,6 @@
 
 * Handle error if attempt to create the same join twice in resource joins
 
-## Next
+## 0.2.3
 
 * Expose `forms` library functions as `Overlook.forms`
