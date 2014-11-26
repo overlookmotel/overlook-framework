@@ -3,9 +3,6 @@
 // edit action
 // --------------------
 
-// modules
-var _ = require('overlook-utils');
-
 // exports
 
 // action definition
