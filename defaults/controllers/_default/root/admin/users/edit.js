@@ -15,8 +15,8 @@ exports = module.exports = {
 	access: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function(allowed) {
-			// check if is system/public user, and say no access if so
-			return allowed && this.dataMain.type != 'system' && this.dataMain.type != 'public';
+			// check if is public user, and say no access if so
+			return allowed && this.dataMain.type != 'public';
 		});
 	},
 	
@@ -26,10 +26,10 @@ exports = module.exports = {
 	},
 	
 	act: function(defaultFn) {
-		// if root user, check uneditable fields haven't been edited
+		// if system/root user, check uneditable fields haven't been edited
 		var user = this.dataMain;
 		if (user.type) {
-			_.forEach(['email', 'isActive'], function(fieldName) {
+			_.forEach(['name', 'isActive'], function(fieldName) {
 				if (this.actData[fieldName] != user[fieldName]) {
 					// field can't be changed
 					this.actResult = {error: 'cannotEdit', field: fieldName, value: user[fieldName]};
