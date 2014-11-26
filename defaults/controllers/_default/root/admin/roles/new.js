@@ -1,6 +1,6 @@
 // --------------------
 // Roles resource controller
-// edit action
+// new action
 // --------------------
 
 // exports
