@@ -68,11 +68,12 @@ exports = module.exports = {
 	start: function() {},
 	
 	access: function() {
-		// allow access to logged in users - but not to anyone else
-		
 		// if user not logged in, access fail
-		//xxx change this to proper access check based on user's permissions
-		if (!this.user.id) return false;
+		if (!this.user.permissions.User) return false;
+		
+		// if user not admin and trying to access admin area, access fail
+		//xxx this should be in a _default file at route of admin namespace, not here
+		if (_.startsWith(this.url, '/admin/') && !this.user.permissions.Admin) return false;
 		
 		// access ok
 		return true;
