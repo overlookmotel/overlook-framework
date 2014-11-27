@@ -81,3 +81,4 @@
 * Controllers for permissions
 * Edit user passwords on separate page
 * Admin permission required to access admin namespace
+* Split starting DB into separate function
