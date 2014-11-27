@@ -84,6 +84,6 @@
 * Split starting DB into separate function
 * Remove travis need to load latest sequelize from Github - sequelize-extra now does this
 
-## Next
+## 0.2.5
 
 * Add user role to all non-special users on startup
