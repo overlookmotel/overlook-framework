@@ -82,3 +82,4 @@
 * Edit user passwords on separate page
 * Admin permission required to access admin namespace
 * Split starting DB into separate function
+* Remove travis need to load latest sequelize from Github - sequelize-extra now does this
