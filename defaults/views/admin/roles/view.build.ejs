@@ -24,7 +24,9 @@ var url = 'edit', text = 'Edit', glyph = 'pencil', mode = 'warning';
 var url = 'delete', text = 'Delete', glyph = 'trash', mode = 'danger';
 %>  <% include ../../_helpers/buttonLink %></p>
 
-<h2>Users &amp; Permissions</h2>
-
-<p><a href="users/">Users who have this role</a></p>
-<p><a href="permissions/">Permissions this role has</a></p>
+<p><%
+var url = 'users/', text = 'Users', glyph = 'user', mode = 'info';
+%><% include ../../_helpers/buttonLink %>
+<%
+var url = 'permissions/', text = 'Permissions', glyph = 'record', mode = 'info';
+%>  <% include ../../_helpers/buttonLink %></p>

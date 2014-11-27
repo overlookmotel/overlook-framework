@@ -22,11 +22,11 @@ var url = 'edit', text = 'Edit', glyph = 'pencil', mode = 'warning';
 %><% include ../../_helpers/buttonLink %>
 <%
 var url = 'password', text = 'Change Password', glyph = 'edit', mode = 'info';
-%><% include ../../_helpers/buttonLink %>
+%>  <% include ../../_helpers/buttonLink %>
 <%
 var url = 'delete', text = 'Delete', glyph = 'trash', mode = 'danger';
 %>  <% include ../../_helpers/buttonLink %></p>
 
-<h2>Roles</h2>
-
-<p><a href="roles/">Roles this user has</a></p>
+<p><%
+var url = 'roles/', text = 'Roles', glyph = 'record', mode = 'info';
+%><% include ../../_helpers/buttonLink %></p>
