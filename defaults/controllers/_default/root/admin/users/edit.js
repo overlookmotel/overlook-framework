@@ -12,17 +12,20 @@ var _ = require('overlook-utils');
 exports = module.exports = {
 	// functions
 	
+	initForm: function(defaultFn) {
+		return defaultFn().bind(this)
+		.then(function() {
+			// modify form
+			delete this.form.fields.password;
+		});
+	},
+	
 	access: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function(allowed) {
 			// check if is public user, and say no access if so
 			return allowed && this.dataMain.type != 'public';
 		});
-	},
-	
-	process: function() {
-		// run process action from new.js
-		return this.route.actions.new.process.call(this);
 	},
 	
 	act: function(defaultFn) {

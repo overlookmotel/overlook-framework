@@ -79,3 +79,4 @@
 * Create 'admin' and 'user' roles
 * Refactor db stocking code
 * Controllers for permissions
+* Edit user passwords on separate page
