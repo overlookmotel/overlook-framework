@@ -23,7 +23,7 @@
     "require-folder-tree": "~1.0.6",
     "shimming": "~0.0.5",
     "bcrypt": "~0.8.0",
-    "overlook-utils": "~0.0.1",
+    "overlook-utils": "~0.0.3",
     "ejs-extra": "~0.0.1"
   },
   "devDependencies": {
