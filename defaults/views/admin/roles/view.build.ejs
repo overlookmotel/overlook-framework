@@ -21,12 +21,10 @@ if (item.updatedAt.toString() != item.createdAt.toString()) {
 var url = 'edit', text = 'Edit', glyph = 'pencil';
 %><% include ../../_helpers/buttonLink %>
 <%
-var url = 'password', text = 'Change Password', glyph = 'edit', mode = 'warning';
-%><% include ../../_helpers/buttonLink %>
-<%
 var url = 'delete', text = 'Delete', glyph = 'trash', mode = 'danger';
 %>  <% include ../../_helpers/buttonLink %></p>
 
-<h2>Roles</h2>
+<h2>Users &amp; Permissions</h2>
 
-<p><a href="roles/">Roles this user has</a></p>
+<p><a href="users/">Users who have this role</a></p>
+<p><a href="permissions/">Permissions this role has</a></p>
