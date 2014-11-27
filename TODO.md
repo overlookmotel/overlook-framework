@@ -1,7 +1,7 @@
 # TODO
 
-* 'Change password' function
-* Permissions/roles
+* Fix errors when trying to delete links between users, roles and permissions
+* Prevent user from removing the default links between users, roles and permissions
 * 'Forgot password' function
 * Move login/logout into 'account' namespace?
 * Check cookie domains being implemented properly
