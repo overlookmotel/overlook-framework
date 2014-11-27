@@ -87,3 +87,7 @@
 ## 0.2.5
 
 * Add user role to all non-special users on startup
+
+## Next
+
+* Made edit buttons yellow, change password button light blue

@@ -18,10 +18,10 @@ if (item.updatedAt.toString() != item.createdAt.toString()) {
 <% include ../../_helpers/itemView %>
 
 <p><%
-var url = 'edit', text = 'Edit', glyph = 'pencil';
+var url = 'edit', text = 'Edit', glyph = 'pencil', mode = 'warning';
 %><% include ../../_helpers/buttonLink %>
 <%
-var url = 'password', text = 'Change Password', glyph = 'edit', mode = 'warning';
+var url = 'password', text = 'Change Password', glyph = 'edit', mode = 'info';
 %><% include ../../_helpers/buttonLink %>
 <%
 var url = 'delete', text = 'Delete', glyph = 'trash', mode = 'danger';
