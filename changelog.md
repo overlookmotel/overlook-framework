@@ -73,7 +73,7 @@
 
 * Expose `forms` library functions as `Overlook.forms`
 
-## Next
+## 0.2.4
 
 * Change from `isRoot`, `isPublic` etc columns in user and role models to single column `type`
 * Create 'admin' and 'user' roles
