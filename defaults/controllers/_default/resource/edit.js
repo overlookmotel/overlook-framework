@@ -57,7 +57,7 @@ exports = module.exports = {
 	},
 	
 	done: function() {
-		return this.redirect('../', 'Saved changes to ' + this.dataMain.name);
+		return this.redirect('./', 'Saved changes to ' + this.dataMain.name);
 	},
 	
 	failed: function() {
