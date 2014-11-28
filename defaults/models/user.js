@@ -10,8 +10,7 @@ module.exports = {
 	fields: {
 		name: {
 			type: Sequelize.STRING(100),
-			allowNull: false,
-			unique: true
+			allowNull: false
 		},
 		email: {
 			type: Sequelize.STRING(50),

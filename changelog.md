@@ -92,3 +92,7 @@
 
 * Made edit buttons yellow, change password button light blue
 * Buttons for users/roles/permission joins
+
+## Next
+
+* user.name field not unique
