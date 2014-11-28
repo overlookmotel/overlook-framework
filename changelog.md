@@ -95,4 +95,5 @@
 
 ## Next
 
+* Support for ENUM datatype
 * user.name field not unique

@@ -1,0 +1,24 @@
+<%
+// receives (field, fieldName, first)
+%><select name="<%= fieldName %>"<% if (first) { %> autofocus<% } %> class="form-control">
+<?
+(function() {
+	var values = <%- JSON.stringify(field.values) %>;
+<%
+if (field.required) {
+%>	if (value == '' || values.indexOf(value) == -1) {
+		?>  <option value="" selected></option>
+<?
+	}
+?><%
+} else {
+%>	?>  <option value=""<? if (value == '') { ?> selected<? } ?>>(none)</option>
+<%
+}
+%><?
+	_.forEach(values, function(item) {
+		?>  <option value="<?= item ?>"<? if (value == item) { ?> selected<? } ?>><?= item ?></option>
+<?
+	});
+})();
+?></select>
