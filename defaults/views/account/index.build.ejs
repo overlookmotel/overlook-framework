@@ -1,0 +1,13 @@
+<% layout('/_layouts/layoutInner') -%>
+<?
+var item = data.user;
+?>
+
+<% include ../_helpers/itemView %>
+
+<p><%
+var url = 'edit', text = 'Change details', glyph = 'pencil', mode = 'warning';
+%><% include ../_helpers/buttonLink %>
+<%
+var url = 'password', text = 'Change Password', glyph = 'edit', mode = 'info';
+%>  <% include ../_helpers/buttonLink %>
