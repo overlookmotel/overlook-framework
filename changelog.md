@@ -97,3 +97,4 @@
 
 * Support for ENUM datatype
 * user.name field not unique
+* Improved debug info printed to console.log on errors in startup and routes
