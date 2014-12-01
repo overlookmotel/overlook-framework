@@ -24,7 +24,8 @@
     "shimming": "~0.0.5",
     "bcrypt": "~0.8.0",
     "overlook-utils": "~0.0.4",
-    "ejs-extra": "~0.0.1"
+    "ejs-extra": "~0.0.1",
+    "marked": "~0.2.10"
   },
   "devDependencies": {
     "mocha": "~2.0.1",
