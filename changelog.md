@@ -101,3 +101,4 @@
 * Record reference to overlook in all routes (so can be accessed by route init functions)
 * Account namespace including function for user to update details and change password
 * Markdown compilation support
+* Contact link on login page
