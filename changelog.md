@@ -103,6 +103,6 @@
 * Markdown compilation support
 * Contact link on login page
 
-## Next
+## 0.2.8
 
 * Updated module dependency marked to v0.3.2
