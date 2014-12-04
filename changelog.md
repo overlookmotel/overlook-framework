@@ -93,7 +93,7 @@
 * Made edit buttons yellow, change password button light blue
 * Buttons for users/roles/permission joins
 
-## Next
+## 0.2.7
 
 * Support for ENUM datatype
 * user.name field not unique
