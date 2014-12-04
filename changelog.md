@@ -102,3 +102,7 @@
 * Account namespace including function for user to update details and change password
 * Markdown compilation support
 * Contact link on login page
+
+## Next
+
+* Updated module dependency marked to v0.3.2
