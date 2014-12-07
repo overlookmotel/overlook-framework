@@ -107,6 +107,6 @@
 
 * Updated module dependency marked to v0.3.2
 
-## Next
+## 0.2.9
 
 * Updated module dependency sequelize-extra to v0.2.8
