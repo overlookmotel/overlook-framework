@@ -39,6 +39,12 @@ module.exports = {
 			type: Sequelize.BOOLEAN,
 			allowNull: false,
 			defaultValue: true
+		},
+		isInitialized: {
+			type: Sequelize.BOOLEAN,
+			allowNull: false,
+			defaultValue: false,
+			secret: true
 		}
 	},
 	manyToMany: {

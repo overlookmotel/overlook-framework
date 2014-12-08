@@ -80,7 +80,11 @@ exports = module.exports = {
 	},
 	accessFail: function() {
 		// if user has not permission for this action, show error
-		if (this.user.id) return this.renderError('noAccess', {}, {title: 'Permission denied', breadcrumbs: this.breadcrumbs, url: this.url, user: this.user});
+		// if user is not initialized, forward to /account/init
+		if (this.user.id) {
+			if (!this.user.isInitialized) return this.redirect('/account/init');
+			return this.renderError('noAccess', {}, {title: 'Permission denied', breadcrumbs: this.breadcrumbs, url: this.url, user: this.user});
+		}
 		
 		// not logged in user - send to login page
 		return this.redirect('/login');
