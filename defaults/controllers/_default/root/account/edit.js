@@ -52,11 +52,6 @@ exports = module.exports = {
 			// unique field not unique
 			this.actResult = {error: 'uniqueFail', field: err.index};
 			return false;
-		})
-		.catch(this.sequelize.ForeignKeyConstraintError, function(err) {
-			// bad reference to another model
-			this.actResult = {error: 'illegalValue', field: err.index};
-			return false;
 		});
 	},
 	
