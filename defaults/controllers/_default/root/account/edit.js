@@ -32,7 +32,10 @@ exports = module.exports = {
 	},
 	
 	load: function() {
-		return this.route.actions.index.load.call(this);
+		return this.models.user.find({where: {id: this.user.id}}).bind(this)
+		.then(function(user) {
+			this.dataMain = this.data.user = user;
+		});
 	},
 	
 	populate: defaultActionEdit.populate,
