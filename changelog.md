@@ -111,6 +111,6 @@
 
 * Updated module dependency sequelize-extra to v0.2.8
 
-## Next
+## 0.2.10
 
 * Add email-sending functionality, using Mandrill
