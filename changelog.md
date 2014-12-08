@@ -114,3 +114,7 @@
 ## 0.2.10
 
 * Add email-sending functionality, using Mandrill
+
+## Next
+
+* Code tidy

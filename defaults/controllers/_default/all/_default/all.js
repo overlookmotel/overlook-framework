@@ -72,7 +72,7 @@ exports = module.exports = {
 		if (!this.user.permissions.User) return false;
 		
 		// if user not admin and trying to access admin area, access fail
-		//xxx this should be in a _default file at route of admin namespace, not here
+		//xxx this should be in a _default file at root of admin namespace, not here
 		if (_.startsWith(this.url, '/admin/') && !this.user.permissions.Admin) return false;
 		
 		// access ok
