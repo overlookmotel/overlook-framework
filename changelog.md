@@ -115,7 +115,7 @@
 
 * Add email-sending functionality, using Mandrill
 
-## Next
+## 0.2.11
 
 * New users must initialize account before access granted
 * textSpaced form field format - which preserves line spacing
