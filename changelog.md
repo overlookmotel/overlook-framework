@@ -125,6 +125,6 @@
 
 * Support for TIME model fields
 
-## Next
+## 0.2.13
 
 * Form widgets for DATE and TIME fields
