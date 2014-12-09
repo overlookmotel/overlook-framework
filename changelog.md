@@ -121,6 +121,6 @@
 * textSpaced form field format - which preserves line spacing
 * Code tidy
 
-## Next
+## 0.2.12
 
 * Support for TIME model fields
