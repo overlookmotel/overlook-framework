@@ -38,6 +38,12 @@ switch (field.widget) {
 	case 'menuOpen':
 		%><% include ./widgets/menuOpen %><%
 		break;
+	case 'date':
+		%><% include ./widgets/date %><%
+		break;
+	case 'time':
+		%><% include ./widgets/time %><%
+		break;
 	default:
 		%><% include ./widgets/text %><%
 }
