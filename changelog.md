@@ -120,3 +120,7 @@
 * New users must initialize account before access granted
 * textSpaced form field format - which preserves line spacing
 * Code tidy
+
+## Next
+
+* Support for TIME model fields
