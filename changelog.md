@@ -137,3 +137,7 @@
 
 * Validate URLs
 * Validate email addresses
+
+## Next
+
+* Fix bug where field properties not cloned and so erroneously affected by each other
