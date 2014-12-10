@@ -133,7 +133,7 @@
 
 * Fix ENUM fields not making form menus
 
-## Next
+## 0.2.15
 
 * Validate URLs
 * Validate email addresses
