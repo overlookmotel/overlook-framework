@@ -136,3 +136,4 @@
 ## Next
 
 * Validate URLs
+* Validate email addresses
