@@ -132,3 +132,7 @@
 ## 0.2.14
 
 * Fix ENUM fields not making form menus
+
+## Next
+
+* Validate URLs
