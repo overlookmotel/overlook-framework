@@ -138,6 +138,6 @@
 * Validate URLs
 * Validate email addresses
 
-## Next
+## 0.2.16
 
 * Fix bug where field properties not cloned and so erroneously affected by each other
