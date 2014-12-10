@@ -128,3 +128,7 @@
 ## 0.2.13
 
 * Form widgets for DATE and TIME fields
+
+## Next
+
+* Fix ENUM fields not making form menus
