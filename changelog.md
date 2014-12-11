@@ -142,6 +142,6 @@
 
 * Fix bug where field properties not cloned and so erroneously affected by each other
 
-## Next
+## 0.2.17
 
 * Admin controller to execute commands on database
