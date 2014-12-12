@@ -1,5 +1,6 @@
 # TODO
 
+* Make HTML version of API index page show results
 * Stop updatedById + updatedAt being filled in when creating new resource item
 * Fix errors when trying to delete links between users, roles and permissions
 * Prevent user from removing the default links between users, roles and permissions
