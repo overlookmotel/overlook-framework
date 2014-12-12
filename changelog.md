@@ -152,3 +152,4 @@
 * `authentication.makeHash()` method
 * Added Server model + controllers
 * HTTP authentication for servers
+* Permissions and roles for access through API
