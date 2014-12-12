@@ -150,3 +150,4 @@
 
 * Remove admin controller to execute commands on database
 * `authentication.makeHash()` method
+* Added Server model + controllers
