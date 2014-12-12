@@ -145,3 +145,7 @@
 ## 0.2.17
 
 * Admin controller to execute commands on database
+
+## Next
+
+* Remove admin controller to execute commands on database
