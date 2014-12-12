@@ -149,3 +149,4 @@
 ## Next
 
 * Remove admin controller to execute commands on database
+* `authentication.makeHash()` method
