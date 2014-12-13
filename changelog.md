@@ -146,7 +146,7 @@
 
 * Admin controller to execute commands on database
 
-## Next
+## 0.2.18
 
 * Remove admin controller to execute commands on database
 * `authentication.makeHash()` method
