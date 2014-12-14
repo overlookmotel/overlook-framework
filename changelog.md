@@ -155,6 +155,6 @@
 * Permissions and roles for access through API
 * API for database actions
 
-## Next
+## 0.2.19
 
 * API default action
