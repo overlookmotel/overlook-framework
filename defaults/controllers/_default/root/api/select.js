@@ -15,7 +15,8 @@ var forms = require('../../../../../lib/forms');
 exports = module.exports = {
 	// action params
 	actionTypes: {
-		form: true
+		form: true,
+		api: true
 	},
 	
 	// functions
@@ -81,38 +82,5 @@ exports = module.exports = {
 			this.actResult = {error: 'illegalValue', field: 'params'};
 			return false;
 		});
-	},
-	
-	done: function() {
-		// display results
-		var displayOptions = {
-			options: {
-				data: {
-					results: this.dataMain
-				}
-			},
-			layoutOptions: {
-				title: this.title,
-				breadcrumbs: this.breadcrumbs,
-				url: this.url,
-				user: this.user
-			}
-		};
-		
-		// render page (just show menu if HTML call)
-		this.view = '_compiled/api/index';
-		return this.render(displayOptions.options, displayOptions.layoutOptions);
-	},
-	
-	failed: function() {
-		var error = this.actResult.error,
-			field = this.actResult.field;
-		
-		if (error == 'illegalValue') {
-			this.formErrors[field] = this.form.fields[field].label + ' is invalid';
-			return;
-		}
-		
-		throw new Error('Unknown error returned from act function');
 	}
 };

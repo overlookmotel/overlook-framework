@@ -15,7 +15,8 @@ var forms = require('../../../../../lib/forms');
 exports = module.exports = {
 	// action params
 	actionTypes: {
-		form: true
+		form: true,
+		api: true
 	},
 	
 	// functions
@@ -76,26 +77,5 @@ exports = module.exports = {
 			this.actResult = {error: 'cannotDelete', field: 'where'};
 			return false;
 		});
-	},
-	
-	done: function() {
-		// redirect to admin page
-		return this.redirect('./', 'Action completed');
-	},
-	
-	failed: function() {
-		var error = this.actResult.error,
-			field = this.actResult.field;
-		
-		if (error == 'illegalValue') {
-			this.formErrors[field] = this.form.fields[field].label + ' is invalid';
-			return;
-		}
-		if (error == 'cannotDelete') {
-			this.formErrors[field] = 'Cannot be deleted';
-			return;
-		}
-		
-		throw new Error('Unknown error returned from act function');
 	}
 };

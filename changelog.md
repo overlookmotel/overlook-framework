@@ -154,3 +154,7 @@
 * HTTP authentication for servers
 * Permissions and roles for access through API
 * API for database actions
+
+## Next
+
+* API default action

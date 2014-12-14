@@ -4,14 +4,19 @@
 // --------------------
 
 // imports
-var defaultAction = require('./_default/all');
+var defaultAction = require('../../all/_default/api');
 
 // exports
 
 // action definition
 exports = module.exports = {
+	// action params
+	actionTypes: {
+		api: true
+	},
+	
 	// functions
 	
-	//xxx should not need to be defined here but inheritance not working at present
+	//xxx should be inherited from api defaults anyway, but isn't working correctly at present
 	access: defaultAction.access
 };
