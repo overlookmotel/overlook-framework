@@ -162,3 +162,4 @@
 ## Next
 
 * Updated module dependency overlook-utils to v0.0.5
+* DateTime validation/conforming/displaying
