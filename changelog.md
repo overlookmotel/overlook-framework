@@ -176,7 +176,7 @@ Accidental version bump. No changes.
 
 * DateTime form widget
 
-## Next
+## 0.2.24
 
 * API returns null value where no records
 * Percent field format
