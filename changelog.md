@@ -159,7 +159,7 @@
 
 * API default action
 
-## Next
+## 0.2.20
 
 * Updated module dependency overlook-utils to v0.0.5
 * DateTime validation/conforming/displaying

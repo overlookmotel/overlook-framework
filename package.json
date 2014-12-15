@@ -1,6 +1,6 @@
 {
   "name": "overlook-framework",
-  "version": "0.2.19",
+  "version": "0.2.20",
   "description": "Yet another node web framework",
   "main": "./lib/",
   "author": {
