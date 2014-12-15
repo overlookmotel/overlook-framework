@@ -180,4 +180,5 @@ Accidental version bump. No changes.
 
 * API returns null value where no records
 * Percent field format
+* Simplify DateTime conformer regexp
 * Update overlook-utils dependency to v0.0.6
