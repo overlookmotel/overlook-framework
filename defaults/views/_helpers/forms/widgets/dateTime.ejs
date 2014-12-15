@@ -1,0 +1,18 @@
+<%
+// receives (field, fieldName, first)
+script('/js/overlook/libraries/moment.js');
+script('/js/overlook/libraries/bootstrap-datetimepicker.min.js');
+
+stylesheet('/css/overlook/css/bootstrap-datetimepicker.min.css'); // from https://github.com/Eonasdan/bootstrap-datetimepicker/
+
+%><div class="input-group date" id="datetimepicker-<%= fieldName %>">
+  <input name="<%= fieldName %>" value="<?= value ?>" class="form-control" data-date-format="DD/MM/YYYY HH:mm"<% if (first) { %> autofocus<% } %> />
+  <span class="input-group-addon">
+    <span class="glyphicon glyphicon-calendar"></span>
+  </span>
+</div>
+<script type="text/javascript">
+$(function() {
+	$('#datetimepicker-<%= fieldName %>').datetimepicker();
+});
+</script>

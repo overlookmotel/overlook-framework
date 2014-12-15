@@ -44,6 +44,9 @@ switch (field.widget) {
 	case 'time':
 		%><% include ./widgets/time %><%
 		break;
+	case 'dateTime':
+		%><% include ./widgets/dateTime %><%
+		break;
 	default:
 		%><% include ./widgets/text %><%
 }

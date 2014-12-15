@@ -167,3 +167,11 @@
 ## 0.2.21
 
 * Fix DateTime conformer function
+
+## 0.2.22
+
+Accidental version bump. No changes.
+
+## Next
+
+* DateTime form widget
