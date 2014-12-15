@@ -175,3 +175,7 @@ Accidental version bump. No changes.
 ## 0.2.23
 
 * DateTime form widget
+
+## Next
+
+* Percent field format
