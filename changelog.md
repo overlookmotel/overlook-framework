@@ -178,4 +178,5 @@ Accidental version bump. No changes.
 
 ## Next
 
+* API returns null value where no records
 * Percent field format

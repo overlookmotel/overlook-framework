@@ -13,7 +13,7 @@ exports = module.exports = {
 	
 	done: function() {
 		// if no data to return, redirect
-		if (!this.dataMain) return this.redirect('./', 'Action completed');
+		if (this.dataMain === undefined) return this.redirect('./', 'Action completed');
 		
 		// display results
 		var displayOptions = {
