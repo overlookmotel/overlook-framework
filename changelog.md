@@ -172,6 +172,6 @@
 
 Accidental version bump. No changes.
 
-## Next
+## 0.2.23
 
 * DateTime form widget
