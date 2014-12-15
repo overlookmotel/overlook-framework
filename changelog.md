@@ -158,3 +158,7 @@
 ## 0.2.19
 
 * API default action
+
+## Next
+
+* Updated module dependency overlook-utils to v0.0.5
