@@ -7,6 +7,9 @@
 var forms = require('../../../../../lib/forms'),
 	authentication = require('../../../../../lib/authentication');
 
+// imports
+var actionEdit = require('./edit');
+
 // exports
 
 exports = module.exports = {
@@ -44,9 +47,7 @@ exports = module.exports = {
 		});
 	},
 	
-	act: function() {
-		return this.route.actions.edit.act.call(this);
-	},
+	act: actionEdit.act,
 	
 	done: function() {
 		return this.redirect('./', 'Password changed');

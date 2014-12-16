@@ -186,3 +186,4 @@ Accidental version bump. No changes.
 ## Next
 
 * Fix account edit not using transaction
+* Account password inherits act method direct from edit action (to avoid problems when overriden)
