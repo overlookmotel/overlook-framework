@@ -33,18 +33,23 @@ exports = module.exports = {
 		forms.addField(this.form, 'password', {format: 'password', required: true});
 	},
 	
-	load: function() {
-		return this.route.actions.edit.load.call(this);
+	load: function(defaultFn) {
+		return this.route.actions.edit.load.call(this, defaultFn);
 	},
 	
-	access: function() {
-		return !!this.user.id;
+	access: function(defaultFn) {
+		return defaultFn().bind(this)
+		.then(function() {
+			return !!this.user.id;
+		});
 	},
 	
-	populate: defaultActionEdit.populate,
+	populate: function(defaultFn) {
+		return this.route.actions.edit.populate.call(this, defaultFn);
+	},
 	
-	process: function() {
-		return this.route.actions.password.process.call(this);
+	process: function(defaultFn) {
+		return this.route.actions.password.process.call(this, defaultFn);
 	},
 	
 	act: function() {

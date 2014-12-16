@@ -187,3 +187,4 @@ Accidental version bump. No changes.
 
 * Fix account edit not using transaction
 * Account password inherits act method direct from edit action (to avoid problems when overriden)
+* Account init methods use defaultFn
