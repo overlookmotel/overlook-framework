@@ -23,13 +23,10 @@ exports = module.exports = {
 	// functions
 	
 	initForm: function() {
-		// make form
-		this.form = forms.createFormFromModel(this.route.overlook.models.user);
+		// call edit action initForm()
+		this.route.actions.edit.initForm.call(this);
 		
-		// modify form fields
-		delete this.form.fields.type;
-		delete this.form.fields.isActive;
-		
+		// add password field
 		forms.addField(this.form, 'password', {format: 'password', required: true});
 	},
 	
@@ -52,25 +49,12 @@ exports = module.exports = {
 		return this.route.actions.password.process.call(this, defaultFn);
 	},
 	
-	act: function() {
-		// init actResult
-		this.actResult = {};
-		
-		// record user id and date
-		this.actData.updatedById = this.user.id;
-		this.actData.updatedAt = new Date();
-		
+	act: function(defaultFn) {
 		// flag as initialized
 		this.actData.isInitialized = true;
 		
-		// update db
-		return this.dataMain.updateAttributes(this.actData, {transaction: this.transaction}).bind(this)
-		.return(true)
-		.catch(this.sequelize.UniqueConstraintError, function(err) {
-			// unique field not unique
-			this.actResult = {error: 'uniqueFail', field: err.index};
-			return false;
-		});
+		// update user
+		return this.route.actions.edit.act.call(this, defaultFn).bind(this);
 	},
 	
 	done: function() {
