@@ -182,3 +182,7 @@ Accidental version bump. No changes.
 * Percent field format
 * Simplify DateTime conformer regexp
 * Update overlook-utils dependency to v0.0.6
+
+## Next
+
+* Fix account edit not using transaction

@@ -32,7 +32,7 @@ exports = module.exports = {
 	},
 	
 	load: function() {
-		return this.models.user.find({where: {id: this.user.id}}).bind(this)
+		return this.models.user.find({where: {id: this.user.id}, transaction: this.transaction}).bind(this)
 		.then(function(user) {
 			this.dataMain = this.data.user = user;
 		});
