@@ -61,9 +61,9 @@ exports = module.exports = {
 	},
 	
 	failed: function() {
-		var error = this.actResult.error;
-		var field = this.actResult.field;
-		var label = this.form.fields[field].label;
+		var error = this.actResult.error,
+			field = this.actResult.field,
+			label = this.form.fields[field].label;
 		
 		if (error == 'uniqueFail') {
 			this.formErrors[field] = label + ' is already taken. Try another.';
