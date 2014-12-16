@@ -183,7 +183,7 @@ Accidental version bump. No changes.
 * Simplify DateTime conformer regexp
 * Update overlook-utils dependency to v0.0.6
 
-## Next
+## 0.2.25
 
 * Fix account edit not using transaction
 * Account password inherits act method direct from edit action (to avoid problems when overriden)
