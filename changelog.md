@@ -196,7 +196,7 @@ Accidental version bump. No changes.
 * Boolean Yes/No radio boxes
 * Expose form formats as Overlook.forms.formats
 
-## Next
+## 0.2.27
 
 * Expose authentication library as Overlook.authentication
 * authentication.makePassword() method
