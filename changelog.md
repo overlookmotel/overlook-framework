@@ -201,6 +201,6 @@ Accidental version bump. No changes.
 * Expose authentication library as Overlook.authentication
 * authentication.makePassword() method
 
-## Next
+## 0.2.28
 
 * Update sequelize-extra dependency to v0.2.9
