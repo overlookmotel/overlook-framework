@@ -195,3 +195,7 @@ Accidental version bump. No changes.
 
 * Boolean Yes/No radio boxes
 * Expose form formats as Overlook.forms.formats
+
+## Next
+
+* Expose authentication library as Overlook.authentication
