@@ -199,3 +199,4 @@ Accidental version bump. No changes.
 ## Next
 
 * Expose authentication library as Overlook.authentication
+* authentication.makePassword() method
