@@ -190,3 +190,7 @@ Accidental version bump. No changes.
 * Account init methods use defaultFn
 * Refactor account init methods to simplify code
 * Code tidy
+
+## Next
+
+* Boolean Yes/No radio boxes

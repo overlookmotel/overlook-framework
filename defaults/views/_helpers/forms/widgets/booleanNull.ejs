@@ -1,0 +1,12 @@
+<%
+// receives (fieldName)
+%><div class="radio">
+  <label>
+    <input type="radio" name="<%= fieldName %>" value="1" <? if (value == '1') { ?> checked<? } ?>> Yes
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="<%= fieldName %>" value="0" <? if (value == '0') { ?> checked<? } ?>> No
+  </label>
+</div>
