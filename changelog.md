@@ -191,7 +191,7 @@ Accidental version bump. No changes.
 * Refactor account init methods to simplify code
 * Code tidy
 
-## Next
+## 0.2.26
 
 * Boolean Yes/No radio boxes
 * Expose form formats as Overlook.forms.formats
