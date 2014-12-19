@@ -205,7 +205,7 @@ Accidental version bump. No changes.
 
 * Update sequelize-extra dependency to v0.2.9
 
-## Next
+## 0.2.29
 
 * Remove ambiguous characters from passwords
 * Base login email field on user email field
