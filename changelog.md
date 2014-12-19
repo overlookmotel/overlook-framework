@@ -204,3 +204,7 @@ Accidental version bump. No changes.
 ## 0.2.28
 
 * Update sequelize-extra dependency to v0.2.9
+
+## Next
+
+* Remove ambiguous characters from passwords
