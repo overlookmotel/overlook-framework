@@ -208,3 +208,4 @@ Accidental version bump. No changes.
 ## Next
 
 * Remove ambiguous characters from passwords
+* Base login email field on user email field

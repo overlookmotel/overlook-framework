@@ -24,18 +24,16 @@ exports = module.exports = {
 	
 	initForm: function() {
 		// make form
-		var form = {
-			fields: {
-				email: {format: 'string', length: 50, widget: 'text', required: true},
-				password: {format: 'password', required: true},
-				remember: {format: 'boolean', label: 'Remember me'}
-			},
-			submit: {
-				text: 'Login',
-				noCancel: true
-			}
+		this.form = forms.createFormFromModel(this.route.overlook.models.user, {only: ['email']});
+		this.form.fields.email.widget = 'text';
+		
+		forms.addField(this.form, 'password', {format: 'password', required: true});
+		forms.addField(this.form, 'remember', {format: 'boolean', label: 'Remember me'});
+		
+		this.form.submit = {
+			text: 'Login',
+			noCancel: true
 		};
-		this.form = forms.createForm(form);
 	},
 	
 	access: function() {
