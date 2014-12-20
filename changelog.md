@@ -210,3 +210,7 @@ Accidental version bump. No changes.
 * Remove ambiguous characters from passwords
 * Base login email field on user email field
 * Password reset functionality
+
+## Next
+
+* Update TODO
