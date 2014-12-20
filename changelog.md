@@ -211,7 +211,7 @@ Accidental version bump. No changes.
 * Base login email field on user email field
 * Password reset functionality
 
-## Next
+## 0.2.30
 
 * Populate form fields with default values
 * Set default sessionCookieDuration to 1 hour
