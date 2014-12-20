@@ -216,3 +216,7 @@ Accidental version bump. No changes.
 * Populate form fields with default values
 * Set default sessionCookieDuration to 1 hour
 * Update TODO
+
+## 0.2.31
+
+Accidental version bump. No changes.
