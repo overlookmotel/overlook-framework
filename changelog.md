@@ -214,4 +214,5 @@ Accidental version bump. No changes.
 ## Next
 
 * Populate form fields with default values
+* Set default sessionCookieDuration to 1 hour
 * Update TODO
