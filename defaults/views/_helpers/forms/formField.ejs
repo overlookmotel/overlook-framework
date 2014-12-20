@@ -2,7 +2,7 @@
 // receives (field, fieldName, first)
 %><?
 (function() {
-	var fieldData<% if (field.dataName) { %> = data[<%- _.quote(field.dataName) %>]<% } %>;
+	var fieldData<% if (field.dataName) { %> = data.references[<%- _.quote(field.dataName) %>]<% } %>;
 ?><%
 switch (field.widget) {
 	case 'text':

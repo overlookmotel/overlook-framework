@@ -197,9 +197,12 @@ exports = module.exports = {
 			this.displayOptions.options.formErrors = this.formErrors;
 			
 			var viewData = this.displayOptions.options.data = {};
-			_.forEach(this.loadReferences, function(model) {
-				viewData[model.namePlural] = forms.getValuesByFields(this.data[model.namePlural], {id: {}, name: {}});
-			}, this);
+			if (this.loadReferences) {
+				viewData.references = {};
+				_.forEach(this.loadReferences, function(model) {
+					viewData.references[model.namePlural] = forms.getValuesByFields(this.data.references[model.namePlural], {id: {}, name: {}});
+				}, this);
+			}
 		});
 	},
 	

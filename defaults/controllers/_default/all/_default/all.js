@@ -128,10 +128,12 @@ exports = module.exports = {
 		// load any data needed to create menus etc
 		if (!this.loadReferences) return;
 		
+		this.data.references = {};
+		
 		return Promise.each(this.loadReferences, function(model) {
 			return model.findAll({attributes: ['id', 'name'], order: [['name']]}).bind(this)
 			.then(function(items) {
-				this.data[model.namePlural] = items;
+				this.data.references[model.namePlural] = items;
 			});
 		}.bind(this));
 	},

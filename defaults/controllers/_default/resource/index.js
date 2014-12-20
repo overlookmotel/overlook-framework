@@ -136,9 +136,12 @@ exports = module.exports = {
 			var viewData = this.displayOptions.options.data = {};
 			viewData[this.model.namePlural] = forms.getValuesByFields(this.dataMain, _.extend({id: {}}, this.fields));
 			
-			_.forEach(this.loadReferences, function(model) {
-				viewData[model.namePlural] = forms.getValuesByFields(this.data[model.namePlural], {id: {}, name: {}});
-			}, this);
+			if (this.loadReferences) {
+				viewData.references = {};
+				_.forEach(this.loadReferences, function(model) {
+					viewData.references[model.namePlural] = forms.getValuesByFields(this.data.references[model.namePlural], {id: {}, name: {}});
+				}, this);
+			}
 			
 			// put filters in display options, including filling in Name fields for open menus
 			this.displayOptions.options.filters = this.filters;
