@@ -220,3 +220,7 @@ Accidental version bump. No changes.
 ## 0.2.31
 
 Accidental version bump. No changes.
+
+## Next
+
+* Handle errors with generic error page in production mode
