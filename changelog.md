@@ -225,7 +225,7 @@ Accidental version bump. No changes.
 
 * Handle errors with generic error page in production mode
 
-## Next
+## 0.2.33
 
 * Workers & processes
 * Load loadReferences into data.references (to avoid clash when a model refers to itself and the loadReference was over-writing the main data as they were both being loaded into this.data[modelNamePlural])
