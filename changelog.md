@@ -242,7 +242,7 @@ Accidental version bump. No changes.
 
 * Fix problem with bad links in index tables for nested resources
 
-## Next
+## 0.2.37
 
 * Worker and Process models name unique
 * asReverse defined for process.afterProcess association
