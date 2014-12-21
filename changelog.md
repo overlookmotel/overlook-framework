@@ -255,3 +255,4 @@ Accidental version bump. No changes.
 
 * Remove duplicates from typeahead suggestions
 * Add '.' to start of cookie domain
+* Refactor cookies library
