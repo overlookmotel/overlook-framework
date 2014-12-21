@@ -237,3 +237,7 @@ Accidental version bump. No changes.
 ## 0.2.35
 
 * API uses JSON field format
+
+## Next
+
+* Fix problem with bad links in index tables for nested resources
