@@ -254,3 +254,4 @@ Accidental version bump. No changes.
 ## Next
 
 * Remove duplicates from typeahead suggestions
+* Add '.' to start of cookie domain
