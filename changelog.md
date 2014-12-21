@@ -238,6 +238,6 @@ Accidental version bump. No changes.
 
 * API uses JSON field format
 
-## Next
+## 0.2.36
 
 * Fix problem with bad links in index tables for nested resources
