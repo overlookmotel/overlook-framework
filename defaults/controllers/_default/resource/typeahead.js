@@ -18,7 +18,7 @@ exports = module.exports = {
 			if (!this.model.rawAttributes[col] || this.model.rawAttributes[col].secret) return;
 			
 			// filter results by query
-			var options = {attributes: [col], order: [[col]], limit: 10};
+			var options = {attributes: [col], order: [[col]], group: [[col]], limit: 10};
 			if (this.query.q) {
 				options.where = {};
 				options.where[col] = {like: '%' + this.query.q + '%'};

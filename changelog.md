@@ -250,3 +250,7 @@ Accidental version bump. No changes.
 ## 0.2.38
 
 * dataSize field format
+
+## Next
+
+* Remove duplicates from typeahead suggestions
