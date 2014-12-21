@@ -234,6 +234,6 @@ Accidental version bump. No changes.
 
 * JSON field format
 
-## Next
+## 0.2.35
 
 * API uses JSON field format
