@@ -251,7 +251,7 @@ Accidental version bump. No changes.
 
 * dataSize field format
 
-## Next
+## 0.2.39
 
 * Remove duplicates from typeahead suggestions
 * Add '.' to start of cookie domain
