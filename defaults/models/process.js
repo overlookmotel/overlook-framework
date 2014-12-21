@@ -18,6 +18,7 @@ module.exports = {
 		},
 		afterProcessId: {
 			reference: 'process',
+			asReverse: 'beforeProcess',
 			allowNull: true
 		}
 	}

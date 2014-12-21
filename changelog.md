@@ -245,3 +245,4 @@ Accidental version bump. No changes.
 ## Next
 
 * Worker and Process models name unique
+* asReverse defined for process.afterProcess association
