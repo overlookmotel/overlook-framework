@@ -227,4 +227,5 @@ Accidental version bump. No changes.
 
 ## Next
 
+* Workers & processes
 * Load loadReferences into data.references (to avoid clash when a model refers to itself and the loadReference was over-writing the main data as they were both being loaded into this.data[modelNamePlural])
