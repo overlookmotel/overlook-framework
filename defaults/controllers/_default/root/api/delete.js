@@ -3,9 +3,6 @@
 // delete action
 // --------------------
 
-// modules
-var _ = require('overlook-utils');
-
 // libraries
 var forms = require('../../../../../lib/forms');
 
@@ -26,27 +23,8 @@ exports = module.exports = {
 		this.form = forms.createForm({
 			fields: {
 				model: {format: 'string', required: true},
-				where: {format: 'text', required: true}
+				where: {format: 'json', required: true}
 			}
-		});
-	},
-	
-	validate: function(defaultFn) {
-		return defaultFn().bind(this)
-		.then(function(success) {
-			// check `where` is valid JSON
-			try {
-				var obj = JSON.parse(this.formData.where);
-				if (!_.isPlainObject(obj)) {
-					this.formErrors.where = 'Where must be a JSON object';
-					return false;
-				}
-			} catch(err) {
-				this.formErrors.where = 'Where is invalid JSON';
-				return false;
-			}
-			
-			return success;
 		});
 	},
 	

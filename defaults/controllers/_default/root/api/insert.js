@@ -26,27 +26,8 @@ exports = module.exports = {
 		this.form = forms.createForm({
 			fields: {
 				model: {format: 'string', required: true},
-				values: {format: 'text', required: true}
+				values: {format: 'json', required: true}
 			}
-		});
-	},
-	
-	validate: function(defaultFn) {
-		return defaultFn().bind(this)
-		.then(function(success) {
-			// check `values` is valid JSON
-			try {
-				var obj = JSON.parse(this.formData.values);
-				if (!_.isPlainObject(obj)) {
-					this.formErrors.values = 'Values must be a JSON object';
-					return false;
-				}
-			} catch(err) {
-				this.formErrors.values = 'Values is invalid JSON';
-				return false;
-			}
-			
-			return success;
 		});
 	},
 	

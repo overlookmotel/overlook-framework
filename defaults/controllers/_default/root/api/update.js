@@ -26,30 +26,9 @@ exports = module.exports = {
 		this.form = forms.createForm({
 			fields: {
 				model: {format: 'string', required: true},
-				values: {format: 'text', required: true},
-				where: {format: 'text', required: true}
+				values: {format: 'json', required: true},
+				where: {format: 'json', required: true}
 			}
-		});
-	},
-	
-	validate: function(defaultFn) {
-		return defaultFn().bind(this)
-		.then(function(success) {
-			// check `values` and `where` are valid JSON
-			['values', 'where'].forEach(function(fieldName) {
-				try {
-					var obj = JSON.parse(this.formData[fieldName]);
-					if (!_.isPlainObject(obj)) {
-						this.formErrors[fieldName] = _.humanize(fieldName) + ' must be a JSON object';
-						success = false;
-					}
-				} catch(err) {
-					this.formErrors[fieldName] = _.humanize(fieldName) + ' is invalid JSON';
-					success = false;
-				}
-			}.bind(this));
-			
-			return success;
 		});
 	},
 	
