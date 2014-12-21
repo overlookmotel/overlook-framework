@@ -247,6 +247,6 @@ Accidental version bump. No changes.
 * Worker and Process models name unique
 * asReverse defined for process.afterProcess association
 
-## Next
+## 0.2.38
 
 * dataSize field format
