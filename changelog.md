@@ -241,3 +241,7 @@ Accidental version bump. No changes.
 ## 0.2.36
 
 * Fix problem with bad links in index tables for nested resources
+
+## Next
+
+* Worker and Process models name unique
