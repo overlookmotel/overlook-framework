@@ -257,6 +257,6 @@ Accidental version bump. No changes.
 * Add '.' to start of cookie domain
 * Refactor cookies library
 
-## Next
+## 0.2.40
 
 * intCollection field format
