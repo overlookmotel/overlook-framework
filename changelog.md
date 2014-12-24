@@ -266,4 +266,5 @@ Accidental version bump. No changes.
 * API library
 * HTTP library
 * Workers library
+* Expose API, HTTP and Workers libraries
 * Add request module dependency
