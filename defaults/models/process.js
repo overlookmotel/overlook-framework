@@ -21,5 +21,10 @@ module.exports = {
 			asReverse: 'beforeProcess',
 			allowNull: true
 		}
+	},
+	options: {
+		hierarchy: {
+			foreignKey: 'afterProcessId'
+		}
 	}
 };
