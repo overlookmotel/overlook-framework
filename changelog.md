@@ -287,6 +287,6 @@ No code changes, fixing typo in v num in last version
 * Show virtual fields in tables etc except name
 * Update sequelize-extra dependency to v0.2.12
 
-## Next
+## 0.2.45
 
 * Repair typo in changelog for last version
