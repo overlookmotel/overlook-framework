@@ -265,3 +265,4 @@ Accidental version bump. No changes.
 
 * API library
 * HTTP library
+* Add request module dependency
