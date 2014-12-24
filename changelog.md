@@ -270,6 +270,6 @@ Accidental version bump. No changes.
 * Add request module dependency
 * Initialize workers on start up
 
-## Next
+## @0.2.42
 
 * Update module dependency sequelize-extra to v0.2.10
