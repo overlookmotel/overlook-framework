@@ -268,3 +268,4 @@ Accidental version bump. No changes.
 * Workers library
 * Expose API, HTTP and Workers libraries
 * Add request module dependency
+* Initialize workers on start up
