@@ -269,3 +269,7 @@ Accidental version bump. No changes.
 * Expose API, HTTP and Workers libraries
 * Add request module dependency
 * Initialize workers on start up
+
+## Next
+
+* Update module dependency sequelize-extra to v0.2.10
