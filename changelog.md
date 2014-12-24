@@ -264,3 +264,4 @@ Accidental version bump. No changes.
 ## Next
 
 * API library
+* HTTP library
