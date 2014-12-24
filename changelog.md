@@ -278,7 +278,7 @@ Accidental version bump. No changes.
 
 No code changes, fixing typo in v num in last version
 
-## Next
+## 0.2.43
 
 * Start autoStart workers on start-up
 * Fix bugs in workers library
