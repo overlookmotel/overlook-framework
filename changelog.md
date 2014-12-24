@@ -277,3 +277,7 @@ Accidental version bump. No changes.
 ## 0.2.43
 
 No code changes, fixing typo in v num in last version
+
+## Next
+
+* Remove erroneous code in workers lib (not buggy)
