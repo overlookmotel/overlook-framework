@@ -260,3 +260,7 @@ Accidental version bump. No changes.
 ## 0.2.40
 
 * intCollection field format
+
+## Next
+
+* API library
