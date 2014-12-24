@@ -265,4 +265,5 @@ Accidental version bump. No changes.
 
 * API library
 * HTTP library
+* Workers library
 * Add request module dependency
