@@ -280,4 +280,5 @@ No code changes, fixing typo in v num in last version
 
 ## Next
 
+* Start autoStart workers on start-up
 * Remove erroneous code in workers lib (not buggy)
