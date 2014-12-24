@@ -274,6 +274,6 @@ Accidental version bump. No changes.
 
 * Update module dependency sequelize-extra to v0.2.10
 
-## Next
+## 0.2.43
 
 No code changes, fixing typo in v num in last version
