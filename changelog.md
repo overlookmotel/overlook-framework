@@ -270,6 +270,10 @@ Accidental version bump. No changes.
 * Add request module dependency
 * Initialize workers on start up
 
-## @0.2.42
+## 0.2.42
 
 * Update module dependency sequelize-extra to v0.2.10
+
+## Next
+
+No code changes, fixing typo in v num in last version
