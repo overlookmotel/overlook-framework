@@ -283,4 +283,5 @@ No code changes, fixing typo in v num in last version
 * Start autoStart workers on start-up
 * Fix bugs in workers library
 * Remove erroneous code in workers lib (not buggy)
+* Show virtual fields in tables etc except name
 * Update sequelize-extra dependency to v0.2.12
