@@ -278,7 +278,7 @@ Accidental version bump. No changes.
 
 No code changes, fixing typo in v num in last version
 
-## 0.2.43
+## 0.2.44
 
 * Start autoStart workers on start-up
 * Fix bugs in workers library
@@ -286,3 +286,7 @@ No code changes, fixing typo in v num in last version
 * Make process model into a hierarchy
 * Show virtual fields in tables etc except name
 * Update sequelize-extra dependency to v0.2.12
+
+## Next
+
+* Repair typo in changelog for last version
