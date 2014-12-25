@@ -291,7 +291,7 @@ No code changes, fixing typo in v num in last version
 
 * Repair typo in changelog for last version
 
-## Next
+## 0.2.46
 
 * Workers startup API hit sends startParams
 * Workers startup runs in series for easier debugging
