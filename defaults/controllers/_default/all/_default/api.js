@@ -10,11 +10,11 @@ exports = module.exports = {
 		// allow access if API user
 		return !!this.user.permissions.API;
 	},
-	
+
 	done: function() {
 		// if no data to return, redirect
 		if (this.dataMain === undefined) return this.redirect('./', 'Action completed');
-		
+
 		// display results
 		var displayOptions = {
 			options: {
@@ -29,16 +29,16 @@ exports = module.exports = {
 				user: this.user
 			}
 		};
-		
+
 		// render page (just show menu if HTML call)
 		this.view = '_compiled/api/index';
 		return this.render(displayOptions.options, displayOptions.layoutOptions);
 	},
-	
+
 	failed: function() {
 		var error = this.actResult.error,
 			field = this.actResult.field;
-		
+
 		if (error == 'illegalValue') {
 			this.formErrors[field] = this.form.fields[field].label + ' is invalid';
 			return;
@@ -51,7 +51,7 @@ exports = module.exports = {
 			this.formErrors[field] = 'Cannot be deleted';
 			return;
 		}
-		
+
 		throw new Error('Unknown error returned from act function');
 	}
 };
