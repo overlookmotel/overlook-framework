@@ -290,3 +290,7 @@ No code changes, fixing typo in v num in last version
 ## 0.2.45
 
 * Repair typo in changelog for last version
+
+## Next
+
+* Workers startup API hit sends startParams
