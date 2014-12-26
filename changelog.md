@@ -300,7 +300,7 @@ No code changes, fixing typo in v num in last version
 * Workers have status
 * Fix bugs in workers library
 
-## Next
+## 0.2.47
 
 * Display number of running jobs in localWorker/index
 * Block access to unused actions in localWorker resource controller
