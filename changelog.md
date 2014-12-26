@@ -303,3 +303,4 @@ No code changes, fixing typo in v num in last version
 ## Next
 
 * Display number of running jobs in localWorker/index
+* Block access to unused actions in localWorker resource controller
