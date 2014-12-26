@@ -9,3 +9,4 @@
 * Add tracking cookie
 * Fix long drop-down menus for filtering tables - should be typeahead box instead
 * Logging
+* Implement hidden form field to prevent Cross-Site Request Forgery attacks
