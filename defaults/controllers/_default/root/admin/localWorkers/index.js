@@ -22,7 +22,8 @@ exports = module.exports = {
             var item = this.model.build({
                 id: Worker.workerId,
                 name: _.capitalize(workerName),
-                status: worker.status
+                status: worker.status,
+                jobs: worker.jobs.length
             });
 
             workers.push(item);

@@ -16,6 +16,11 @@ module.exports = {
         status: {
             type: Sequelize.ENUM('Starting', 'Started', 'Stopping', 'Stopped'),
             allowNull: false
+        },
+        jobs: {
+            type: Sequelize.INTEGER.UNSIGNED,
+            allowNull: false,
+            defaultValue: 0
         }
     }
 };

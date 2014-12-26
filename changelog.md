@@ -299,3 +299,7 @@ No code changes, fixing typo in v num in last version
 * Control panel for controlling workers
 * Workers have status
 * Fix bugs in workers library
+
+## Next
+
+* Display number of running jobs in localWorker/index
