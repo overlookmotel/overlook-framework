@@ -317,3 +317,4 @@ No code changes, fixing typo in v num in last version
 ## Next
 
 * Workers get default options from _default
+* Worker#run passed progress options
