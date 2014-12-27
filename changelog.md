@@ -320,6 +320,6 @@ No code changes, fixing typo in v num in last version
 * Worker#run passed progress options
 * Fix bug progress fn clashing with progress state - progress fn renamed to `progressed`
 
-## Next
+## 0.2.51
 
 * Fix bug in informing API of progress in workers
