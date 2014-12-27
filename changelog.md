@@ -319,3 +319,7 @@ No code changes, fixing typo in v num in last version
 * Workers get default options from _default
 * Worker#run passed progress options
 * Fix bug progress fn clashing with progress state - progress fn renamed to `progressed`
+
+## Next
+
+* Fix bug in informing API of progress in workers
