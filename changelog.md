@@ -310,6 +310,6 @@ No code changes, fixing typo in v num in last version
 * Log data sent to API
 * Fix bug reporting number of worker jobs running
 
-## Next
+## 0.2.49
 
 No code changes, fixing typo in v num in last version
