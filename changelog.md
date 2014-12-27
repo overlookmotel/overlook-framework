@@ -314,7 +314,7 @@ No code changes, fixing typo in v num in last version
 
 No code changes, fixing typo in v num in last version
 
-## Next
+## 0.2.50
 
 * Workers get default options from _default
 * Worker#run passed progress options
