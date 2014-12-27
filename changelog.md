@@ -308,3 +308,4 @@ No code changes, fixing typo in v num in last version
 ## Next
 
 * Log data sent to API
+* Fix bug reporting number of worker jobs running

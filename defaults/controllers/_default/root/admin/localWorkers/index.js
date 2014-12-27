@@ -23,7 +23,7 @@ exports = module.exports = {
                 id: Worker.workerId,
                 name: _.capitalize(workerName),
                 status: worker.status,
-                jobs: worker.jobs.length
+                jobs: Object.keys(worker.jobs).length
             });
 
             workers.push(item);
