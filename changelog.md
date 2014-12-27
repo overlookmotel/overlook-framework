@@ -313,3 +313,7 @@ No code changes, fixing typo in v num in last version
 ## 0.2.49
 
 No code changes, fixing typo in v num in last version
+
+## Next
+
+* Workers get default options from _default
