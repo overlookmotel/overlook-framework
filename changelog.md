@@ -328,6 +328,6 @@ No code changes, fixing typo in v num in last version
 
 * api/insert returns id of inserted record
 
-## Next
+## 0.2.53
 
 * api/select converts model names to models in query params
