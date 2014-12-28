@@ -18,9 +18,9 @@ exports = module.exports = {
 		form: true,
 		api: true
 	},
-	
+
 	// functions
-	
+
 	initForm: function() {
 		// make form
 		this.form = forms.createForm({
@@ -30,23 +30,23 @@ exports = module.exports = {
 			}
 		});
 	},
-	
+
 	process: function() {
 		// convert params from JSON to object
 		this.actData.params = JSON.parse(this.actData.params);
 	},
-	
+
 	act: function() {
 		// init actResult
 		this.actResult = {};
-		
+
 		// get model + check exists
 		var model = this.models[this.actData.model];
 		if (!model) {
 			this.actResult = {error: 'illegalValue', field: 'model'};
 			return false;
 		}
-		
+
 		// convert model names in params to models
 		var params = _.clone(this.actData.params);
 
@@ -60,12 +60,12 @@ exports = module.exports = {
 
 		// run action on DB
 		params.transaction = this.transaction;
-		
+
 		return model.findAll(params).bind(this)
 		.then(function(results) {
 			// write result to dataMain
 			this.dataMain = results;
-			
+
 			return true;
 		})
 		.catch(function(err) { // jshint ignore:line
