@@ -15,12 +15,12 @@ var forms = require('../../../../../lib/forms');
 exports = module.exports = {
 	// action params
 	actionTypes: {
-		form: true, 
+		form: true,
 		api: true
 	},
-	
+
 	// functions
-	
+
 	initForm: function() {
 		// make form
 		this.form = forms.createForm({
@@ -30,37 +30,37 @@ exports = module.exports = {
 			}
 		});
 	},
-	
+
 	process: function() {
 		// convert values from JSON to object
 		this.actData.values = JSON.parse(this.actData.values);
 	},
-	
+
 	act: function() {
 		// init actResult
 		this.actResult = {};
-		
+
 		// record user id and date in actData
 		var actData = this.actData,
 			values = actData.values;
-		
+
 		_.defaults(values, {
 			createdById: this.user.id,
 			createdAt: new Date()
 		});
-		
+
 		_.defaults(values, {
 			updatedById: values.createdById,
 			updatedAt: values.createdAt
 		});
-		
+
 		// get model + check exists
 		var model = this.models[actData.model];
 		if (!model) {
 			this.actResult = {error: 'illegalValue', field: 'model'};
 			return false;
 		}
-		
+
 		// run action on DB
 		return model.create(values, {transaction: this.transaction}).bind(this)
 		.then(function(item) {
