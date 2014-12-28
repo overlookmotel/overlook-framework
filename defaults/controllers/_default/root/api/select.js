@@ -47,8 +47,18 @@ exports = module.exports = {
 			return false;
 		}
 		
-		// run action on DB
+		// convert model names in params to models
 		var params = _.clone(this.actData.params);
+
+		try {
+			convertIncludes(params, this.models);
+			convertOrders(params, this.models);
+		} catch(err) {
+			this.actResult = {error: 'illegalValue', field: 'params'};
+			return false;
+		}
+
+		// run action on DB
 		params.transaction = this.transaction;
 		
 		return model.findAll(params).bind(this)
@@ -65,3 +75,36 @@ exports = module.exports = {
 		});
 	}
 };
+
+function convertIncludes(params, models) {
+	var includes = params.include;
+	if (!includes) return;
+	if (!Array.isArray(includes)) includes = params.include = [includes];
+
+	_.forEach(includes, function(include, index) {
+		if (_.isString(include)) {
+			if (!models[include]) throw new Error("Unknown model '" + include + "'");
+			include = includes[index] = models[include];
+			return;
+		}
+
+		if (!include.model) throw new Error('Undefined model in include');
+		if (!models[include.model]) throw new Error("Unknown model '" + include.model + "'");
+		include.model = models[include.model];
+
+		convertIncludes(include, models);
+	});
+}
+
+function convertOrders(params, models) {
+	var orders = params.order;
+	if (!orders) return;
+
+	_.forEach(orders, function(order) {
+		_.forEach(order, function(part) {
+			if (!part.model) return;
+			if (!models[part.model]) throw new Error("Unknown model '" + part.model + "'");
+			part.model = models[part.model];
+		});
+	});
+}
