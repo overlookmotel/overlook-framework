@@ -323,3 +323,7 @@ No code changes, fixing typo in v num in last version
 ## 0.2.51
 
 * Fix bug in informing API of progress in workers
+
+## Next
+
+* api/insert returns id of inserted record

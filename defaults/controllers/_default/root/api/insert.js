@@ -63,7 +63,10 @@ exports = module.exports = {
 		
 		// run action on DB
 		return model.create(values, {transaction: this.transaction}).bind(this)
-		.return(true)
+		.then(function(item) {
+			this.dataMain = item.id || true;
+			return true;
+		})
 		.catch(this.sequelize.UniqueConstraintError, function(err) { // jshint ignore:line
 			// unique field not unique
 			this.actResult = {error: 'uniqueFail', field: 'values'};
