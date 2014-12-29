@@ -336,7 +336,7 @@ No code changes, fixing typo in v num in last version
 
 No changes. Erroneous version bump.
 
-## Next
+## 0.2.55
 
 * Default worker options need not be provided
 * `startParams` method optional for workers
