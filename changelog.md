@@ -340,3 +340,7 @@ No changes. Erroneous version bump.
 
 * Default worker options need not be provided
 * `startParams` method optional for workers
+
+## Next
+
+* Workers log and send more details of errors to API
