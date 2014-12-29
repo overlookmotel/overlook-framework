@@ -345,6 +345,6 @@ No changes. Erroneous version bump.
 
 * Workers log and send more details of errors to API
 
-## Next
+## 0.2.57
 
 * Added `requiresResource` field to processes model
