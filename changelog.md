@@ -331,3 +331,7 @@ No code changes, fixing typo in v num in last version
 ## 0.2.53
 
 * api/select converts model names to models in query params
+
+## 0.2.54
+
+No changes. Erroneous version bump.
