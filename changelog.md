@@ -335,3 +335,7 @@ No code changes, fixing typo in v num in last version
 ## 0.2.54
 
 No changes. Erroneous version bump.
+
+## Next
+
+* Default worker options need not be provided
