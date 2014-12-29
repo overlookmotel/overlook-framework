@@ -20,6 +20,11 @@ module.exports = {
 			reference: 'process',
 			asReverse: 'beforeProcess',
 			allowNull: true
+		},
+		requiresResource: {
+			type: Sequelize.BOOLEAN,
+			allowNull: false,
+			defaultValue: 0
 		}
 	},
 	options: {
