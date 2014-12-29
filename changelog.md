@@ -341,6 +341,6 @@ No changes. Erroneous version bump.
 * Default worker options need not be provided
 * `startParams` method optional for workers
 
-## Next
+## 0.2.56
 
 * Workers log and send more details of errors to API
