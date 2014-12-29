@@ -339,3 +339,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Default worker options need not be provided
+* `startParams` method optional for workers
