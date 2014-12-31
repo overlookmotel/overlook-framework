@@ -348,3 +348,7 @@ No changes. Erroneous version bump.
 ## 0.2.57
 
 * Added `requiresResource` field to processes model
+
+## Next
+
+* Log worker errors
