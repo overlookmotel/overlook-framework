@@ -359,6 +359,6 @@ No changes. Erroneous version bump.
 * Updated module dependency overlook-utils to v0.0.7
 * Removed all trailing whitespace
 
-## Next
+## 0.2.60
 
 * Updated module dependency overlook-utils to v0.0.8
