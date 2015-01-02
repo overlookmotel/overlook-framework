@@ -352,3 +352,7 @@ No changes. Erroneous version bump.
 ## 0.2.58
 
 * Log worker errors
+
+## Next
+
+* Controllers+views for processes children of worker
