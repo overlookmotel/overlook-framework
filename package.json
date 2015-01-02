@@ -24,7 +24,7 @@
     "shimming": "~0.0.5",
     "bcrypt": "~0.8.0",
     "request": "~2.51.0",
-    "overlook-utils": "~0.0.6",
+    "overlook-utils": "~0.0.7",
     "ejs-extra": "~0.0.1",
     "marked": "~0.3.2",
     "mandrill-api": "~1.0.41"
