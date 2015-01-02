@@ -353,7 +353,7 @@ No changes. Erroneous version bump.
 
 * Log worker errors
 
-## Next
+## 0.2.59
 
 * Controllers+views for processes children of worker
 * Updated module dependency overlook-utils to v0.0.7
