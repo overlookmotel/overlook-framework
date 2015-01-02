@@ -358,3 +358,7 @@ No changes. Erroneous version bump.
 * Controllers+views for processes children of worker
 * Updated module dependency overlook-utils to v0.0.7
 * Removed all trailing whitespace
+
+## Next
+
+* Updated module dependency overlook-utils to v0.0.8
