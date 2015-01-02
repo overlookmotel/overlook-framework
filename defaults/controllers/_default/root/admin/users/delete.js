@@ -8,7 +8,7 @@
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	access: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function(allowed) {

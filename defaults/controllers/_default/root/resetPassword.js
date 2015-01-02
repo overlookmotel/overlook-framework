@@ -15,11 +15,11 @@ exports = module.exports = {
 	actionTypes: {
 		form: true
 	},
-	
+
 	title: 'Reset Password',
-	
+
 	// functions
-	
+
 	initForm: function() {
 		// make form
 		this.form = forms.createFormFromModel(this.route.overlook.models.user, {only: ['email']});
@@ -29,11 +29,11 @@ exports = module.exports = {
 			noCancel: true
 		};
 	},
-	
+
 	access: function() {
 		return true;
 	},
-	
+
 	act: function() {
 		// check email address valid
 		return this.models.user.find({
@@ -46,10 +46,10 @@ exports = module.exports = {
 				this.actResult = {error: 'invalidEmail'};
 				return false;
 			}
-			
+
 			// save user to dataMain
 			this.dataMain = this.data.user = user;
-			
+
 			// make new password
 			var password = authentication.makePassword();
 			return authentication.makeHashAndKey(password).bind(this)
@@ -78,31 +78,31 @@ exports = module.exports = {
 						"Please note that we do not work full-time, so please bear with us if you don't get a reply to\n" +
 						'your email straight away.\n'
 				};
-				
+
 				var recipient = {
 					name: user.name,
 					email: user.email,
 					password: password
 				};
-				
+
 				return this.overlook.mailer.sendBatch(message, recipient)
 				.return(true);
 			});
 		});
 	},
-	
+
 	done: function() {
 		// redirect
 		return this.redirect('/login', 'New password sent to ' + this.dataMain.email);
 	},
-	
+
 	failed: function() {
 		var error = this.actResult.error;
 		if (error == 'invalidEmail') {
 			this.formErrors.email = 'That email is not recognised. Please try again.';
 			return;
 		}
-		
+
 		throw new Error('Unknown error returned from act function');
 	}
 };

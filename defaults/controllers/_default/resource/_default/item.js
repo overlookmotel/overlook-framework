@@ -11,14 +11,14 @@ var _ = require('overlook-utils');
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	load: function() {
 		var options = {
 			model: this.model,
 			where: _.set({}, this.route.paramField, this.params[this.route.param]),
 			include: [{all: 'One', attributes: ['id', 'name']}]
 		};
-		
+
 		return this.loadWithParents(options).bind(this)
 		.then(function() {
 			if (this.data[this.model.name]) this.dataMain = this.data[this.model.name];
@@ -44,20 +44,20 @@ exports = module.exports = {
 		} else {
 			type = this.titleItem;
 		}
-		
+
 		// render error page
 		return this.renderError('noItem', {type: type}, {title: type + ' deleted', breadcrumbs: this.breadcrumbs, url: this.url, user: this.user});
 	},
-	
+
 	accessFail: function(defaultFn) {
 		// remove item title from breadcrumbs
 		this.breadcrumbs[this.breadcrumbs.length - 1].title = this.titleItem;
 		//xxx need to do this for all resource items in breadcrumbs
-		
+
 		// run default action
 		return defaultFn();
 	},
-	
+
 	makeTitle: function() {
 		_.defaultValue(this, 'title', (this.titleAction ? this.titleAction + ' ' : '') + (this.dataMain ? this.dataMain.get('name') : this.titleItem));
 	},

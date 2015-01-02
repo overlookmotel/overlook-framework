@@ -11,7 +11,7 @@ var _ = require('overlook-utils');
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	makeTitle: function() {
 		_.defaultValue(this, 'title', (this.titleAction ? this.titleAction + ' ' : '') + this.titleItem);
 	}

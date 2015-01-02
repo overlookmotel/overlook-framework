@@ -8,7 +8,7 @@
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	load: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(this.loaded)
@@ -16,14 +16,14 @@ exports = module.exports = {
 			// check if column name is valid
 			var col = this.query.c;
 			if (!this.model.rawAttributes[col] || this.model.rawAttributes[col].secret) return;
-			
+
 			// filter results by query
 			var options = {attributes: [col], order: [[col]], group: [[col]], limit: 10};
 			if (this.query.q) {
 				options.where = {};
 				options.where[col] = {like: '%' + this.query.q + '%'};
 			}
-			
+
 			// get results from DB
 			return this.model.findAll(options).bind(this)
 			.then(function(items) {
@@ -32,7 +32,7 @@ exports = module.exports = {
 			});
 		});
 	},
-	
+
 	makeDisplayOptions: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function() {
@@ -41,7 +41,7 @@ exports = module.exports = {
 			var viewData = this.dataMain.map(function(item) {
 				return item[col];
 			});
-			
+
 			this.displayOptions.options.data = viewData;
 		});
 	}

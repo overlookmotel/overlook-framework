@@ -11,7 +11,7 @@ var _ = require('overlook-utils');
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	initForm: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function() {
@@ -19,7 +19,7 @@ exports = module.exports = {
 			delete this.form.fields.password;
 		});
 	},
-	
+
 	access: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function(allowed) {
@@ -27,7 +27,7 @@ exports = module.exports = {
 			return allowed && this.dataMain.type != 'public';
 		});
 	},
-	
+
 	act: function(defaultFn) {
 		// if system/root user, check uneditable fields haven't been edited
 		var user = this.dataMain;
@@ -39,10 +39,10 @@ exports = module.exports = {
 					return false;
 				}
 			}.bind(this));
-			
+
 			if (this.actResult && this.actResult.error) return false;
 		}
-		
+
 		// run default action
 		return defaultFn();
 	}

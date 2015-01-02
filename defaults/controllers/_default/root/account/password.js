@@ -17,12 +17,12 @@ exports = module.exports = {
 	actionTypes: {
 		form: true
 	},
-	
+
 	titleAction: 'Change Password',
 	title: 'Change Password',
-	
+
 	// functions
-	
+
 	initForm: function() {
 		// create form
 		this.form = forms.createForm({
@@ -31,11 +31,11 @@ exports = module.exports = {
 			}
 		});
 	},
-	
+
 	load: function() {
 		return this.route.actions.index.load.call(this);
 	},
-	
+
 	process: function() {
 		// create password hash
 		return authentication.makeHashAndKey(this.actData.password).bind(this)
@@ -46,13 +46,13 @@ exports = module.exports = {
 			delete this.actData.password;
 		});
 	},
-	
+
 	act: actionEdit.act,
-	
+
 	done: function() {
 		return this.redirect('./', 'Password changed');
 	},
-	
+
 	failed: function() {
 		throw new Error('Unknown error returned from act function');
 	}

@@ -15,28 +15,28 @@ exports = module.exports = {
 		item: true,
 		form: true
 	},
-	
+
 	// functions
-	
+
 	initForm: function() {
 		// run same initForm function as for new
 		return this.route.actions.new.initForm.call(this);
 	},
-	
+
 	populate: function() {
 		// populate form data from db
 		this.formData = forms.populateFromModelInstance(this.form, this.dataMain);
 		this.formErrors = {};
 	},
-	
+
 	act: function() {
 		// init actResult
 		this.actResult = {};
-		
+
 		// record user id and date
 		this.actData.updatedById = this.user.id;
 		this.actData.updatedAt = new Date();
-		
+
 		// create any sub-items
 		return this.route.actions.new.actMenuOpen.call(this).bind(this)
 		.then(function() {
@@ -55,16 +55,16 @@ exports = module.exports = {
 			});
 		});
 	},
-	
+
 	done: function() {
 		return this.redirect('./', 'Saved changes to ' + this.dataMain.name);
 	},
-	
+
 	failed: function() {
 		var error = this.actResult.error,
 			field = this.actResult.field,
 			label = this.form.fields[field].label;
-		
+
 		if (error == 'uniqueFail') {
 			this.formErrors[field] = label + ' is already taken. Try another.';
 			return;
@@ -77,7 +77,7 @@ exports = module.exports = {
 			this.formData[field] = this.actResult.value;
 			return;
 		}
-		
+
 		throw new Error('Unknown error returned from act function');
 	}
 };

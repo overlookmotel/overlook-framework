@@ -18,9 +18,9 @@ exports = module.exports = {
 		item: true,
 		form: true
 	},
-	
+
 	// functions
-	
+
 	initForm: function() {
 		// init form
 		var form = {
@@ -29,11 +29,11 @@ exports = module.exports = {
 		};
 		this.form = forms.createForm(form);
 	},
-	
+
 	act: function() {
 		this.actData.updatedById = this.user.id;
 		this.actData.updatedAt = new Date();
-		
+
 		// delete item
 		return this.dataMain.destroy({transaction: this.transaction}).bind(this)
 		.return(true)
@@ -43,21 +43,21 @@ exports = module.exports = {
 			return false;
 		});
 	},
-	
+
 	done: function() {
 		return this.redirect('../', 'Deleted ' + this.dataMain.name);
 	},
-	
+
 	failed: function() {
 		var error = this.actResult.error;
 		if (error == 'cannotDelete') {
 			this.formErrors._dummy = this.dataMain.name + ' cannot be deleted';
 			return;
 		}
-		
+
 		throw new Error('Unknown error returned from act function');
 	},
-	
+
 	makeDisplayOptions: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function() {

@@ -12,7 +12,7 @@ var forms = require('../../../../../../lib/forms'),
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	initForm: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function() {
@@ -20,7 +20,7 @@ exports = module.exports = {
 			forms.addField(this.form, 'password', {format: 'password', required: true});
 		});
 	},
-	
+
 	process: function() {
 		// create password hash
 		return authentication.makeHash(this.actData.password).bind(this)

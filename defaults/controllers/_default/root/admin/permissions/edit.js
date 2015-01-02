@@ -8,7 +8,7 @@
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	initForm: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function() {
@@ -16,7 +16,7 @@ exports = module.exports = {
 			delete this.form.fields.type;
 		});
 	},
-	
+
 	access: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function(allowed) {

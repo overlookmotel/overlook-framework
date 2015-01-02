@@ -14,9 +14,9 @@ exports = module.exports = {
 	actionTypes: {
 		api: true
 	},
-	
+
 	// functions
-	
+
 	//xxx should be inherited from api defaults anyway, but isn't working correctly at present
 	access: defaultAction.access
 };

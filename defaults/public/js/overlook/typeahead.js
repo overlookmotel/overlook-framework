@@ -49,7 +49,7 @@
 			source: bloodhound.ttAdapter()
 		});
 	}
-	
+
 	// dropdown typeaheads
 	function dropdownTypeaheadsInit()
 	{
@@ -83,7 +83,7 @@
 
 		// get id form field and save in element
 		element.data('idField', element.siblings(':input'));
-		
+
 		// set event handlers for state change
 		element.bind({
 			'typeahead:selected typeahead:autocompleted': dropdownTypeaheadSelected,

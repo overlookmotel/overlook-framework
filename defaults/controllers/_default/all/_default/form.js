@@ -15,7 +15,7 @@ var forms = require('../../../../../lib/forms');
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	// init form before running rest of init
 	init: function(defaultFn) {
 		// init form
@@ -23,7 +23,7 @@ exports = module.exports = {
 		.then(this.initForm)
 		.then(defaultFn);
 	},
-	
+
 	get: function() {
 		// run chain of functions
 		return Promise.bind(this)
@@ -48,7 +48,7 @@ exports = module.exports = {
 			return Promise.bind(this)
 			.then(this.accessFail);
 		});
-		
+
 		/*
 		//xxx delete this
 		this.chain([
@@ -72,7 +72,7 @@ exports = module.exports = {
 		], callback);
 		*/
 	},
-	
+
 	post: function() {
 		// run chain of functions
 		return Promise.bind(this)
@@ -121,7 +121,7 @@ exports = module.exports = {
 			.then(this.rollback)
 			.then(this.accessFail);
 		});
-		
+
 		/*
 		//xxx delete this
 		this.chain([
@@ -175,27 +175,27 @@ exports = module.exports = {
 		], callback);
 		*/
 	},
-	
+
 	populate: function() {
 		// populate form data with default values
 		this.formData = forms.populateDefaults(this.form);
 		this.formErrors = {};
 	},
-	
+
 	repopulate: function() {
 		// populate form data from request post
 		this.formData = forms.populateFromPost(this.form, this.req.body);
 		this.formErrors = {};
 	},
-	
+
 	process: function() {},
-	
+
 	makeDisplayOptions: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function() {
 			this.displayOptions.options.formData = this.formData;
 			this.displayOptions.options.formErrors = this.formErrors;
-			
+
 			var viewData = this.displayOptions.options.data = {};
 			if (this.loadReferences) {
 				viewData.references = {};
@@ -205,7 +205,7 @@ exports = module.exports = {
 			}
 		});
 	},
-	
+
 	sanitise: function() {
 		forms.sanitise(this.form, this.formData);
 	},

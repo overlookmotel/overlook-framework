@@ -18,22 +18,22 @@ exports = module.exports = {
 		item: true,
 		form: true
 	},
-	
+
 	// functions
-	
+
 	initForm: resourceDeleteAction.initForm,
 	act: resourceDeleteAction.act,
-	
+
 	done: function() {
 		return this.redirect('../', 'Deleted ' + this.dataMain[this.targetModel.name].name + ' from ' + this.dataMain[this.parent.model.name].name);
 	},
-	
+
 	failed: function(defaultFn) {
 		resourceDeleteAction.failed.call(this, defaultFn);
-		
+
 		this.formErrors._dummy = this.dataMain[this.targetModel.name].name + ' cannot be deleted from ' + this.dataMain[this.parent.model.name].name;
 	},
-	
+
 	makeDisplayOptions: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function() {

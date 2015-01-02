@@ -14,9 +14,9 @@ exports = module.exports = {
 	title: 'Logout',
 	view: false,
 	actLocal: true,
-	
+
 	// functions
-	
+
 	get: function() {
 		// logout user
 		return authentication.logout(this.user, this.res, this.overlook).bind(this)

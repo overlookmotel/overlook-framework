@@ -12,12 +12,12 @@ var Promise = require('bluebird-extra'),
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	init: function() {
 		// set title
 		_.defaultValue(this, 'titleAction', _.humanize(this.name));
 	},
-	
+
 	get: function() {
 		// run chain of functions
 		return Promise.bind(this)
@@ -41,7 +41,7 @@ exports = module.exports = {
 			return Promise.bind(this)
 			.then(this.accessFail);
 		});
-		
+
 		/*
 		//xxx delete this
 		this.chain([
@@ -64,17 +64,17 @@ exports = module.exports = {
 		], callback);
 		*/
 	},
-	
+
 	start: function() {},
-	
+
 	access: function() {
 		// if user not logged in, access fail
 		if (!this.user.permissions.User) return false;
-		
+
 		// if user not admin and trying to access admin area, access fail
 		//xxx this should be in a _default file at root of admin namespace, not here
 		if (_.startsWith(this.url, '/admin/') && !this.user.permissions.Admin) return false;
-		
+
 		// access ok
 		return true;
 	},
@@ -85,11 +85,11 @@ exports = module.exports = {
 			if (!this.user.isInitialized) return this.redirect('/account/init');
 			return this.renderError('noAccess', {}, {title: 'Permission denied', breadcrumbs: this.breadcrumbs, url: this.url, user: this.user});
 		}
-		
+
 		// not logged in user - send to login page
 		return this.redirect('/login');
 	},
-	
+
 	// load parent resources
 	load: function() {
 		if (this.parentResources) return this.loadWithParents();
@@ -111,11 +111,11 @@ exports = module.exports = {
 			}
 		}, this);
 		if (!type) type = lastType;
-		
+
 		// render error page
 		return this.renderError('noItem', {type: type}, {title: type + ' deleted', breadcrumbs: this.breadcrumbs, url: this.url, user: this.user});
 	},
-	
+
 	makeTitle: function() {
 		_.defaultValue(this, 'title', (this.titleAction ? this.titleAction + ' ' : '') + this.titleRoute);
 	},
@@ -123,13 +123,13 @@ exports = module.exports = {
 		this.breadcrumbs = this.makeBreadcrumbsIndex(this.route, this.data, _.parentUrl(this.url));
 		this.breadcrumbs.push({title: this.titleAction, url: this.url});
 	},
-	
+
 	loadAdditional: function() {
 		// load any data needed to create menus etc
 		if (!this.loadReferences) return;
-		
+
 		this.data.references = {};
-		
+
 		return Promise.each(this.loadReferences, function(model) {
 			return model.findAll({attributes: ['id', 'name'], order: [['name']]}).bind(this)
 			.then(function(items) {
@@ -137,7 +137,7 @@ exports = module.exports = {
 			});
 		}.bind(this));
 	},
-	
+
 	display: function() {
 		// get display options
 		return Promise.bind(this)
@@ -146,7 +146,7 @@ exports = module.exports = {
 			return this.render(this.displayOptions.options, this.displayOptions.layoutOptions);
 		});
 	},
-	
+
 	makeDisplayOptions: function() {
 		this.displayOptions = {
 			options: {},

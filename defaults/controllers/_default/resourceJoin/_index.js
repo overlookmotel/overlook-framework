@@ -14,7 +14,7 @@ var resourceRoute = require('../resource/_index');
 // route definition
 exports = module.exports = {
 	// functions
-	
+
 	init: function(defaultFn) {
 		return resourceRoute.init.call(this, defaultFn).bind(this)
 		.then(function() {
@@ -22,7 +22,7 @@ exports = module.exports = {
 			this.paramField = this.targetModel.name + _.capitalize(this.targetModel.primaryKeyAttribute);
 		});
 	},
-	
+
 	makeBreadcrumbsItem: function(route, data, url) {
 		var title;
 		if (data[route.model.name]) {
@@ -31,9 +31,9 @@ exports = module.exports = {
 		} else {
 			title = route.titleItem;
 		}
-		
+
 		var breadcrumbs = this.makeBreadcrumbsIndex(route, data, _.parentUrl(url));
-		
+
 		breadcrumbs.push({title: title, url: url});
 		return breadcrumbs;
 	}

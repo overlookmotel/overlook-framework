@@ -12,7 +12,7 @@ var forms = require('../../../../../../lib/forms'),
 // action definition
 exports = module.exports = {
 	// functions
-	
+
 	initForm: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function() {
@@ -21,7 +21,7 @@ exports = module.exports = {
 			forms.addField(this.form, 'password', {format: 'password', required: true});
 		});
 	},
-	
+
 	process: function() {
 		// create password hash
 		return authentication.makeHashAndKey(this.actData.password).bind(this)
@@ -32,12 +32,12 @@ exports = module.exports = {
 			delete this.actData.password;
 		});
 	},
-	
+
 	act: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function(success) {
 			if (!success) return success;
-			
+
 			// add user role to user
 			return this.dataMain.addRole(this.overlook.userRole, {transaction: this.transaction})
 			.return(success);

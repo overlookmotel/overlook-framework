@@ -15,9 +15,9 @@ exports = module.exports = {
 		form: true,
 		api: true
 	},
-	
+
 	// functions
-	
+
 	initForm: function() {
 		// make form
 		this.form = forms.createForm({
@@ -27,26 +27,26 @@ exports = module.exports = {
 			}
 		});
 	},
-	
+
 	process: function() {
 		// convert where from JSON to object
 		this.actData.where = JSON.parse(this.actData.where);
 	},
-	
+
 	act: function() {
 		// init actResult
 		this.actResult = {};
-		
+
 		// record user id and date in actData
 		var actData = this.actData;
-		
+
 		// get model + check exists
 		var model = this.models[actData.model];
 		if (!model) {
 			this.actResult = {error: 'illegalValue', field: 'model'};
 			return false;
 		}
-		
+
 		// run action on DB
 		return model.destroy({where: actData.where, transaction: this.transaction}).bind(this)
 		.return(true)
