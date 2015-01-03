@@ -366,4 +366,5 @@ No changes. Erroneous version bump.
 ## Next
 
 * Route action type `data`
+* Add `isActive` field to process model
 * Update sequelize-extra dependency to v0.2.13
