@@ -367,4 +367,5 @@ No changes. Erroneous version bump.
 
 * Route action type `data`
 * Add `isActive` field to process model
+* Fix bug Job#log not passing obj to Worker#log
 * Update sequelize-extra dependency to v0.2.13
