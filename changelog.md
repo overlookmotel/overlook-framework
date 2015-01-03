@@ -363,7 +363,7 @@ No changes. Erroneous version bump.
 
 * Updated module dependency overlook-utils to v0.0.8
 
-## Next
+## 0.2.61
 
 * Route action type `data`
 * Add `isActive` field to process model
