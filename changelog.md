@@ -366,3 +366,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Route action type `data`
+* Update sequelize-extra dependency to v0.2.13
