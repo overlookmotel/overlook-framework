@@ -362,3 +362,7 @@ No changes. Erroneous version bump.
 ## 0.2.60
 
 * Updated module dependency overlook-utils to v0.0.8
+
+## Next
+
+* Route action type `data`
