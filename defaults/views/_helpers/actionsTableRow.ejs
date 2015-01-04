@@ -1,0 +1,28 @@
+<%
+// receives (actions, groupActions)
+%>      <tr>
+        <td class="col-md-1"><%
+_.forEach(actions, function(action) {
+%><a href="<?= <%- _.quote(action.url) %>.replace(':id', id) ?>" class="btn btn-xs btn-<%= action.mode || 'primary' %>"><%
+    if (action.glyph) {
+        var glyph = action.glyph;
+        %><% include ./glyph %><%
+    }
+    if (action.text) {
+        if (action.glyph) {%> <%}
+        %><%= action.text %><%
+    }
+%></a> <%
+});
+
+if (groupActions) {
+    %><input type="checkbox" name="Select<?= id ?>" value="1" style="margin-left:10px" /><%
+}
+
+%></td>
+<%
+_.forIn(fields, function(field, fieldName) {
+%>        <td><% include ./itemField %></td>
+<%
+});
+%>      </tr>

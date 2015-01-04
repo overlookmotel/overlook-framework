@@ -1,0 +1,55 @@
+<%
+// receives (overlook, fields, actions, groupActions)
+%><div class="table-responsive">
+<%
+
+if (groupActions && groupActions.length == 0) {
+    groupActions = null;
+} else {
+    %><form method="POST"><%
+}
+
+%>
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th class="col-md-1"></th>
+<%
+// table headers
+_.forIn(fields, function(field, fieldName) {
+    %>        <th><%= field.label %></th>
+<%
+});
+%>      </tr>
+    </thead>
+    <tbody>
+<?
+// table body
+_.forEach(items, function(item) {
+    var id = item.id;
+?><% include ./actionsTableRow %><?
+});
+?>
+    </tbody>
+  </table>
+<%
+if (groupActions) {
+    script('/js/overlook/actionsTable.js');
+
+    %><p><%
+
+    _.forEach(groupActions, function(action) {
+        %><a data-group-submit="<%= action.url %>" class="btn btn-<%= action.mode || 'primary' %>"><%
+        if (action.glyph) {
+            var glyph = action.glyph;
+            %><% include ./glyph %> <%
+        }
+        %><%= action.text %></a> <%
+    });
+
+    %></p>
+  </form>
+<%
+}
+%>
+</div>
