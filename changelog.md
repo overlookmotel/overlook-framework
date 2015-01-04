@@ -376,4 +376,5 @@ No changes. Erroneous version bump.
 * Split itemsTable view helper into 2 files
 * Added actionsTable view helper
 * Added modelLinkList view helper
+* When action methods are inherited from default routes, parent action method is attached
 * Allow non-array createForm+FieldsFromModel only/exclude options
