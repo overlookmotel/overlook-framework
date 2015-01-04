@@ -371,7 +371,7 @@ No changes. Erroneous version bump.
 * Fix bug Job#log not passing obj to Worker#log
 * Update sequelize-extra dependency to v0.2.13
 
-## Next
+## 0.2.62
 
 * Split itemsTable view helper into 2 files
 * Added actionsTable view helper
