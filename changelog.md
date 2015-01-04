@@ -376,3 +376,4 @@ No changes. Erroneous version bump.
 * Split itemsTable view helper into 2 files
 * Added actionsTable view helper
 * Added modelLinkList view helper
+* Allow non-array createForm+FieldsFromModel only/exclude options
