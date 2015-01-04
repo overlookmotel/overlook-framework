@@ -378,3 +378,7 @@ No changes. Erroneous version bump.
 * Added modelLinkList view helper
 * When action methods are inherited from default routes, parent action method is attached
 * Allow non-array createForm+FieldsFromModel only/exclude options
+
+## Next
+
+* forms.createFormFromModel + forms.createFieldsFromModel `only` + `all` options override fields normally excluded
