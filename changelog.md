@@ -374,3 +374,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Split itemsTable view helper into 2 files
+* Added modelLinkList view helper

@@ -1,0 +1,17 @@
+<%
+// receives (overlook, modelName, action)
+%><?
+(function() {
+    var id, name;
+    for (var i = 0; i < items.length; i++) {
+        id = item.id;
+        name = item.name;
+        ?><% include ./modelLink %><?
+        if (i < items.length - 2) {
+            ?>, <?
+        } else if (i == items.length - 2) {
+            ?> and <?
+        }
+    }
+})();
+?>
