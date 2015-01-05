@@ -379,6 +379,6 @@ No changes. Erroneous version bump.
 * When action methods are inherited from default routes, parent action method is attached
 * Allow non-array createForm+FieldsFromModel only/exclude options
 
-## Next
+## 0.2.63
 
 * forms.createFormFromModel + forms.createFieldsFromModel `only` + `all` options override fields normally excluded
