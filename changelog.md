@@ -383,6 +383,6 @@ No changes. Erroneous version bump.
 
 * forms.createFormFromModel + forms.createFieldsFromModel `only` + `all` options override fields normally excluded
 
-## Next
+## 0.2.64
 
 * Cookies get names from overlook.options
