@@ -386,3 +386,7 @@ No changes. Erroneous version bump.
 ## 0.2.64
 
 * Cookies get names from overlook.options
+
+## Next
+
+* Update dependencies
