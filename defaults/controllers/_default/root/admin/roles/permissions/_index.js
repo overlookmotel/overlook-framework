@@ -8,6 +8,5 @@
 // route definition
 exports = module.exports = {
 	// route params
-	type: 'resourceJoin',
-	as: 'permission' //xxx temporary fix for inflection not correctly pluralizing 'permission'
+	type: 'resourceJoin'
 };
