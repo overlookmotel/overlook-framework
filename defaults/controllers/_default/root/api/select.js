@@ -59,8 +59,6 @@ exports = module.exports = {
 		}
 
 		// run action on DB
-		params.transaction = this.transaction;
-
 		return model.findAll(params).bind(this)
 		.then(function(results) {
 			// write result to dataMain

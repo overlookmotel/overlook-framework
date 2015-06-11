@@ -39,7 +39,7 @@ exports = module.exports = {
 			if (!success) return success;
 
 			// add user role to user
-			return this.dataMain.addRole(this.overlook.userRole, {transaction: this.transaction})
+			return this.dataMain.addRole(this.overlook.userRole)
 			.return(success);
 		});
 	}

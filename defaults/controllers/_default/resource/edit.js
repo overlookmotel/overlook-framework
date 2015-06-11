@@ -41,7 +41,7 @@ exports = module.exports = {
 		return this.route.actions.new.actMenuOpen.call(this).bind(this)
 		.then(function() {
 			// update db
-			return this.dataMain.updateAttributes(this.actData, {transaction: this.transaction}).bind(this)
+			return this.dataMain.updateAttributes(this.actData).bind(this)
 			.return(true)
 			.catch(this.sequelize.UniqueConstraintError, function(err) {
 				// unique field not unique

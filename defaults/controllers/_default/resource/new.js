@@ -53,7 +53,7 @@ exports = module.exports = {
 		return this.actMenuOpen().bind(this)
 		.then(function() {
 			// save to db
-			return this.model.create(this.actData, {transaction: this.transaction}).bind(this)
+			return this.model.create(this.actData).bind(this)
 			.then(function(item) {
 				// success
 				this.actResult.id = item.id;
@@ -98,7 +98,7 @@ exports = module.exports = {
 			if (this.actData[fieldName]) newData.id = this.actData[fieldName];
 
 			var modelName = this.form.fields[fieldName].modelName;
-			return this.models[modelName].findOrCreate({where: {name: name}, defaults: newData, transaction: this.transaction}).bind(this)
+			return this.models[modelName].findOrCreate({where: {name: name}, defaults: newData}).bind(this)
 			.spread(function(item, created) {
 				// success
 				this.actResult[fieldName] = item.id;

@@ -32,7 +32,7 @@ exports = module.exports = {
 	},
 
 	load: function() {
-		return this.models.user.find({where: {id: this.user.id}, transaction: this.transaction}).bind(this)
+		return this.models.user.find({where: {id: this.user.id}}).bind(this)
 		.then(function(user) {
 			this.dataMain = this.data.user = user;
 		});
@@ -49,7 +49,7 @@ exports = module.exports = {
 		this.actData.updatedAt = new Date();
 
 		// update db
-		return this.dataMain.updateAttributes(this.actData, {transaction: this.transaction}).bind(this)
+		return this.dataMain.updateAttributes(this.actData).bind(this)
 		.return(true)
 		.catch(this.sequelize.UniqueConstraintError, function(err) {
 			// unique field not unique

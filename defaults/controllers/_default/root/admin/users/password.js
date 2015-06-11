@@ -50,7 +50,7 @@ exports = module.exports = {
 		this.actData.updatedAt = new Date();
 
 		// update db
-		return this.dataMain.updateAttributes(this.actData, {transaction: this.transaction}).bind(this)
+		return this.dataMain.updateAttributes(this.actData).bind(this)
 		.return(true);
 	},
 

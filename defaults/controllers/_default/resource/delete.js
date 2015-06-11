@@ -35,7 +35,7 @@ exports = module.exports = {
 		this.actData.updatedAt = new Date();
 
 		// delete item
-		return this.dataMain.destroy({transaction: this.transaction}).bind(this)
+		return this.dataMain.destroy().bind(this)
 		.return(true)
 		.catch(this.sequelize.ForeignKeyConstraintError, function(err) { // jshint ignore:line
 			// cannot be deleted

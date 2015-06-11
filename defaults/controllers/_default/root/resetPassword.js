@@ -36,10 +36,7 @@ exports = module.exports = {
 
 	act: function() {
 		// check email address valid
-		return this.models.user.find({
-			where: {email: this.actData.email, isActive: true},
-			transaction: this.transaction
-		}).bind(this)
+		return this.models.user.find({where: {email: this.actData.email, isActive: true}}).bind(this)
 		.then(function(user) {
 			if (!user) {
 				// success
@@ -60,7 +57,7 @@ exports = module.exports = {
 					isInitialized: false,
 					updatedById: this.overlook.systemUserId,
 					updatedAt: new Date()
-				}, {transaction: this.transaction});
+				});
 			}).then(function() {
 				// email user login details
 				var message = {

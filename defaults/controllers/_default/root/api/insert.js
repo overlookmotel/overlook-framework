@@ -62,7 +62,7 @@ exports = module.exports = {
 		}
 
 		// run action on DB
-		return model.create(values, {transaction: this.transaction}).bind(this)
+		return model.create(values).bind(this)
 		.then(function(item) {
 			this.dataMain = item.id || true;
 			return true;

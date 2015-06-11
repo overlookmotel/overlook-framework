@@ -58,7 +58,7 @@ exports = module.exports = {
 		}
 
 		// run action on DB
-		return model.update(actData.values, {where: actData.where, transaction: this.transaction}).bind(this)
+		return model.update(actData.values, {where: actData.where}).bind(this)
 		.return(true)
 		.catch(this.sequelize.UniqueConstraintError, function(err) { // jshint ignore:line
 			// unique field not unique

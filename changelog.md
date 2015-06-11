@@ -391,5 +391,6 @@ No changes. Erroneous version bump.
 
 * Update sequelize-extra dependency to v0.4.1 (sequelize v3.2.0)
 * Use CLS for Sequelize transactions
+* Remove all transaction passing (now handled by CLS)
 * Update dependencies
 * Update dev dependencies

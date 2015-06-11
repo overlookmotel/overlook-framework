@@ -87,7 +87,6 @@ exports = module.exports = {
 		}
 
 		var model = _.pop(options, 'model');
-		options.transaction = this.transaction;
 
 		// load from DB
 		return model.find(options).bind(this)

@@ -48,7 +48,7 @@ exports = module.exports = {
 		}
 
 		// run action on DB
-		return model.destroy({where: actData.where, transaction: this.transaction}).bind(this)
+		return model.destroy({where: actData.where}).bind(this)
 		.return(true)
 		.catch(this.sequelize.ForeignKeyConstraintError, function(err) { // jshint ignore:line
 			// cannot be deleted
