@@ -394,6 +394,7 @@ No changes. Erroneous version bump.
 * Remove all transaction passing (now handled by CLS)
 * Update dependencies
 * Update dev dependencies
+* Test code coverage & Travis sends to coveralls
 * Disable Travis dependency cache
 * Travis runs on new container infrastructure
 * Update README badges to use shields.io

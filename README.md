@@ -8,6 +8,7 @@
 [![Build Status](https://img.shields.io/travis/overlookmotel/overlook-framework/master.svg)](http://travis-ci.org/overlookmotel/overlook-framework)
 [![Dependency Status](https://img.shields.io/david/overlookmotel/overlook-framework.svg)](https://david-dm.org/overlookmotel/overlook-framework)
 [![Dev dependency Status](https://img.shields.io/david/dev/overlookmotel/overlook-framework.svg)](https://david-dm.org/overlookmotel/overlook-framework)
+[![Coverage Status](https://img.shields.io/coveralls/overlookmotel/overlook-framework/master.svg)](https://coveralls.io/r/overlookmotel/overlook-framework)
 
 ## Usage
 
@@ -15,7 +16,7 @@ NOT READY FOR USE YET
 
 ## Tests
 
-Use `npm test` to run the tests.
+Use `npm test` to run the tests. Use `npm run cover` to check coverage.
 
 ## Changelog
 
