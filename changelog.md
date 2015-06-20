@@ -400,6 +400,6 @@ No changes. Erroneous version bump.
 * Travis runs on new container infrastructure
 * Update README badges to use shields.io
 
-## Next
+## 0.3.1
 
 * Temporary fix for Sequelize losing CLS context on `Promise#nodeify()`
