@@ -394,3 +394,4 @@ No changes. Erroneous version bump.
 * Remove all transaction passing (now handled by CLS)
 * Update dependencies
 * Update dev dependencies
+* Disable Travis dependency cache
