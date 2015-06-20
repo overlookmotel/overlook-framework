@@ -395,3 +395,4 @@ No changes. Erroneous version bump.
 * Update dependencies
 * Update dev dependencies
 * Disable Travis dependency cache
+* Travis runs on new container infrastructure
