@@ -4,8 +4,10 @@
 
 ## Current status
 
-[![Build Status](https://secure.travis-ci.org/overlookmotel/overlook-framework.png?branch=master)](http://travis-ci.org/overlookmotel/overlook-framework)
-[![Dependency Status](https://david-dm.org/overlookmotel/overlook-framework.png)](https://david-dm.org/overlookmotel/overlook-framework)
+[![NPM version](https://img.shields.io/npm/v/overlook-framework.svg)](https://www.npmjs.com/package/overlook-framework)
+[![Build Status](https://img.shields.io/travis/overlookmotel/overlook-framework/master.svg)](http://travis-ci.org/overlookmotel/overlook-framework)
+[![Dependency Status](https://img.shields.io/david/overlookmotel/overlook-framework.svg)](https://david-dm.org/overlookmotel/overlook-framework)
+[![Dev dependency Status](https://img.shields.io/david/dev/overlookmotel/overlook-framework.svg)](https://david-dm.org/overlookmotel/overlook-framework)
 
 ## Usage
 

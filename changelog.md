@@ -396,3 +396,4 @@ No changes. Erroneous version bump.
 * Update dev dependencies
 * Disable Travis dependency cache
 * Travis runs on new container infrastructure
+* Update README badges to use shields.io
