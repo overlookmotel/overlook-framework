@@ -30,7 +30,7 @@ tests:
 	fi
 
 jshint:
-	./node_modules/.bin/jshint lib defaults/controllers defaults/models
+	./node_modules/.bin/jshint lib test defaults/controllers defaults/models
 
 cover:
 	make teaser; \

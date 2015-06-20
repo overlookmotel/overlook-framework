@@ -395,6 +395,7 @@ No changes. Erroneous version bump.
 * Update dependencies
 * Update dev dependencies
 * Test code coverage & Travis sends to coveralls
+* JSHint covers tests
 * Disable Travis dependency cache
 * Travis runs on new container infrastructure
 * Update README badges to use shields.io
