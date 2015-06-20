@@ -387,7 +387,7 @@ No changes. Erroneous version bump.
 
 * Cookies get names from overlook.options
 
-## Next
+## 0.3.0
 
 * Update sequelize-extra dependency to v0.4.1 (sequelize v3.2.0)
 * Use CLS for Sequelize transactions
