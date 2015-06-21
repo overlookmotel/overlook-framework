@@ -403,3 +403,7 @@ No changes. Erroneous version bump.
 ## 0.3.1
 
 * Temporary fix for Sequelize losing CLS context on `Promise#nodeify()`
+
+## Next
+
+* Remove temporary fix for Sequelize losing CLS context on `Promise#nodeify()` (fixed in Sequelize v3.3.0)
