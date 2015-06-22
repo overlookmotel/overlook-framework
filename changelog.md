@@ -408,3 +408,7 @@ No changes. Erroneous version bump.
 
 * Remove temporary fix for Sequelize losing CLS context on `Promise#nodeify()` (fixed in Sequelize v3.3.0)
 * Update sequelize-extra dependency to v0.4.2 (sequelize v3.3.0)
+
+## Next
+
+* Update sequelize-extra dependency to v0.4.3
