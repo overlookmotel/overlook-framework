@@ -412,3 +412,7 @@ No changes. Erroneous version bump.
 ## 0.3.3
 
 * Update sequelize-extra dependency to v0.4.3
+
+## Next
+
+* Errors include stack trace
