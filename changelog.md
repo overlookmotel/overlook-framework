@@ -416,3 +416,7 @@ No changes. Erroneous version bump.
 ## 0.3.4
 
 * Errors include stack trace
+
+## Next
+
+* Remove `localWorker` model + controller
