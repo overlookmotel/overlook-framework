@@ -417,7 +417,7 @@ No changes. Erroneous version bump.
 
 * Errors include stack trace
 
-## Next
+## 0.4.0
 
 * Remove `localWorker` model + controller
 * Remove servers, workers, processes
