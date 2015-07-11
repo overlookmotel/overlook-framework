@@ -432,3 +432,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * UUID request IDs
+* Remove CLS context for static assets
