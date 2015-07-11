@@ -19,7 +19,7 @@
 
 ## 0.0.5
 
-* Added default view _layouts/layoutInner.ejs
+* Added default view \_layouts/layoutInner.ejs
 
 ## 0.0.6
 
@@ -62,7 +62,7 @@
 
 * Move TODO into separate file, not included by npm
 * Fix redirection after deleting resource item
-* Dummy fields used in errors called '_dummy' not 'dummy' to avoid clash with an actual field called 'dummy'
+* Dummy fields used in errors called '\_dummy' not 'dummy' to avoid clash with an actual field called 'dummy'
 * Titles and messages for resourceJoin actions
 
 ## 0.2.2
@@ -316,7 +316,7 @@ No code changes, fixing typo in v num in last version
 
 ## 0.2.50
 
-* Workers get default options from _default
+* Workers get default options from \_default
 * Worker#run passed progress options
 * Fix bug progress fn clashing with progress state - progress fn renamed to `progressed`
 
@@ -427,3 +427,4 @@ No changes. Erroneous version bump.
 * `authentication.getUser` returns inactive users
 * Expose crypto methods on Overlook
 * Run Travis on node v0.12
+* Changelog cleanup
