@@ -425,3 +425,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * `authentication.getUser` returns inactive users
+* Expose crypto methods on Overlook
