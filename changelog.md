@@ -422,7 +422,7 @@ No changes. Erroneous version bump.
 * Remove `localWorker` model + controller
 * Remove servers, workers, processes
 
-## Next
+## 0.4.1
 
 * `authentication.getUser` returns inactive users
 * Expose crypto methods on Overlook
