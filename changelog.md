@@ -428,3 +428,7 @@ No changes. Erroneous version bump.
 * Expose crypto methods on Overlook
 * Run Travis on node v0.12
 * Changelog cleanup
+
+## Next
+
+* UUID request IDs
