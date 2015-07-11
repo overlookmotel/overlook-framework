@@ -10,11 +10,12 @@ language: node_js
 
 node_js:
   - "0.10"
+  - "0.12"
 
 matrix:
   fast_finish: true
   include:
-    - node_js: "0.10"
+    - node_js: "0.12"
       env:
         - TEST_SUITE=test
         - COVERAGE=true

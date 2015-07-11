@@ -426,3 +426,4 @@ No changes. Erroneous version bump.
 
 * `authentication.getUser` returns inactive users
 * Expose crypto methods on Overlook
+* Run Travis on node v0.12
