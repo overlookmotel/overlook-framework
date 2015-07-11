@@ -421,3 +421,7 @@ No changes. Erroneous version bump.
 
 * Remove `localWorker` model + controller
 * Remove servers, workers, processes
+
+## Next
+
+* `authentication.getUser` returns inactive users
