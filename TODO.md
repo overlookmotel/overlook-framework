@@ -1,5 +1,9 @@
 # TODO
 
+* Fix loss of CLS context in promises
+* Test for CLS loss in all query-running
+* Use Bunyan for logging
+
 * Make HTML version of API index page show results
 * Stop updatedById + updatedAt being filled in when creating new resource item
 * Fix errors when trying to delete links between users, roles and permissions
@@ -8,5 +12,4 @@
 * Move login/logout into 'account' namespace?
 * Add tracking cookie
 * Fix long drop-down menus for filtering tables - should be typeahead box instead
-* Logging
 * Implement hidden form field to prevent Cross-Site Request Forgery attacks
