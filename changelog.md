@@ -429,7 +429,7 @@ No changes. Erroneous version bump.
 * Run Travis on node v0.12
 * Changelog cleanup
 
-## Next
+## 0.4.2
 
 * UUID request IDs
 * Log request ID
