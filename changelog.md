@@ -436,7 +436,7 @@ No changes. Erroneous version bump.
 * Print process user at startup
 * Remove CLS context for static assets
 
-## Next
+## 0.4.3
 
 * Move express middleware into route handler (to avoid CLS context bug)
 * Code tidy
