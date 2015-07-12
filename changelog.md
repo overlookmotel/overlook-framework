@@ -433,4 +433,5 @@ No changes. Erroneous version bump.
 
 * UUID request IDs
 * Log request ID
+* Print process user at startup
 * Remove CLS context for static assets
