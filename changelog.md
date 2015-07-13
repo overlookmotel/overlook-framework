@@ -441,6 +441,6 @@ No changes. Erroneous version bump.
 * Move express middleware into route handler (to avoid CLS context bug)
 * Code tidy
 
-## Next
+## 0.4.4
 
 * Use Sequelize's Promise to avoid CLS context loss
