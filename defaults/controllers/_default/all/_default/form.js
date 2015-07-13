@@ -4,11 +4,11 @@
 // --------------------
 
 // modules
-var Promise = require('bluebird-extra'),
-	_ = require('overlook-utils');
+var _ = require('overlook-utils');
 
 // libraries
-var forms = require('../../../../../lib/forms');
+var Promise = require('../../../../../lib/promise'),
+	forms = require('../../../../../lib/forms');
 
 // exports
 
