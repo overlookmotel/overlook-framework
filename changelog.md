@@ -448,3 +448,7 @@ No changes. Erroneous version bump.
 ## 0.4.5
 
 * Update `overlook-utils` dependency
+
+## Next
+
+* Accept generators as route/action methods

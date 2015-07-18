@@ -30,7 +30,8 @@
     "overlook-utils": "^0.1.0",
     "ejs-extra": "^0.0.1",
     "marked": "^0.3.3",
-    "mandrill-api": "^1.0.45"
+    "mandrill-api": "^1.0.45",
+    "promisify-any": "^1.1.1"
   },
   "devDependencies": {
     "mocha": "^2.2.4",
