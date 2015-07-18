@@ -444,3 +444,7 @@ No changes. Erroneous version bump.
 ## 0.4.4
 
 * Use Sequelize's Promise to avoid CLS context loss
+
+## Next
+
+* Update `overlook-utils` dependency
