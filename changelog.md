@@ -452,3 +452,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Accept generators as route/action methods
+* APIs return data without wrapping in results object

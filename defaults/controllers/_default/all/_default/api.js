@@ -18,9 +18,7 @@ exports = module.exports = {
 		// display results
 		var displayOptions = {
 			options: {
-				data: {
-					results: this.dataMain
-				}
+				data: this.dataMain
 			},
 			layoutOptions: {
 				title: this.title,
