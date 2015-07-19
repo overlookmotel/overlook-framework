@@ -449,7 +449,7 @@ No changes. Erroneous version bump.
 
 * Update `overlook-utils` dependency
 
-## Next
+## 0.4.6
 
 * Accept generators as route/action methods
 * APIs return data without wrapping in results object
