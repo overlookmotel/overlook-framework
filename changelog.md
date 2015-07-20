@@ -453,3 +453,7 @@ No changes. Erroneous version bump.
 
 * Accept generators as route/action methods
 * APIs return data without wrapping in results object
+
+## Next
+
+* Fix: errors on 404 not found pages

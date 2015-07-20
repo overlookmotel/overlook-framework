@@ -2,6 +2,7 @@
 
 * Fix loss of CLS context in promises
 * Test for CLS loss in all query-running
+* Work out way to include user details in 404 error pages
 * Use Bunyan for logging
 
 * Make HTML version of API index page show results
