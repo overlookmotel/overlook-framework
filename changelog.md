@@ -457,3 +457,7 @@ No changes. Erroneous version bump.
 ## 0.4.7
 
 * Fix: errors on 404 not found pages
+
+## Next
+
+* Fix: correctly identify virtual fields and skip in forms
