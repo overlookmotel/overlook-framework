@@ -462,7 +462,7 @@ No changes. Erroneous version bump.
 
 * Fix: correctly identify virtual fields and skip in forms
 
-## Next
+## 0.4.9
 
 * Update dependencies
 * Update dev dependencies
