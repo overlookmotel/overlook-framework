@@ -466,3 +466,4 @@ No changes. Erroneous version bump.
 
 * Update dependencies
 * Update dev dependencies
+* `promisify-any` uses Sequelize Promise for CLS
