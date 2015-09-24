@@ -473,7 +473,7 @@ No changes. Erroneous version bump.
 * Update `express` dependency
 * Update `sequelize-extra` dependency
 
-## Next
+## 0.4.11
 
 * Fix: filters on ENUM fields
 * Update `sequelize-extra` dependency
