@@ -480,4 +480,5 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* Fix: correct identification of model field types
 * Fix: filters on BOOLEAN fields
