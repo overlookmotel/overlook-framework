@@ -468,7 +468,7 @@ No changes. Erroneous version bump.
 * Update dev dependencies
 * `promisify-any` uses Sequelize Promise for CLS
 
-## Next
+## 0.4.10
 
 * Update `express` dependency
 * Update `sequelize-extra` dependency
