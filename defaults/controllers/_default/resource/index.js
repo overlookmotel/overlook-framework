@@ -80,7 +80,7 @@ exports = module.exports = {
 		_.forIn(this.filters, function(value, attribute) {
 			var field = this.fields[attribute];
 			if (field) {
-				if (field.mainType == 'string') {
+				if (field.mainType == 'string' && !field.enum) {
 					options.where[attribute] = {like: '%' + value + '%'};
 				} else if (field.mainType == 'date') {
 					value = forms.conformers.date(value);

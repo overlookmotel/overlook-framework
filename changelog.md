@@ -475,4 +475,5 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* Fix: filters on ENUM fields
 * Update `sequelize-extra` dependency
