@@ -471,3 +471,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Update `express` dependency
+* Update `sequelize-extra` dependency
