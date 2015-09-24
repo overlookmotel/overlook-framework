@@ -86,6 +86,8 @@ exports = module.exports = {
 					value = forms.conformers.date(value);
 					this.filters[attribute] = _.dateToString(value);
 					options.where[attribute] = {gte: value};
+				} else if (field.mainType == 'boolean') {
+					options.where[attribute] = forms.conformers.boolean(value);
 				} else {
 					options.where[attribute] = value;
 				}
