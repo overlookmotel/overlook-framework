@@ -482,3 +482,7 @@ No changes. Erroneous version bump.
 
 * Fix: correct identification of model field types
 * Fix: filters on BOOLEAN fields
+
+## Next
+
+* Use `bunyan` for logging

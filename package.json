@@ -31,7 +31,8 @@
     "ejs-extra": "^0.0.1",
     "marked": "^0.3.5",
     "mandrill-api": "^1.0.45",
-    "promisify-any": "^2.0.1"
+    "promisify-any": "^2.0.1",
+    "bunyan": "^1.5.1"
   },
   "devDependencies": {
     "mocha": "^2.3.3",
