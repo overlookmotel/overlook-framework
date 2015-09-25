@@ -487,3 +487,4 @@ No changes. Erroneous version bump.
 
 * Use `bunyan` for logging
 * Convert `console.log` usage to bunyan logging
+* Log authentication events

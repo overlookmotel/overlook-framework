@@ -22,6 +22,7 @@ exports = module.exports = {
 		return authentication.logout(this.user, this.res, this.overlook).bind(this)
 		.then(function() {
 			// redirect to homepage
+			this.log('Logout');
 			return this.redirect('/', 'You are logged out');
 		});
 	}

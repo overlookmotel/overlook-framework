@@ -46,11 +46,13 @@ exports = module.exports = {
 		.then(function(user) {
 			if (!user) {
 				// success
+				this.log('Login failed');
 				this.actResult = {error: 'loginFailed'};
 				return false;
 			}
 
 			// success
+			this.log('Login success', {user: {id: user.id, name: user.name}});
 			this.user = user;
 			return true;
 		});
