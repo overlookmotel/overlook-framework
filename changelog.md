@@ -493,3 +493,7 @@ No changes. Erroneous version bump.
 ## 0.4.14
 
 * Notify Keymetrics of route errors
+
+## Next
+
+* Fix: Keymetrics error notification
