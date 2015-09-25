@@ -494,6 +494,6 @@ No changes. Erroneous version bump.
 
 * Notify Keymetrics of route errors
 
-## Next
+## 0.4.15
 
 * Fix: Keymetrics error notification
