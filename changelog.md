@@ -490,6 +490,6 @@ No changes. Erroneous version bump.
 * Log request handling
 * Log authentication events
 
-## Next
+## 0.4.14
 
 * Notify Keymetrics of route errors
