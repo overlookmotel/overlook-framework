@@ -486,3 +486,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Use `bunyan` for logging
+* Convert `console.log` usage to bunyan logging
