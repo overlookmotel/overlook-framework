@@ -489,3 +489,7 @@ No changes. Erroneous version bump.
 * Convert `console.log` usage to bunyan logging
 * Log request handling
 * Log authentication events
+
+## Next
+
+* Notify Keymetrics of route errors
