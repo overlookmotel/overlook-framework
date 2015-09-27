@@ -501,3 +501,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Use `bunyanesque` for logging
+* Expose error constructor as `Overlook.Error`
