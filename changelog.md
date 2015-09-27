@@ -498,7 +498,7 @@ No changes. Erroneous version bump.
 
 * Fix: Keymetrics error notification
 
-## Next
+## 0.4.16
 
 * Use `bunyanesque` for logging
 * Expose error constructor as `Overlook.Error`
