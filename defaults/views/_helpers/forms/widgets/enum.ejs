@@ -4,6 +4,7 @@
 <?
 (function() {
 	var values = <%- JSON.stringify(field.values) %>;
+	var valueLabels = <%- JSON.stringify(field.valueLabels || null) %>;
 <%
 if (field.required) {
 %>	if (value == '' || values.indexOf(value) == -1) {
@@ -16,8 +17,8 @@ if (field.required) {
 <%
 }
 %><?
-	_.forEach(values, function(item) {
-		?>  <option value="<?= item ?>"<? if (value == item) { ?> selected<? } ?>><?= item ?></option>
+	_.forEach(values, function(item, itemNum) {
+		?>  <option value="<?= item ?>"<? if (value == item) { ?> selected<? } ?>><?= valueLabels ? valueLabels[itemNum] : item ?></option>
 <?
 	});
 })();

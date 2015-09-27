@@ -502,3 +502,7 @@ No changes. Erroneous version bump.
 
 * Use `bunyanesque` for logging
 * Expose error constructor as `Overlook.Error`
+
+## Next
+
+* Display text for ENUM options
