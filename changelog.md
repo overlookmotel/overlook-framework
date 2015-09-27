@@ -497,3 +497,7 @@ No changes. Erroneous version bump.
 ## 0.4.15
 
 * Fix: Keymetrics error notification
+
+## Next
+
+* Use `bunyanesque` for logging
