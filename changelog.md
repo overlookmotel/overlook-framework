@@ -512,6 +512,6 @@ No changes. Erroneous version bump.
 * Update `bluebird-extra` dependency
 * README
 
-## Next
+## 0.4.19
 
 * Update `sequelize-extra` dependency
