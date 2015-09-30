@@ -510,3 +510,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Update `bluebird-extra` dependency
+* README

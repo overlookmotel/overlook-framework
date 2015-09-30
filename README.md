@@ -20,7 +20,7 @@ Use `npm test` to run the tests. Use `npm run cover` to check coverage.
 
 ## Changelog
 
-See changelog.md
+See [changelog.md](https://github.com/overlookmotel/overlook-framework/blob/master/changelog.md)
 
 ## Issues
 
