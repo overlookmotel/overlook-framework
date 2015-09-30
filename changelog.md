@@ -507,7 +507,7 @@ No changes. Erroneous version bump.
 
 * Display text for ENUM options
 
-## Next
+## 0.4.18
 
 * Update `bluebird-extra` dependency
 * README
