@@ -515,3 +515,7 @@ No changes. Erroneous version bump.
 ## 0.4.19
 
 * Update `sequelize-extra` dependency
+
+## Next
+
+* Update `sequelize-extra` dependency
