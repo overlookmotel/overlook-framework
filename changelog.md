@@ -524,3 +524,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Fix: Default `initForm` function for form actions
+* `Overlook#start()` returns promise
