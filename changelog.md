@@ -521,7 +521,7 @@ No changes. Erroneous version bump.
 * Update `sequelize-extra` dependency
 * Update `bluebird-extra` dependency
 
-## Next
+## 0.4.21
 
 * Fix: Default `initForm` function for form actions
 * `Overlook#start()` returns promise
