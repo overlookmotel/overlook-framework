@@ -24,6 +24,8 @@ exports = module.exports = {
 		.then(defaultFn);
 	},
 
+	initForm: function() {},
+
 	get: function() {
 		// run chain of functions
 		return Promise.bind(this)

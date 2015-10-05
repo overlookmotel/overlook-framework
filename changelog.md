@@ -520,3 +520,7 @@ No changes. Erroneous version bump.
 
 * Update `sequelize-extra` dependency
 * Update `bluebird-extra` dependency
+
+## Next
+
+* Fix: Default `initForm` function for form actions
