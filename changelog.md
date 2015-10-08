@@ -526,7 +526,7 @@ No changes. Erroneous version bump.
 * Fix: Default `initForm` function for form actions
 * `Overlook#start()` returns promise
 
-## Next
+## 0.4.22
 
 * `createdById` and `updatedById` fields on all models required
 * Log SQL from `sequelize.sync()`
