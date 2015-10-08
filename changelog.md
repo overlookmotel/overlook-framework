@@ -535,7 +535,7 @@ No changes. Erroneous version bump.
 
 * Correct spelling
 
-## Next
+## 0.4.24
 
 * Fix: `createdById` + `updatedById` fields filled in `admin/users/new`
 * Generalize password reset email
