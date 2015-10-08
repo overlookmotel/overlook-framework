@@ -6,6 +6,7 @@
 
 * Make HTML version of API index page show results
 * Stop updatedById + updatedAt being filled in when creating new resource item
+* Temporarily relax `createdById` + `updatedById` NOT NULL constraints for creation of system user
 * Fix errors when trying to delete links between users, roles and permissions
 * Prevent user from removing the default links between users, roles and permissions
 * Make user's session expire when password changed (at present only "remember me" cookie expires)

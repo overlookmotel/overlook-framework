@@ -528,4 +528,5 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* `createdById` and `updatedById` fields on all models required
 * Log SQL from `sequelize.sync()`
