@@ -525,3 +525,7 @@ No changes. Erroneous version bump.
 
 * Fix: Default `initForm` function for form actions
 * `Overlook#start()` returns promise
+
+## Next
+
+* Log SQL from `sequelize.sync()`
