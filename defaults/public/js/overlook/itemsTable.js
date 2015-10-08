@@ -1,6 +1,6 @@
 // --------------------
 // Items table
-// Initialises all item tables on page
+// Initializes all item tables on page
 // --------------------
 
 $(document).ready(function() {

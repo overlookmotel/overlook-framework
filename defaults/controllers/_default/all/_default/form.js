@@ -89,7 +89,7 @@ exports = module.exports = {
 			.ifElse(function() {
 				return Promise.bind(this)
 				.then(this.repopulate)
-				.then(this.sanitise)
+				.then(this.sanitize)
 				.then(this.validate)
 				.ifElse(function() {
 					return Promise.bind(this)
@@ -137,7 +137,7 @@ exports = module.exports = {
 					test: this.loaded,
 					success: [
 						this.repopulate,
-						this.sanitise,
+						this.sanitize,
 						{
 							test: this.validate,
 							success: [
@@ -208,8 +208,8 @@ exports = module.exports = {
 		});
 	},
 
-	sanitise: function() {
-		forms.sanitise(this.form, this.formData);
+	sanitize: function() {
+		forms.sanitize(this.form, this.formData);
 	},
 	validate: function() {
 		return forms.validate(this.form, this.formData, this.formErrors);

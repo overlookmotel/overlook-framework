@@ -1,6 +1,6 @@
 // --------------------
 // Group action buttons
-// Initialises all group action buttons on page
+// Initializes all group action buttons on page
 // --------------------
 
 (function() {

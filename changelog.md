@@ -530,3 +530,7 @@ No changes. Erroneous version bump.
 
 * `createdById` and `updatedById` fields on all models required
 * Log SQL from `sequelize.sync()`
+
+## Next
+
+* Correct spelling

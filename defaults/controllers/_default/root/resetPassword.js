@@ -96,7 +96,7 @@ exports = module.exports = {
 	failed: function() {
 		var error = this.actResult.error;
 		if (error == 'invalidEmail') {
-			this.formErrors.email = 'That email is not recognised. Please try again.';
+			this.formErrors.email = 'That email is not recognized. Please try again.';
 			return;
 		}
 

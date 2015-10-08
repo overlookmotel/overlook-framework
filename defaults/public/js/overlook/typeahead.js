@@ -1,6 +1,6 @@
 // --------------------
 // Dropdown typeaheads
-// Initialises all dropdown typeaheads on page
+// Initializes all dropdown typeaheads on page
 // --------------------
 
 (function() {
