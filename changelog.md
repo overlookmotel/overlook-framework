@@ -537,4 +537,5 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* Fix: `createdById` + `updatedById` fields filled in `admin/users/new`
 * Generalize password reset email
