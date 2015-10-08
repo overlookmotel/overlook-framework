@@ -534,3 +534,7 @@ No changes. Erroneous version bump.
 ## 0.4.23
 
 * Correct spelling
+
+## Next
+
+* Generalize password reset email

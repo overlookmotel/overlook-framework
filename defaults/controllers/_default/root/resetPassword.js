@@ -61,19 +61,14 @@ exports = module.exports = {
 			}).then(function() {
 				// email user login details
 				var message = {
-					subject: 'Cinebox password reset',
+					subject: 'Password reset',
 					text: 'Hi [name].\n\n' +
 						'You requested a password reset.\n\n' +
 						'YOUR NEW LOGIN DETAILS:\n' +
-						'Website: http://www.cinebox.co/\n' +
+						'Website: http://' + this.overlook.options.domain.domain + '/\n' +
 						'Email (login): [email]\n' +
 						'Password: [password]\n\n' +
-						'Many thanks,\n\n' +
-						'LSFF tech team\n\n' +
-						'--\n' +
-						'tech@shortfilms.org.uk\n\n' +
-						"Please note that we do not work full-time, so please bear with us if you don't get a reply to\n" +
-						'your email straight away.\n'
+						'Many thanks\n'
 				};
 
 				var recipient = {
