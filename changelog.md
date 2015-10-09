@@ -552,3 +552,7 @@ No changes. Erroneous version bump.
 ## 0.4.27
 
 * Fix: Errors sent to KeyMetrics always instances of Error constructor (so KeyMetrics flags them)
+
+## Next
+
+* `enumRadio` form field

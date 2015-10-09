@@ -1,0 +1,18 @@
+<%
+// receives (field, fieldName, first)
+%>
+<?
+(function() {
+	var values = <%- JSON.stringify(field.values) %>;
+	var valueLabels = <%- JSON.stringify(field.valueLabels || null) %>;
+
+	_.forEach(values, function(item, itemNum) {
+		?><div class="radio">
+  <label>
+	<input type="radio" name="<%= fieldName %>" value="<?= item ?>"<? if (value == item) { ?> checked<? } ?>> <?= valueLabels ? valueLabels[itemNum] : item ?>
+  </label>
+</div>
+<?
+	});
+})();
+?>
