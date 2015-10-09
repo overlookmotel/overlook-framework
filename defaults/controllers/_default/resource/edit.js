@@ -45,7 +45,7 @@ exports = module.exports = {
 			.return(true)
 			.catch(this.sequelize.UniqueConstraintError, function(err) {
 				// unique field not unique
-				this.actResult = {error: 'uniqueFail', field: err.index};
+				this.actResult = {error: 'uniqueFail', field: Object.keys(err.fields)[0]};
 				return false;
 			})
 			.catch(this.sequelize.ForeignKeyConstraintError, function(err) {

@@ -539,3 +539,7 @@ No changes. Erroneous version bump.
 
 * Fix: `createdById` + `updatedById` fields filled in `admin/users/new`
 * Generalize password reset email
+
+## Next
+
+* Fix: handle Sequelize unique key violation errors
