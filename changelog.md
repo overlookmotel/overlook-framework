@@ -547,3 +547,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Fix: Ensure all thrown errors are instances of Error constructor (so KeyMetrics flags them)
+* Fix: Error logging
