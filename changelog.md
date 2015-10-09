@@ -544,7 +544,7 @@ No changes. Erroneous version bump.
 
 * Fix: handle Sequelize unique key violation errors
 
-## Next
+## 0.4.26
 
 * Fix: Ensure all thrown errors are instances of Error constructor (so KeyMetrics flags them)
 * Fix: Error logging
