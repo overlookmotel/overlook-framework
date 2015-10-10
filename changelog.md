@@ -556,3 +556,7 @@ No changes. Erroneous version bump.
 ## 0.4.28
 
 * `enumRadio` form field
+
+## Next
+
+* Update `fs-extra-promise` dependency

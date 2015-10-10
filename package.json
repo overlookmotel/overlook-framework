@@ -22,7 +22,7 @@
     "continuation-local-storage": "^3.1.4",
     "uuid": "^2.0.1",
     "whoami-exec": "^1.2.2",
-    "fs-extra-promise": "^0.2.1",
+    "fs-extra-promise": "^0.3.0",
     "require-folder-tree": "^1.4.5",
     "shimming": "^0.0.8",
     "bcrypt": "^0.8.5",
