@@ -560,3 +560,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Update `fs-extra-promise` dependency
+* Tie `fs` to `Promise` (to support CLS)
