@@ -564,3 +564,4 @@ No changes. Erroneous version bump.
 * Tie `fs` to `Promise` (to support CLS)
 * Log `process.env.NODE_ENV`
 * Update dev dependencies
+* Code tidy forms library
