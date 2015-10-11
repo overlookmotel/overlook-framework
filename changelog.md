@@ -565,3 +565,7 @@ No changes. Erroneous version bump.
 * Log `process.env.NODE_ENV`
 * Update dev dependencies
 * Code tidy forms library
+
+## Next
+
+* Remove markdown compilation support
