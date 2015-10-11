@@ -559,6 +559,7 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* Fix: Boolean default values in form object creation
 * Update `fs-extra-promise` dependency
 * Tie `fs` to `Promise` (to support CLS)
 * Log `process.env.NODE_ENV`
