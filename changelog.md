@@ -557,7 +557,7 @@ No changes. Erroneous version bump.
 
 * `enumRadio` form field
 
-## Next
+## 0.4.29
 
 * Fix: Boolean default values in form object creation
 * Update `fs-extra-promise` dependency
