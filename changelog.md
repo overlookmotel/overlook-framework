@@ -566,6 +566,6 @@ No changes. Erroneous version bump.
 * Update dev dependencies
 * Code tidy forms library
 
-## Next
+## 0.5.0
 
 * Remove markdown compilation support
