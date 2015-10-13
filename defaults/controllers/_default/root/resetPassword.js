@@ -3,6 +3,9 @@
 // resetPassword action
 // --------------------
 
+// modules
+var _ = require('overlook-utils');
+
 // libraries
 var forms = require('../../../../lib/forms'),
 	authentication = require('../../../../lib/authentication');
@@ -76,6 +79,8 @@ exports = module.exports = {
 					email: user.email,
 					password: password
 				};
+
+				this.log('Sending reset password email', {email: _.extend({}, message, recipient)});
 
 				return this.overlook.mailer.sendBatch(message, recipient)
 				.return(true);

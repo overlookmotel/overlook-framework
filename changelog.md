@@ -573,3 +573,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Not found 404 logged at level `warn`
+* Log sending password reset email
