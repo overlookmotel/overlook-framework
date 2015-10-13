@@ -570,7 +570,7 @@ No changes. Erroneous version bump.
 
 * Remove markdown compilation support
 
-## Next
+## 0.5.1
 
 * Not found 404 logged at level `warn`
 * Log sending password reset email
