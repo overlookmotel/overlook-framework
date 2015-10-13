@@ -569,3 +569,7 @@ No changes. Erroneous version bump.
 ## 0.5.0
 
 * Remove markdown compilation support
+
+## Next
+
+* Not found 404 logged at level `warn`
