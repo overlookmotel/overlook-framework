@@ -31,7 +31,7 @@
     "ejs-extra": "^0.0.1",
     "mandrill-api": "^1.0.45",
     "promisify-any": "^2.0.1",
-    "bunyanesque": "^0.1.0",
+    "bunyanesque": "^0.2.1",
     "pmx": "^0.5.3"
   },
   "devDependencies": {

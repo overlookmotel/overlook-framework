@@ -578,3 +578,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Code comments
+* Update `bunyanesque` dependency
