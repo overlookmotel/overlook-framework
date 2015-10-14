@@ -575,7 +575,7 @@ No changes. Erroneous version bump.
 * Not found 404 logged at level `warn`
 * Log sending password reset email
 
-## Next
+## 0.5.2
 
 * Use bunyan serializers on logged objects
 * Code comments
