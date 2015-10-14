@@ -577,5 +577,6 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* Use bunyan serializers on logged objects
 * Code comments
 * Update `bunyanesque` dependency
