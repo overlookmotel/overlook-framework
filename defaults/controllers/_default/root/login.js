@@ -45,7 +45,7 @@ exports = module.exports = {
 		return authentication.login(this.actData.email, this.actData.password, this.actData.remember, this.res, this.overlook).bind(this)
 		.then(function(user) {
 			if (!user) {
-				// success
+				// failed
 				this.log('Login failed');
 				this.actResult = {error: 'loginFailed'};
 				return false;
