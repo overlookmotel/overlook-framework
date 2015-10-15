@@ -580,3 +580,7 @@ No changes. Erroneous version bump.
 * Use bunyan serializers on logged objects
 * Code comments
 * Update `bunyanesque` dependency
+
+## Next
+
+* Fix: Handle logging multi-line SQL queries
