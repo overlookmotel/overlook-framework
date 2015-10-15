@@ -581,6 +581,6 @@ No changes. Erroneous version bump.
 * Code comments
 * Update `bunyanesque` dependency
 
-## Next
+## 0.5.3
 
 * Fix: Handle logging multi-line SQL queries
