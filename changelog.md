@@ -588,3 +588,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Tracking cookies
+* Log HTTP request + response
