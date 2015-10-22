@@ -584,3 +584,7 @@ No changes. Erroneous version bump.
 ## 0.5.3
 
 * Fix: Handle logging multi-line SQL queries
+
+## Next
+
+* Tracking cookies
