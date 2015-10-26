@@ -589,3 +589,7 @@ No changes. Erroneous version bump.
 
 * Tracking cookies
 * Log HTTP request + response
+
+## Next
+
+* Update `sequelize-extra` dependency
