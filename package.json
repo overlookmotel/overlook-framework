@@ -52,10 +52,5 @@
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/overlookmotel/overlook-framework/raw/master/License"
-    }
-  ]
+  "license": "MIT"
 }
