@@ -33,19 +33,22 @@ exports = module.exports = {
 		});
 	},
 
-	start: function() {
-		// get paging + sorting
-		this.paging = {page: this.query.p * 1 || 1};
+	start: function(defaultFn) {
+		return defaultFn().bind(this)
+		.then(function() {
+			// get paging + sorting
+			this.paging = {page: this.query.p * 1 || 1};
 
-		// create sort order
-		this.sort = this.query.s;
-		if (this.sort === undefined) this.sort = this.sortDefault;
+			// create sort order
+			this.sort = this.query.s;
+			if (this.sort === undefined) this.sort = this.sortDefault;
 
-		// create filters
-		this.filters = {};
-		_.forIn(this.query, function(value, attribute) {
-			if (_.startsWith(attribute, 'f')) this.filters[_.uncapitalize(attribute.slice(1))] = value;
-		}, this);
+			// create filters
+			this.filters = {};
+			_.forIn(this.query, function(value, attribute) {
+				if (_.startsWith(attribute, 'f')) this.filters[_.uncapitalize(attribute.slice(1))] = value;
+			}, this);
+		});
 	},
 
 	load: function(defaultFn) {

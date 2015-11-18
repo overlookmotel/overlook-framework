@@ -594,3 +594,7 @@ No changes. Erroneous version bump.
 
 * Update `sequelize-extra` dependency
 * License update
+
+## Next
+
+* Fix: Default resource `index` action `start` method calls `defaultFn`
