@@ -599,7 +599,7 @@ No changes. Erroneous version bump.
 
 * Fix: Default resource `index` action `start` method calls `defaultFn`
 
-## Next
+## 0.5.7
 
 * `requestSizeLimit` option
 * Log errors using `overlook.log` where `req.log` not available (express errors)
