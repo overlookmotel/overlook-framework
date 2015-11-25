@@ -598,3 +598,7 @@ No changes. Erroneous version bump.
 ## 0.5.6
 
 * Fix: Default resource `index` action `start` method calls `defaultFn`
+
+## Next
+
+* Log errors using `overlook.log` where `req.log` not available (express errors)
