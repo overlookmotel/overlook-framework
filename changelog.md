@@ -601,4 +601,5 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* `requestSizeLimit` option
 * Log errors using `overlook.log` where `req.log` not available (express errors)
