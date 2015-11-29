@@ -612,3 +612,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Fix: Enforce field length in forms for `TEXT` data type
+* Update `sequelize-extra` dependency
