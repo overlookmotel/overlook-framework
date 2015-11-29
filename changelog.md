@@ -603,3 +603,7 @@ No changes. Erroneous version bump.
 
 * `requestSizeLimit` option
 * Log errors using `overlook.log` where `req.log` not available (express errors)
+
+## Next
+
+* Update `sequelize-extra` dependency
