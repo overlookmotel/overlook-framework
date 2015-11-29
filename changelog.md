@@ -606,4 +606,5 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* Support all `TEXT` field types and enforce field length in forms
 * Update `sequelize-extra` dependency
