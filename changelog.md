@@ -604,7 +604,7 @@ No changes. Erroneous version bump.
 * `requestSizeLimit` option
 * Log errors using `overlook.log` where `req.log` not available (express errors)
 
-## Next
+## 0.5.8
 
 * Support all `TEXT` field types and enforce field length in forms
 * Update `sequelize-extra` dependency
