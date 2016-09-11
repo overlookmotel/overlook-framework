@@ -620,3 +620,7 @@ No changes. Erroneous version bump.
 * Refactor `handleRoute` function to use `cls.runAndReturn()`
 * Update `continuation-local-storage` dependency
 * Git ignore `.DS_Store` files
+
+## Next
+
+* Add reference to `express` to `Overlook` + `Overlook.prototype`
