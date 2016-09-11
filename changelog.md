@@ -614,7 +614,7 @@ No changes. Erroneous version bump.
 * Fix: Enforce field length in forms for `TEXT` data type
 * Update `sequelize-extra` dependency
 
-## Next
+## 0.6.0
 
 * Save overlook `request` object to CLS
 * Refactor `handleRoute` function to use `cls.runAndReturn()`
