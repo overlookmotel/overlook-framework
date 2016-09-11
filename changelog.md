@@ -621,7 +621,7 @@ No changes. Erroneous version bump.
 * Update `continuation-local-storage` dependency
 * Git ignore `.DS_Store` files
 
-## Next
+## 0.6.1
 
 * Add reference to `express` to `Overlook` + `Overlook.prototype`
 * Add reference to `overlook` to `sequelize` object (for use in sequelize hooks)
