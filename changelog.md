@@ -616,5 +616,6 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* Refactor `handleRoute` function to use `cls.runAndReturn()`
 * Update `continuation-local-storage` dependency
 * Git ignore `.DS_Store` files
