@@ -617,3 +617,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Update `continuation-local-storage` dependency
+* Git ignore `.DS_Store` files
