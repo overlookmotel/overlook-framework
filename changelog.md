@@ -638,3 +638,4 @@ No changes. Erroneous version bump.
 * Update dev dependencies
 * Travis CI tests against node v4 + v6
 * Travis CI runs on all branches (to enable `greenkeeper.io`)
+* Replace `Makefile` with `npm` scripts
