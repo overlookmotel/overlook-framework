@@ -647,4 +647,5 @@ No changes. Erroneous version bump.
 
 ## 0.6.5
 
+* Fix: `bootstrap` front end component fonts
 * Skip Travis CI runs on release tags
