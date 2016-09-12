@@ -645,6 +645,6 @@ No changes. Erroneous version bump.
 
 * Move front end components to dev dependencies
 
-## Next
+## 0.6.5
 
 * Skip Travis CI runs on release tags
