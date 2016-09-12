@@ -632,7 +632,7 @@ No changes. Erroneous version bump.
 * Update front end components to latest
 * Fix: Line returns in email sending in `lib/email`
 
-## Next
+## 0.6.3
 
 * Update dependencies
 * Update dev dependencies
