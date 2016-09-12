@@ -43,12 +43,12 @@
     "typeahead.js-bootstrap3.less": "git://github.com/hyspace/typeahead.js-bootstrap3.less"
   },
   "devDependencies": {
-    "mocha": "^2.3.3",
-    "chai": "^3.3.0",
-    "chai-as-promised": "^5.1.0",
-    "jshint": "^2.8.0",
-    "istanbul": "^0.3.22",
-    "coveralls": "^2.11.4"
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "jshint": "^2.9.3",
+    "istanbul": "^0.4.5",
+    "coveralls": "^2.11.12"
   },
   "keywords": [
   ],

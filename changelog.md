@@ -635,3 +635,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Update dependencies
+* Update dev dependencies
