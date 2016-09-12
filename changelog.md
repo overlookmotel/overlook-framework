@@ -630,3 +630,4 @@ No changes. Erroneous version bump.
 
 * Load front end components from npm/git and build script
 * Update front end components to latest
+* Fix: Line returns in email sending in `lib/email`
