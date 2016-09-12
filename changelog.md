@@ -650,7 +650,7 @@ No changes. Erroneous version bump.
 * Fix: `bootstrap` front end component fonts
 * Skip Travis CI runs on release tags
 
-## Next
+## 0.6.6
 
 * Fix: Date/time picker fields
 * Fix: Typeahead fields
