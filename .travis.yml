@@ -25,11 +25,6 @@ matrix:
         - TEST_SUITE=test
         - COVERAGE=true
 
-branches:
-  only:
-    - master
-    - dev
-
 addons:
   apt:
     sources:
