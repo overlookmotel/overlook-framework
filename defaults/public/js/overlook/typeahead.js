@@ -3,6 +3,10 @@
 // Initializes all dropdown typeaheads on page
 // --------------------
 
+/* global document */
+/* global $ */
+/* global Bloodhound */
+
 (function() {
 	$(document).ready(function() {
 		typeaheadsInit();
@@ -10,16 +14,14 @@
 	});
 
 	// normal typeahead
-	function typeaheadsInit()
-	{
+	function typeaheadsInit() {
 		// find all dropdown typeaheads
 		$('input[data-typeahead-url]').each(function() {
 			typeaheadInit($(this));
 		});
 	}
 
-	function typeaheadInit(element)
-	{
+	function typeaheadInit(element) {
 		// get field name
 		var name = element.attr('name');
 
@@ -29,6 +31,7 @@
 			queryTokenizer: Bloodhound.tokenizers.whitespace,
 			remote: {
 				url: element.attr('data-typeahead-url') + 'typeahead?c=' + encodeURIComponent(name) + '&q=%QUERY',
+				wildcard: '%QUERY',
 				filter: function(response) {
 					return response.data.map(function(value) {return {value: value};});
 				}
@@ -51,22 +54,21 @@
 	}
 
 	// dropdown typeaheads
-	function dropdownTypeaheadsInit()
-	{
+	function dropdownTypeaheadsInit() {
 		// find all dropdown typeaheads
 		$('input[data-dropdown-url]').each(function() {
 			dropdownTypeaheadInit($(this));
 		});
 	}
 
-	function dropdownTypeaheadInit(element)
-	{
+	function dropdownTypeaheadInit(element) {
 		// init bloodhound
 		var bloodhound = new Bloodhound({
 			datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
 			queryTokenizer: Bloodhound.tokenizers.whitespace,
 			remote: {
 				url: element.attr('data-dropdown-url') + 'list?q=%QUERY',
+				wildcard: '%QUERY',
 				filter: function(response) {
 					var data = response.data;
 					for (var i in data) {
@@ -103,13 +105,11 @@
 		});
 	}
 
-	function dropdownTypeaheadSelected(event, selected)
-	{
+	function dropdownTypeaheadSelected(event, selected) { // jshint ignore:line
 		$(this).data('idField').val(selected.id);
 	}
 
-	function dropdownTypeaheadUnselected()
-	{
+	function dropdownTypeaheadUnselected() { // jshint ignore:line
 		$(this).data('idField').val('');
 	}
 })();

@@ -653,4 +653,5 @@ No changes. Erroneous version bump.
 ## Next
 
 * Fix: Date/time picker fields
+* Fix: Typeahead fields
 * Pin versions of front end component dev dependencies (to get `greenkeeper.io` PRs when updated)
