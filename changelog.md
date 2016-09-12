@@ -625,3 +625,7 @@ No changes. Erroneous version bump.
 
 * Add reference to `express` to `Overlook` + `Overlook.prototype`
 * Add reference to `overlook` to `sequelize` object (for use in sequelize hooks)
+
+## Next
+
+* Load front end components from npm/git and build script
