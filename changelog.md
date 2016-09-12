@@ -641,6 +641,6 @@ No changes. Erroneous version bump.
 * Replace `Makefile` with `npm` scripts
 * Update license
 
-## Next
+## 0.6.4
 
 * Move front end components to dev dependencies
