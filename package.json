@@ -32,7 +32,15 @@
     "mandrill-api": "^1.0.45",
     "promisify-any": "^2.0.1",
     "bunyanesque": "^0.2.1",
-    "pmx": "^0.6.4",
+    "pmx": "^0.6.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "jshint": "^2.9.3",
+    "istanbul": "^0.4.5",
+    "coveralls": "^2.11.12",
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.0",
     "html5shiv": "^3.7.3",
@@ -41,14 +49,6 @@
     "moment": "^2.15.0",
     "typeahead.js": "^0.11.1",
     "typeahead.js-bootstrap3.less": "git://github.com/hyspace/typeahead.js-bootstrap3.less"
-  },
-  "devDependencies": {
-    "mocha": "^3.0.2",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.3.0",
-    "jshint": "^2.9.3",
-    "istanbul": "^0.4.5",
-    "coveralls": "^2.11.12"
   },
   "keywords": [
   ],

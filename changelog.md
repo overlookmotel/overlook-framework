@@ -640,3 +640,7 @@ No changes. Erroneous version bump.
 * Travis CI runs on all branches (to enable `greenkeeper.io`)
 * Replace `Makefile` with `npm` scripts
 * Update license
+
+## Next
+
+* Move front end components to dev dependencies
