@@ -629,3 +629,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Load front end components from npm/git and build script
+* Update front end components to latest
