@@ -649,3 +649,7 @@ No changes. Erroneous version bump.
 
 * Fix: `bootstrap` front end component fonts
 * Skip Travis CI runs on release tags
+
+## Next
+
+* Pin versions of front end component dev dependencies (to get `greenkeeper.io` PRs when updated)
