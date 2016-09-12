@@ -636,3 +636,4 @@ No changes. Erroneous version bump.
 
 * Update dependencies
 * Update dev dependencies
+* Travis CI tests against node v4 + v6

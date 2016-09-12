@@ -1,8 +1,3 @@
-before_script:
-  - "mysql -e 'create database sequelize_test;'"
-  - "psql -c 'create database sequelize_test;' -U postgres"
-  - "export SEQ_USER=travis"
-
 script:
   - "make test"
 
@@ -11,11 +6,17 @@ language: node_js
 node_js:
   - "0.10"
   - "0.12"
+  - "4"
+  - "6"
+
+env:
+  global:
+    - CXX=g++-4.8
 
 matrix:
   fast_finish: true
   include:
-    - node_js: "0.12"
+    - node_js: "4"
       env:
         - TEST_SUITE=test
         - COVERAGE=true
@@ -28,5 +29,12 @@ branches:
   only:
     - master
     - dev
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 
 sudo: false
