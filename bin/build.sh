@@ -1,6 +1,7 @@
 # Copy frontend components from npm modules to:
-#   defaults/public/css/overlook/css/
 #   defaults/public/js/overlook/libraries/
+#   defaults/public/css/overlook/css/
+#   defaults/public/css/overlook/fonts/
 
 echo "Installing packages from npm"
 npm install
@@ -11,6 +12,7 @@ echo "Installing frontend components"
 cp node_modules/bootstrap/dist/js/bootstrap.min.js defaults/public/js/overlook/libraries/
 cp node_modules/bootstrap/dist/css/bootstrap.min.css defaults/public/css/overlook/css/
 cp node_modules/bootstrap/dist/css/bootstrap-theme.min.css defaults/public/css/overlook/css/
+cp node_modules/bootstrap/dist/fonts/* defaults/public/css/overlook/fonts/
 
 # jquery (dependency of bootstrap)
 cp node_modules/jquery/dist/jquery.min.js defaults/public/js/overlook/libraries/
