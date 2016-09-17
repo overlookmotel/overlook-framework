@@ -659,3 +659,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Verbose logging to `stdout` in development mode
+* Refactor `lib/crypto` + `lib/authentication` for efficiency
