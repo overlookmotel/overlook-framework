@@ -655,3 +655,7 @@ No changes. Erroneous version bump.
 * Fix: Date/time picker fields
 * Fix: Typeahead fields
 * Pin versions of front end component dev dependencies (to get `greenkeeper.io` PRs when updated)
+
+## Next
+
+* Verbose logging to `stdout` in development mode
