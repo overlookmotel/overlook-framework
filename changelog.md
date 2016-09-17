@@ -661,6 +661,6 @@ No changes. Erroneous version bump.
 * Verbose logging to `stdout` in development mode
 * Refactor `lib/crypto` + `lib/authentication` for efficiency
 
-## Next
+## 0.6.8
 
 * Change page error message to 'Error'
