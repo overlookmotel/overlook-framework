@@ -656,7 +656,7 @@ No changes. Erroneous version bump.
 * Fix: Typeahead fields
 * Pin versions of front end component dev dependencies (to get `greenkeeper.io` PRs when updated)
 
-## Next
+## 0.6.7
 
 * Verbose logging to `stdout` in development mode
 * Refactor `lib/crypto` + `lib/authentication` for efficiency
