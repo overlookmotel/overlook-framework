@@ -665,6 +665,6 @@ No changes. Erroneous version bump.
 
 * Change page error message to 'Error'
 
-## Next
+## 0.6.9
 
 * `url` validator accepts FTP urls
