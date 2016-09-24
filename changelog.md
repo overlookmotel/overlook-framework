@@ -673,7 +673,7 @@ No changes. Erroneous version bump.
 
 * Fix: `lib/forms/validators` allow '+' characters in email addresses
 
-## Next
+## 0.6.11
 
 * Fix: `lib/forms/displayers` URL displayer uses `target="_blank"`
 * Fix: `textboxSpaced` form data sanitizer handle line breaks properly
