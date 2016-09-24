@@ -676,3 +676,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Fix: `lib/forms/displayers` URL displayer uses `target="_blank"`
+* Field format for Twitter handles
