@@ -672,3 +672,7 @@ No changes. Erroneous version bump.
 ## 0.6.10
 
 * Fix: `lib/forms/validators` allow '+' characters in email addresses
+
+## Next
+
+* Fix: `lib/forms/displayers` URL displayer uses `target="_blank"`
