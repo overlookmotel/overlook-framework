@@ -669,6 +669,6 @@ No changes. Erroneous version bump.
 
 * `url` validator accepts FTP urls
 
-## Next
+## 0.6.10
 
 * Fix: `lib/forms/validators` allow '+' characters in email addresses
