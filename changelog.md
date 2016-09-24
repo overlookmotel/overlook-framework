@@ -676,4 +676,5 @@ No changes. Erroneous version bump.
 ## Next
 
 * Fix: `lib/forms/displayers` URL displayer uses `target="_blank"`
+* Fix: `textboxSpaced` form data sanitizer handle line breaks properly
 * Field format for Twitter handles
