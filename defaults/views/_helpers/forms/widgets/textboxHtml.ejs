@@ -1,0 +1,8 @@
+<%
+// TrumboWYG JS + CSS
+stylesheet('/css/overlook/css/trumbowyg.min.css');
+script('/js/overlook/libraries/trumbowyg.min.js');
+script('/js/overlook/htmlEdit.js');
+
+// receives (fieldName, first)
+%><textarea name="<%= fieldName %>" class="form-control html-edit" row="5"<% if (first) { %> autofocus<% } %>><?= value ?></textarea>
