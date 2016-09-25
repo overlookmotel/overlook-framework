@@ -679,7 +679,7 @@ No changes. Erroneous version bump.
 * Fix: `textboxSpaced` form data sanitizer handle line breaks properly
 * Field format for Twitter handles
 
-## Next
+## 0.6.12
 
 * HTML editor form fields using `trumbowyg`
 * Field format for HTML
