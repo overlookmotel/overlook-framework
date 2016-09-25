@@ -682,3 +682,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * HTML editor form fields using `trumbowyg`
+* Field format for HTML
