@@ -683,3 +683,4 @@ No changes. Erroneous version bump.
 
 * HTML editor form fields using `trumbowyg`
 * Field format for HTML
+* Fix: Update `typeahead` front end component CSS
