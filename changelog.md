@@ -685,6 +685,6 @@ No changes. Erroneous version bump.
 * Field format for HTML
 * Fix: Update `typeahead` front end component CSS
 
-## Next
+## 0.6.13
 
 * Fix: `html` format sanitizer function
