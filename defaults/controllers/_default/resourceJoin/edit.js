@@ -3,6 +3,9 @@
 // edit action
 // --------------------
 
+// modules
+var _ = require('overlook-utils');
+
 // imports
 var resourceEditAction = require('../resource/edit'),
 	resourceNewAction = require('../resource/new');
@@ -20,11 +23,12 @@ exports = module.exports = {
 	// functions
 
 	initForm: function() {
+		// remove form field for target resource
+		if (this.fieldsExclude && !_.isArray(this.fieldsExclude)) this.fieldsExclude = [this.fieldsExclude];
+		this.fieldsExclude = _.uniq([this.route.targetModel.name + 'Id'].concat(this.fieldsExclude || []));
+
 		// run same function as for resource.new
 		resourceNewAction.initForm.call(this);
-
-		// remove form fields for target resource
-		delete this.form.fields[this.route.targetModel.name + 'Id'];
 	},
 
 	populate: resourceEditAction.populate,
