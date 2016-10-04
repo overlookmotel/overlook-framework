@@ -24,15 +24,18 @@ exports = module.exports = {
 
 	initForm: function() {
 		// make form
-		this.form = forms.createFormFromModel(this.route.model);
-		_.moveValue(this, this.form, 'loadReferences');
 
-		// remove form fields for parentResources
+		// identify fields to be excluded based on parentResources
+		var exclude;
 		if (this.route.parentResources) {
-			_.forEach(this.route.parentResources, function(route) {
-				delete this.form.fields[route.model.name + 'Id'];
-			}, this);
+			exclude = _.uniq(this.route.parentResources.map(function(route) {
+				return route.model.name + 'Id';
+			}));
 		}
+
+		// make form from model
+		this.form = forms.createFormFromModel(this.route.model, exclude ? {exclude: exclude} : undefined);
+		_.moveValue(this, this.form, 'loadReferences');
 	},
 
 	act: function() {

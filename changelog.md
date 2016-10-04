@@ -688,3 +688,7 @@ No changes. Erroneous version bump.
 ## 0.6.13
 
 * Fix: `html` format sanitizer function
+
+## Next
+
+* Fix: `controllers/_default/resource/new` do not load menu options for form fields relating to ancestors which are removed
