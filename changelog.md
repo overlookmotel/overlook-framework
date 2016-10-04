@@ -692,3 +692,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Fix: `controllers/_default/resource/new` do not load menu options for form fields relating to ancestors which are removed
+* Export `routes` object as `overlook.routes`
