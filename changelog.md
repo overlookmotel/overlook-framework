@@ -695,5 +695,6 @@ No changes. Erroneous version bump.
 * Fix: `resourceJoin` default `edit` action do not load menu options for form field for both sides of relationship
 * `fieldsExclude` + `fieldsOnly` options on resource and resource join actions
 * Refactor default `root` controllers to use `fieldsExclude` option
+* Resource join `index` view includes `edit` button for each item
 * View compilation errors include `routePath`
 * Export `routes` object as `overlook.routes`

@@ -7,7 +7,7 @@ _.forEach(items, function(item) {
 ?>      <tr>
         <td><%
 var modelName = route.model.name, action = 'edit', glyph = 'pencil', mode = 'warning';
-%><% //include ../_helpers/modelButtonGlyphLink %> <%
+%><% include ../_helpers/modelButtonGlyphLink %> <%
 action = 'delete', glyph = 'trash', mode = 'danger';
 %><% include ../_helpers/modelButtonGlyphLink %></td>
 <%
