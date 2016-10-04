@@ -24,8 +24,12 @@ exports = module.exports = {
 	// functions
 
 	init: function(defaultFn) {
+		// convert `fieldsOnly` and `fieldsExclude` to arrays if values
+		if (this.fieldsOnly && !_.isArray(this.fieldsOnly)) this.fieldsOnly = [this.fieldsOnly];
+		if (this.fieldsExclude && !_.isArray(this.fieldsExclude)) this.fieldsExclude = [this.fieldsExclude];
+
 		// record model fields in action
-		this.fields = forms.createFieldsFromModel(this.route.model);
+		this.fields = forms.createFieldsFromModel(this.route.model, {only: this.fieldsOnly, exclude: this.fieldsExclude});
 
 		return defaultFn();
 	},

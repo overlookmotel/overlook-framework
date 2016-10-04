@@ -23,11 +23,25 @@ exports = module.exports = {
 	init: function(defaultFn) {
 		return defaultFn().bind(this)
 		.then(function() {
+			// convert `fieldsOnly` and `fieldsExclude` to arrays if values
+			if (this.fieldsOnly && !_.isArray(this.fieldsOnly)) this.fieldsOnly = [this.fieldsOnly];
+			if (this.fieldsExclude && !_.isArray(this.fieldsExclude)) this.fieldsExclude = [this.fieldsExclude];
+
+			// identify fields to be excluded based on parentResources
+			// NB if fieldsOnly is provided, it is not altered
+			if (this.route.parentResources && !this.fieldsOnly) {
+				var parentExclude = this.route.parentResources.map(function(route) {
+					return route.model.name + 'Id';
+				});
+
+				if (parentExclude.length) this.fieldsExclude = _.uniq(parentExclude.concat(this.fieldsExclude || []));
+			}
+
 			// make fields
-			this.fields = forms.createFieldsFromModel(this.route.model);
+			this.fields = forms.createFieldsFromModel(this.route.model, {only: this.fieldsOnly, exclude: this.fieldsExclude});
 
 			// make form
-			this.form = forms.createFormFromModel(this.route.model);
+			this.form = forms.createFormFromModel(this.route.model, {only: this.fieldsOnly, exclude: this.fieldsExclude});
 			_.moveValue(this, this.form, 'loadReferences');
 			delete this.form;
 		});
