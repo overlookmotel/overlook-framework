@@ -7,15 +7,8 @@
 
 // action definition
 exports = module.exports = {
+	fieldsExclude: ['type'],
 	// functions
-
-	initForm: function(defaultFn) {
-		return defaultFn().bind(this)
-		.then(function() {
-			// modify form
-			delete this.form.fields.type;
-		});
-	},
 
 	access: function(defaultFn) {
 		return defaultFn().bind(this)

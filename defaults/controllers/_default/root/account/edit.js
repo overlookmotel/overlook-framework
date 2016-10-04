@@ -24,11 +24,7 @@ exports = module.exports = {
 
 	initForm: function() {
 		// make form
-		this.form = forms.createFormFromModel(this.route.overlook.models.user);
-
-		// remove form fields
-		delete this.form.fields.type;
-		delete this.form.fields.isActive;
+		this.form = forms.createFormFromModel(this.route.overlook.models.user, {exclude: ['type', 'isActive']});
 	},
 
 	load: function() {

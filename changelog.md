@@ -694,4 +694,5 @@ No changes. Erroneous version bump.
 * Fix: `controllers/_default/resource/new` do not load menu options for form fields relating to ancestors which are removed
 * Fix: `resourceJoin` default `edit` action do not load menu options for form field for both sides of relationship
 * `fieldsExclude` + `fieldsOnly` options on resource and resource join actions
+* Refactor default `root` controllers to use `fieldsExclude` option
 * Export `routes` object as `overlook.routes`

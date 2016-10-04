@@ -10,15 +10,9 @@ var _ = require('overlook-utils');
 
 // action definition
 exports = module.exports = {
-	// functions
+	fieldsExclude: ['password'],
 
-	initForm: function(defaultFn) {
-		return defaultFn().bind(this)
-		.then(function() {
-			// modify form
-			delete this.form.fields.password;
-		});
-	},
+	// functions
 
 	access: function(defaultFn) {
 		return defaultFn().bind(this)

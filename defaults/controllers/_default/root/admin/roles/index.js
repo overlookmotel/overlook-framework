@@ -7,13 +7,5 @@
 
 // action definition
 exports = module.exports = {
-	// functions
-
-	init: function(defaultFn) {
-		return defaultFn().bind(this)
-		.then(function() {
-			// set up fields
-			delete this.fields.type;
-		});
-	}
+	fieldsExclude: ['type']
 };
