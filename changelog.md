@@ -699,6 +699,6 @@ No changes. Erroneous version bump.
 * View compilation errors include `routePath`
 * Export `routes` object as `overlook.routes`
 
-## Next
+## 0.7.1
 
 * Fix: Update `typeahead` front end component CSS to latest git master
