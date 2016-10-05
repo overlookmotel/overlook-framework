@@ -689,7 +689,7 @@ No changes. Erroneous version bump.
 
 * Fix: `html` format sanitizer function
 
-## Next
+## 0.7.0
 
 * Fix: `controllers/_default/resource/new` do not load menu options for form fields relating to ancestors which are removed
 * Fix: `resourceJoin` default `edit` action do not load menu options for form field for both sides of relationship
