@@ -698,3 +698,7 @@ No changes. Erroneous version bump.
 * Resource join `index` view includes `edit` button for each item
 * View compilation errors include `routePath`
 * Export `routes` object as `overlook.routes`
+
+## Next
+
+* Fix: Update `typeahead` front end component CSS to latest git master
