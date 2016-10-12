@@ -703,7 +703,7 @@ No changes. Erroneous version bump.
 
 * Fix: Update `typeahead` front end component CSS to latest git master
 
-## Next
+## 0.7.2
 
 * Fix: crashes due to `pmx` module not liking `error@context` attribute added to errors by CLS
 * `itemViewHalf` view helper
