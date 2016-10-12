@@ -702,3 +702,7 @@ No changes. Erroneous version bump.
 ## 0.7.1
 
 * Fix: Update `typeahead` front end component CSS to latest git master
+
+## Next
+
+* Fix: crashes due to `pmx` module not liking `error@context` attribute added to errors by CLS
