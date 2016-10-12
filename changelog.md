@@ -711,3 +711,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * `panelCollapse` view helper
+* `itemsTableSimple` view helper

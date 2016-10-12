@@ -1,0 +1,17 @@
+<%
+// receives (fields)
+%>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th class="col-md-1"></th>
+<%
+// table headers
+_.forIn(fields, function(field, fieldName) {
+%>        <th><%= field.label %></a></th>
+<%
+});
+%>      </tr>
+    </thead>
+    <tbody>
