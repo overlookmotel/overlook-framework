@@ -1,0 +1,9 @@
+<%
+// receives (overlook, fields)
+%><table class="table table-condensed">
+<%
+_.forIn(fields, function(field, fieldName) {
+%>  <tr><td class="col-md-4"><%= field.label %>:</b></td><td class="col-md-8"><% include ./itemField %></td></tr>
+<%
+});
+%></table>

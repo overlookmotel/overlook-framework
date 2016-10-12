@@ -706,3 +706,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Fix: crashes due to `pmx` module not liking `error@context` attribute added to errors by CLS
+* `itemViewHalf` view helper
