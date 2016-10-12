@@ -707,3 +707,7 @@ No changes. Erroneous version bump.
 
 * Fix: crashes due to `pmx` module not liking `error@context` attribute added to errors by CLS
 * `itemViewHalf` view helper
+
+## Next
+
+* `panelCollapse` view helper
