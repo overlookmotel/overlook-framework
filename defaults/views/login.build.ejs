@@ -2,4 +2,8 @@
 
 <p><% include ./_helpers/forms/form %></p>
 
-<p>If you have trouble logging in, please <a href="/resetpassword">reset your password</a></p>
+<p><b>Having trouble logging in?</b><br />
+<%
+{
+	let url = '/resetpassword', text = 'Email me a new password', glyph = 'envelope', mode = 'warning';
+%>  <% include ./_helpers/buttonLink %><% } %></p>

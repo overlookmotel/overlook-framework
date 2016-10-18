@@ -81,7 +81,7 @@ exports = module.exports = {
 	failed: function() {
 		var error = this.actResult.error;
 		if (error == 'loginFailed') {
-			this.formErrors.email = 'Login failed. Please try again.';
+			this.formErrors.email = "Login failed. Please try again. If you can't remember your password, use the 'Email me a new password' button below.";
 			this.formData.password = '';
 			return;
 		}
