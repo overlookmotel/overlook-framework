@@ -713,6 +713,6 @@ No changes. Erroneous version bump.
 * `panelCollapse` view helper
 * `itemsTableSimple` view helper
 
-## Next
+## 0.7.4
 
 * More visible "reset password" button on login page
