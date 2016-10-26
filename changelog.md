@@ -716,3 +716,7 @@ No changes. Erroneous version bump.
 ## 0.7.4
 
 * More visible "reset password" button on login page
+
+## Next
+
+* All tables striped
