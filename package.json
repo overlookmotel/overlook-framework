@@ -35,7 +35,7 @@
     "pmx": "^0.6.4"
   },
   "devDependencies": {
-    "mocha": "^3.0.2",
+    "mocha": "^3.4.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
     "jshint": "^2.9.3",
