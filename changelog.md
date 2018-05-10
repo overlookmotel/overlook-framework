@@ -720,3 +720,7 @@ No changes. Erroneous version bump.
 ## 0.7.5
 
 * All tables striped
+
+## Next
+
+* Fix: `lib/forms/populators` `decimal` method rounds floats
