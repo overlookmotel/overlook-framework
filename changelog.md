@@ -724,3 +724,7 @@ No changes. Erroneous version bump.
 ## 0.7.6
 
 * Fix: `lib/forms/populators` `decimal` method rounds floats
+
+## Next
+
+* Expose `modelPaths` before route `.init()` methods called
