@@ -728,3 +728,7 @@ No changes. Erroneous version bump.
 ## 0.7.7
 
 * Expose `modelPaths` before route `.init()` methods called
+
+## Next
+
+* Fix: `dataSize` format displayer indicate sizes are binary (GiB not GB)
