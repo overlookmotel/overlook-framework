@@ -734,6 +734,6 @@ No changes. Erroneous version bump.
 * Fix: `dataSize` format displayer indicate sizes are binary (GiB not GB)
 * `dataSize` format displayer `decimal` option
 
-## Next
+## 0.7.9
 
 * Allow calls to `require` within views
