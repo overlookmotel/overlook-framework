@@ -737,3 +737,7 @@ No changes. Erroneous version bump.
 ## 0.7.9
 
 * Allow calls to `require` within views
+
+## Next
+
+* Database `charset` + `collate` options
