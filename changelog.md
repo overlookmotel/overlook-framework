@@ -741,3 +741,7 @@ No changes. Erroneous version bump.
 ## 0.7.10
 
 * Database `charset` + `collate` options
+
+## Next
+
+* NPM ignore unnecessary files
