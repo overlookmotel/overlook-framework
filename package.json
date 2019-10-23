@@ -14,7 +14,7 @@
     "url": "https://github.com/overlookmotel/overlook-framework/issues"
   },
   "dependencies": {
-    "express": "^3.21.2",
+    "express": "^4.15.0",
     "connect-powered-by": "^0.1.0",
     "less-middleware": "^2.2.0",
     "sequelize-extra": "^0.4.13",
