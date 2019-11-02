@@ -42,7 +42,7 @@
     "istanbul": "^0.4.5",
     "coveralls": "^2.11.12",
     "bootstrap": "3.3.7",
-    "jquery": "3.1.0",
+    "jquery": "3.4.1",
     "html5shiv": "3.7.3",
     "respond.js": "1.4.2",
     "eonasdan-bootstrap-datetimepicker": "4.17.42",
