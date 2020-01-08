@@ -20,7 +20,7 @@
     "sequelize-extra": "^0.4.13",
     "bluebird-extra": "^2.0.0",
     "continuation-local-storage": "^3.2.0",
-    "uuid": "^2.0.2",
+    "uuid": "^3.0.1",
     "whoami-exec": "^1.2.2",
     "fs-extra-promise": "^0.4.1",
     "require-folder-tree": "^1.4.5",
