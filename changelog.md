@@ -746,7 +746,7 @@ No changes. Erroneous version bump.
 
 * NPM ignore unnecessary files
 
-## Next
+## 0.8.0
 
 * Drop support for Node v4 and below [major]
 * Update `bcrypt` dependency to 2.x
