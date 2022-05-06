@@ -34,7 +34,8 @@ cp node_modules/moment/min/moment.min.js defaults/public/js/overlook/libraries/
 cp node_modules/typeahead.js/dist/typeahead.bundle.min.js defaults/public/js/overlook/libraries/
 
 # typeahead.js-bootstrap3.less (to make typeahead fit with bootstrap styles)
-cp node_modules/typeahead.js-bootstrap3.less/typeahead.css defaults/public/css/overlook/css/
+# Cannot install via NPM git dependency any more. Need to update manually.
+# cp node_modules/typeahead.js-bootstrap3.less/typeahead.css defaults/public/css/overlook/css/
 
 # Trumbowyg HTML editor (http://alex-d.github.io/Trumbowyg/)
 mkdir -p defaults/public/css/overlook/svg

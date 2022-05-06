@@ -750,3 +750,4 @@ No changes. Erroneous version bump.
 
 * Drop support for Node v4 and below [major]
 * Update `bcrypt` dependency to 2.x
+* Remove git dependency `typeahead.js-bootstrap3.less`
