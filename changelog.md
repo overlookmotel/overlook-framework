@@ -745,3 +745,7 @@ No changes. Erroneous version bump.
 ## 0.7.11
 
 * NPM ignore unnecessary files
+
+## Next
+
+* Drop support for Node v4 and below [major]
