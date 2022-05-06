@@ -749,3 +749,4 @@ No changes. Erroneous version bump.
 ## Next
 
 * Drop support for Node v4 and below [major]
+* Update `bcrypt` dependency to 2.x
