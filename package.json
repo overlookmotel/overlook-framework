@@ -45,7 +45,7 @@
     "jquery": "3.1.0",
     "html5shiv": "3.7.3",
     "respond.js": "1.4.2",
-    "eonasdan-bootstrap-datetimepicker": "4.17.42",
+    "eonasdan-bootstrap-datetimepicker": "4.17.46",
     "moment": "2.15.0",
     "typeahead.js": "0.11.1",
     "trumbowyg": "^2.3.0"
