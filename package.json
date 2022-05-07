@@ -32,7 +32,7 @@
     "mandrill-api": "^1.0.45",
     "promisify-any": "^2.0.1",
     "bunyanesque": "^0.2.1",
-    "pmx": "^0.6.4"
+    "pmx": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "^3.0.2",
