@@ -14,7 +14,7 @@
     "url": "https://github.com/overlookmotel/overlook-framework/issues"
   },
   "dependencies": {
-    "express": "^3.21.2",
+    "express": "^4.14.0",
     "connect-powered-by": "^0.1.0",
     "less-middleware": "^2.2.0",
     "sequelize-extra": "^0.4.13",
@@ -42,11 +42,11 @@
     "istanbul": "^0.4.5",
     "coveralls": "^2.11.12",
     "bootstrap": "3.3.7",
-    "jquery": "3.1.0",
+    "jquery": "3.1.1",
     "html5shiv": "3.7.3",
     "respond.js": "1.4.2",
     "eonasdan-bootstrap-datetimepicker": "4.17.42",
-    "moment": "2.15.0",
+    "moment": "2.15.1",
     "typeahead.js": "0.11.1",
     "trumbowyg": "^2.3.0"
   },
