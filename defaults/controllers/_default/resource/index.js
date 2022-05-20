@@ -91,6 +91,9 @@ exports = module.exports = {
 	},
 
 	loadOptions: function(options) {
+		// set attributes
+		options.attributes = _.uniq(this.model.primaryKeyAttributes.concat(Object.keys(this.fields));
+
 		// set filters
 		options.where = {};
 

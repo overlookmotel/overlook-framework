@@ -762,4 +762,5 @@ No changes. Erroneous version bump.
 
 ## Next
 
+* Resource routes index actions do not load excluded fields from database [fix]
 * Revert preserving function arguments when merging action methods with defaults [fix]
