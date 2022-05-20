@@ -755,3 +755,7 @@ No changes. Erroneous version bump.
 ## 0.8.1
 
 * Preserve function arguments when merging action methods with defaults [fix]
+
+## Next
+
+* Preserve function arguments when merging action methods with defaults [fix]
