@@ -752,6 +752,6 @@ No changes. Erroneous version bump.
 * Update `bcrypt` dependency to 2.x
 * Remove git dependency `typeahead.js-bootstrap3.less`
 
-## Next
+## 0.8.1
 
 * Preserve function arguments when merging action methods with defaults [fix]
