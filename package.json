@@ -17,7 +17,7 @@
     "express": "^3.21.2",
     "connect-powered-by": "^0.1.0",
     "less-middleware": "^2.2.0",
-    "sequelize-extra": "^0.4.13",
+    "sequelize-extra": "^0.4.14",
     "bluebird-extra": "^2.0.0",
     "continuation-local-storage": "^3.2.0",
     "uuid": "^2.0.2",
