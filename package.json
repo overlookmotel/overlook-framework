@@ -1,6 +1,6 @@
 {
   "name": "overlook-framework",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "Yet another node web framework",
   "main": "./lib/",
   "author": {
@@ -50,8 +50,7 @@
     "typeahead.js": "0.11.1",
     "trumbowyg": "^2.3.0"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "scripts": {
     "test": "npm run jshint && npm run test-main",
     "jshint": "jshint lib test",

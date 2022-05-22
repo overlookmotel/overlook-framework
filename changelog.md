@@ -768,3 +768,7 @@ No changes. Erroneous version bump.
 ## 0.8.4
 
 * Fix syntax error [fix]
+
+## 0.8.5
+
+* Update `sequelize-extra` dependency
