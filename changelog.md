@@ -772,3 +772,8 @@ No changes. Erroneous version bump.
 ## 0.8.5
 
 * Update `sequelize-extra` dependency
+
+## 0.8.6
+
+* Update `sequelize-extra` dependency
+* Dev: Update `.editorconfig`
